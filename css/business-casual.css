@@ -87,3 +87,5 @@ hr.divider {
 .map-container iframe.clicked {
     pointer-events: auto;
 }
+
+.img-center {margin:0 35%;}

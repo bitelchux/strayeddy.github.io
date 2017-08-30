@@ -4,8 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
 
+@font-face {
+    font-family: 'Purisa';
+    src: url('fonts/Purisa-bold.eot'); /* For IE */
+    src: local('Purisa'),
+         url('fonts/Purisa-bold.ttf') format('truetype');
+}
+
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background: url('../img/bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -13,6 +20,7 @@ body {
     -o-background-size: cover;
 }
 
+a,
 h1,
 h2,
 h3,
@@ -20,7 +28,7 @@ h4,
 h5,
 h6,
 .text-heading {
-    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Purisa", "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -89,3 +97,8 @@ hr.divider {
 }
 
 .img-center {margin:0 35%;}
+
+.logo {
+    max-width: 10%;
+    height: auto;
+}

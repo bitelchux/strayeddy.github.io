@@ -1,7 +1,7 @@
-# [Meditate In Peace]
+# [HeadPause]
 
-[Meditate In Peace] is an informative page for people to go meditate in our studio.
+[HeadPause] is an informative page for people to receive meditation therapy.
 
 ## Copyright and License
 
-Copyright 2017 Meditate In Peace.
+Copyright 2017 HeadPause.

@@ -64,6 +64,7 @@ body {
   background-color: #222222; }
   #mainNav .navbar-toggler {
     font-size: 12px;
+    font-weight: bold;
     right: 0;
     padding: 13px;
     text-transform: uppercase;

@@ -408,19 +408,93 @@
                 <div class="modal-body">
                   <!-- Service Details Go Here -->
                   <h2>Thérapie</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="item-intro text-muted">Faisons le ensemble.</p>
                   <img class="img-fluid d-block mx-auto" src="img/services/therapy.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;En utilisant une combinaison de techniques <strong>cognitives, comportementales et émotionnelles</strong>, nous pouvons surmonter les difficultés dans votre vie. Nous fournissons de l'aide dans de nombreux domaines, tels que les <strong>troubles émotionels</strong> (dépression, anxiété, etc.), les <strong>troubles de la personnalité</strong> (TOC, BPD, etc.), les <strong> problèmes physiques</strong> (douleur chronique, insomnie, etc.) et les <strong>problèmes relationnels</strong> (famille, couple). Faites un geste courageux aujourd'hui pour améliorer votre vie.</p>
                   <ul class="list-inline">
-                    <li>Rate: 50$/hr</li>
+                    <h3>Tarif: 50$/hr</h3>
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer Service</button>
                 </div>
               </div>
             </div>
           </div>
+          <section class="bg-light" id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Demandez Un Rendezvous</h2><h3 class="section-subheading text-muted">Parlez nous un peu de vous.</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <form id="therapyForm" name="therapyMessage" action="https://formspree.io/contact@headpause.com" method="POST">
+                    <div class="row">
+                      <div class="col-4 col-lg-4">
+                        <p class="text-left">Je veux surmonter...</p>
+                      </div>
+                      <div class="col-8 col-lg-8">
+                        <select class="form-control" name="problemSelect">
+                          <option>Dépression</option>
+                          <option>Anxiété/Stress</option>
+                          <option>Colère</option>
+                          <option>Trouble de la Personnalité</option>
+                          <option>Douleur/Maladie Chronique</option>
+                          <option>Trouble du Sommeil</option>
+                          <option>Problèmes Relationnels</option>
+                          <option>Autre</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4 col-lg-4">
+                        <p class="text-left">Et préfère...</p>
+                      </div>
+                      <div class="col-8 col-lg-8 form-group">
+                        <select class="form-control" name="preferenceSelect">
+                          <option>Comprendre mieux mes problèmes</option>
+                          <option>Quelqu'un qui écoute et m'aide à comprendre mes pensées et sentiments</option>
+                          <option>Apprendre des stratégies pour faire face à ma situation actuelle</option>
+                          <option>Je ne sais pas</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input class="form-control" id="name" type="text" name="name" placeholder="Votre Nom *" required data-validation-required-message="Veuillez entrer votre nom.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="email" type="email" name="email" placeholder="Votre Email *" required data-validation-required-message="Veuillez entrer votre email.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" id="phone" type="tel" name="phone" placeholder="Votre Téléphone *" required data-validation-required-message="Veuillez entrer votre numéro de téléphone.">
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <textarea class="form-control" id="message" name="message" placeholder="Message Optionel"></textarea>
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 mx-auto">
+                        <div id="success"></div>
+                        <button id="sendMessageButton" class="btn btn-xl" type="submit">Envoyez</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <h3 class="section-subheading text-muted" style="margin-top: 1rem;">Vous êtes incertain? Vous avez des questions? Pas de problème, <a class="js-scroll-trigger" onclick="$('#therapyModal').modal('hide')" href="#contact">demandez nous!</a></h3>
+
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

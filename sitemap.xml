@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://headpause.com/</loc>
+    <lastmod>2017-09-17</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://headpause.com/index-fr.html</loc>
+    <lastmod>2017-09-17</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://headpause.com/index.html</loc>
+    <lastmod>2017-09-17</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+</urlset>
+<!--<guid value="abc85197-8ba5-4b11-8986-73e2d817cd54" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

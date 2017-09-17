@@ -1,5 +1,0 @@
-User-Agent: *
-Disallow: 
-Allow: /
-
-Sitemap: http://www.headpause.com/sitemap.xml

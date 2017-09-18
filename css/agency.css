@@ -38,6 +38,10 @@ h1 {
   clip: rect(1px,1px,1px,1px);
 }
 
+h2, .h2 {
+  font-size: 1.9rem;
+}
+
 section {
   padding: 100px 0; }
   section h2.section-heading {

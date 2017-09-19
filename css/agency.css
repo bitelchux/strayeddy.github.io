@@ -20,7 +20,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+th {
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
@@ -616,4 +617,12 @@ ul.social-buttons {
 
 .bg-light {
   background-color: #f2f3f4!important;
+}
+
+th {
+  font-size: 1.5rem;
+}
+
+td {
+  font-size: 1.25em;
 }

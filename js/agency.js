@@ -34,5 +34,27 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   });
+  
+  // Fill up hidden selects of therapy form
+  $("input[name=problem]").val($("select[name=problemSelect]").val());
+  $("select[name=problemSelect]").change(function(){
+    $("input[name=problem]").val($(this).val());
+  });
+  
+  $("input[name=preference]").val($("select[name=preferenceSelect]").val());
+  $("select[name=preferenceSelect]").change(function(){
+    $("input[name=preference]").val($(this).val());
+  });
+  
+  // Fill up hidden selects of courses form
+  $("input[name=course]").val($("select[name=courseSelect]").val());
+  $("select[name=courseSelect]").change(function(){
+    $("input[name=course]").val($(this).val());
+  });
+  
+  $("input[name=nbPeople]").val($("select[name=nbPeopleSelect]").val());
+  $("select[name=nbPeopleSelect]").change(function(){
+    $("input[name=nbPeople]").val($(this).val());
+  });
 
 })(jQuery); // End of use strict

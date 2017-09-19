@@ -613,3 +613,7 @@ ul.social-buttons {
 	font-size:2em;
   }
 }
+
+.bg-light {
+  background-color: #f2f3f4!important;
+}

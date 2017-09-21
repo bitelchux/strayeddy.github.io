@@ -630,3 +630,14 @@ td {
 .text-muted {
   color: #666b70 !important;
 }
+
+.fa-circle {
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-clickable {
+  border-style: solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+}

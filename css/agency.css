@@ -631,9 +631,8 @@ td {
   color: #666b70 !important;
 }
 
-.fa-circle {
-  border-radius: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+.fa-square {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .img-clickable {

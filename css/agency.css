@@ -652,6 +652,26 @@ td {
 my-email::after {
   content: attr(data-domain);
 }
+
 my-email::before {
   content: attr(data-user) "\0040";
+}
+
+.logo {
+  width: 100%;
+}
+
+.meditation-icon {
+  position: relative;
+  height: 55%;
+  width: 40%;
+  top: -7%;
+}
+
+.donation-label {
+  margin-bottom: 0;
+}
+
+.donation-label {
+  width:50%
 }

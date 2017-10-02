@@ -52,11 +52,11 @@
     <!--  Navigation  -->
     
     <span itemscope itemtype="http://schema.org/LocalBusiness">
-    <span itemprop="priceRange">$50 - $200</span>
+    <span itemprop="priceRange" content="$50 - $200"></span>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a itemprop="url" class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img itemprop="image" src="img/logos/headpause.png" style="width: 100%" alt="HeadPause - Home Therapy, Meditation Group & Mindfulness Courses"/>
+          <img itemprop="image" class="logo" src="img/logos/headpause.png" alt="HeadPause - Home Therapy, Meditation Group & Mindfulness Courses"/>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -126,9 +126,9 @@
           </div>
           <div class="col-md-4">
             <a class="portfolio-link" data-toggle="modal" href="#meditationModal">
-              <span class="fa-stack fa-4x" style="text-align: center;">
+              <span class="fa-stack fa-4x text-center">
                 <i class="fa fa-square fa-stack-2x text-primary"></i>
-                <img class="fa-stack-2x" src="img/logos/meditation-icon.png" alt="Meditation" style="position: relative;height: 55%;width: 40%;top: -7%;"/>
+                <img class="fa-stack-2x meditation-icon" src="img/logos/meditation-icon.png" alt="Meditation"/>
               </span>
             </a>
             <h4 class="service-heading">Meditation Group</h4>
@@ -264,7 +264,7 @@
               </li>
               <li class="timeline">
                 <div class="timeline-image">
-                  <h4 style="margin-bottom: 0;">Donate</h4>
+                  <h4 class="donation-label">Donate</h4>
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_donations"/>
                     <input type="hidden" name="business" value="contact@headpause.com"/>
@@ -273,8 +273,8 @@
                     <input type="hidden" name="no_note" value="0"/>
                     <input type="hidden" name="currency_code" value="CAD"/>
                     <input type="hidden" name="bn" value="PP-DonationsBF:donation-button.png:NonHostedGuest"/>
-                    <input type="image" style="width:50%" src="http://headpause.com/img/about/donation-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                    <input class="donation-button" type="image" src="http://headpause.com/img/about/donation-button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                    <img alt="Paypal" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
                   </form>
                 </div>
                 <div class="timeline-panel">
@@ -529,7 +529,7 @@
               </div>
               <div class="row">
                 <div class="col-lg-12 mx-auto">
-                  <h3 class="section-subheading text-muted" style="margin-top: 1rem;">Feeling uncertain? Having questions? It's ok, <a class="js-scroll-trigger" onclick="$('#therapyModal').modal('hide')" href="#contact">just ask us!</a></h3>
+                  <h3 class="section-subheading text-muted mt-3">Feeling uncertain? Having questions? It's ok, <a class="js-scroll-trigger" onclick="$('#therapyModal').modal('hide')" href="#contact">just ask us!</a></h3>
 
                 </div>
               </div>
@@ -702,7 +702,7 @@
               </div>
               <div class="row">
                 <div class="col-lg-12 mx-auto">
-                  <h3 class="section-subheading text-muted" style="margin-top: 1rem;">Feeling uncertain? Having questions? It's ok, <a class="js-scroll-trigger" onclick="$('#coursesModal').modal('hide')" href="#contact">just ask us!</a></h3>
+                  <h3 class="section-subheading text-muted mt-3">Feeling uncertain? Having questions? It's ok, <a class="js-scroll-trigger" onclick="$('#coursesModal').modal('hide')" href="#contact">just ask us!</a></h3>
 
                 </div>
               </div>

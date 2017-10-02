@@ -662,16 +662,16 @@ my-email::before {
 }
 
 .meditation-icon {
-  position: relative;
-  height: 55%;
-  width: 40%;
-  top: -7%;
+  position: relative !important;
+  height: 55% !important;
+  width: 40% !important;
+  top: -7% !important;
 }
 
 .donation-label {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .donation-button {
-  width:50%
+  width:50% !important;
 }

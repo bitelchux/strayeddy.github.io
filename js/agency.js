@@ -64,4 +64,8 @@
       }
   });
 
+  $(document).ready(function() {
+      $('a[href="#therapyModal"]').first().trigger('click');
+  });
+
 })(jQuery); // End of use strict

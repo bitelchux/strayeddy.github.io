@@ -341,12 +341,21 @@
     </section>
 
     <!--  Contact  -->
-    <section id="contact">
+    <section itemscope itemtype="http://schema.org/LocalBusiness" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Contactez Nous</h2>
-            <h3 class="section-subheading text-white"><my-email data-user="contact" data-domain="headpause.com"></my-email> - 438-228-7721 - Montreal</h3>
+            <h3 class="section-subheading text-white">
+              <span itemprop="email" content="contact@headpause.com"><my-email data-user="contact" data-domain="headpause.com"></my-email></span> - 
+              <span itemprop="telephone">438-228-7721</span> - 
+              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Montréal</span>
+                <meta itemprop="addressCountry" content="Canada">
+                <meta itemprop="addressRegion" content="Québec">
+              </span> - 
+              <span itemprop="openingHours" content="Mo-Fr 9:00-17:00">Lu-Ve 9:00-17:00</span>
+            </h3>
           </div>
         </div>
         <div class="row">
@@ -420,7 +429,7 @@
     <!--  Services Modals  -->
     
     <!--  Therapy Modal  -->
-    <div class="portfolio-modal modal fade" id="therapyModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div itemscope itemtype="http://schema.org/Product" itemref="_brand4" class="portfolio-modal modal fade" id="therapyModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -433,11 +442,11 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!--  Service Details Go Here  -->
-                  <h2>Thérapie à Domicile</h2>
+                  <h2 itemprop="name">Thérapie à Domicile</h2>
                   <p class="item-intro text-muted">Faisons le ensemble.</p>
                   <img class="img-fluid d-block mx-auto" src="img/services/therapy.jpg" alt="Thérapie à Domicile"/>
-                  <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;En utilisant une combinaison de techniques <strong>cognitives, comportementales et émotionnelles</strong>, nous pouvons surmonter les difficultés dans votre vie. Nous fournissons de l'aide dans de nombreux domaines, tels que les <strong>troubles émotionels</strong> (dépression, anxiété, etc.), les <strong>troubles de la personnalité</strong> (TOC, BPD, etc.), les <strong> problèmes physiques</strong> (douleur chronique, insomnie, etc.) et les <strong>problèmes relationnels</strong> (famille, couple). Faites un geste courageux aujourd'hui pour améliorer votre vie.</p>
-                  <h4>Tarif: 50$/hr</h4>
+                  <p itemprop="description" class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;En utilisant une combinaison de techniques <strong>cognitives, comportementales et émotionnelles</strong>, nous pouvons surmonter les difficultés dans votre vie. Nous fournissons de l'aide dans de nombreux domaines, tels que les <strong>troubles émotionels</strong> (dépression, anxiété, etc.), les <strong>troubles de la personnalité</strong> (TOC, BPD, etc.), les <strong> problèmes physiques</strong> (douleur chronique, insomnie, etc.) et les <strong>problèmes relationnels</strong> (famille, couple). Faites un geste courageux aujourd'hui pour améliorer votre vie.</p>
+                  <h4 itemprop="price">Tarif: 50$/hr</h4>
                 </div>
               </div>
             </div>
@@ -529,7 +538,7 @@
     </div>
 
     <!--  Meditation Modal  -->
-    <div class="portfolio-modal modal fade" id="meditationModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div itemscope itemtype="http://schema.org/Product" itemref="_brand4" class="portfolio-modal modal fade" id="meditationModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -542,11 +551,11 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!--  Service Details Go Here  -->
-                  <h2>Groupe de Méditation</h2>
+                  <h2 itemprop="name">Groupe de Méditation</h2>
                   <p class="item-intro text-muted">Soyons en bonne santé.</p>
                   <img class="img-fluid d-block mx-auto" src="img/services/meditation.jpg" alt="Méditation"/>
-                  <p class="text-justify">La méditation nous permet de cultiver compréhension, paix et une bonne santé. Il est scientifiquement prouvé qu'elle <strong>réduit</strong> beaucoup de problèmes <strong>mentaux</strong> (dépression, anxiété, stress, etc.) et <strong>physiques</strong> (douleur chronique, pression sanguine, coeur, etc.). Elle démontre aussi une longue liste d' <strong>avantages importants</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Essayez la méditation aujourd'hui, elle améliorera à votre vie.</p>
-                  <h4>Tarif: gratuit (temps limité)</h4>
+                  <p itemprop="description" class="text-justify">La méditation nous permet de cultiver compréhension, paix et une bonne santé. Il est scientifiquement prouvé qu'elle <strong>réduit</strong> beaucoup de problèmes <strong>mentaux</strong> (dépression, anxiété, stress, etc.) et <strong>physiques</strong> (douleur chronique, pression sanguine, coeur, etc.). Elle démontre aussi une longue liste d' <strong>avantages importants</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Essayez la méditation aujourd'hui, elle améliorera à votre vie.</p>
+                  <h4 itemprop="price">Tarif: gratuit (temps limité)</h4>
                   <a href="https://www.meetup.com/meditateinpeace-montreal" class="btn btn-xl" role="button">Joignez Notre Groupe</a>
                 </div>
               </div>
@@ -557,7 +566,7 @@
     </div>
 
     <!--  Courses Modal  -->
-    <div class="portfolio-modal modal fade" id="coursesModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div itemscope itemtype="http://schema.org/Product" itemref="_brand4" class="portfolio-modal modal fade" id="coursesModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -570,10 +579,10 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!--  Service Details Go Here  -->
-                  <h2>Cours de Pleine Conscience</h2>
+                  <h2 itemprop="name">Cours de Pleine Conscience</h2>
                   <p class="item-intro text-muted">Apprenons à mieux nous connaître.</p>
                   <img class="img-fluid d-block mx-auto" src="img/services/courses.jpg" alt="Cours"/>
-                  <p class="text-justify">La pleine conscience est la capacité de regarder le déroulement de notre expérience à chaque instant, sans jugement. En pratiquant régulièrement durant de notre journée, nous pouvons <strong>réduire de nombreux problèmes</strong> (dépression, anxiété/stress, douleur chronique, pression sanguine, etc.) et <strong>augmenter nos capacités</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Mais ne nous croyez pas sur parole, regardez ce que <a href="https://goamra.org/" target="_blank">l'Association Américaine de Recherche sur la Pleine Conscience</a> en dit.</p>
+                  <p itemprop="description" class="text-justify">La pleine conscience est la capacité de regarder le déroulement de notre expérience à chaque instant, sans jugement. En pratiquant régulièrement durant de notre journée, nous pouvons <strong>réduire de nombreux problèmes</strong> (dépression, anxiété/stress, douleur chronique, pression sanguine, etc.) et <strong>augmenter nos capacités</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Mais ne nous croyez pas sur parole, regardez ce que <a href="https://goamra.org/" target="_blank">l'Association Américaine de Recherche sur la Pleine Conscience</a> en dit.</p>
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="course1-tab" data-toggle="tab" href="#course1" role="tab" aria-controls="course1" aria-expanded="true">Adultes</a>

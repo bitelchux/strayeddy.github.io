@@ -648,3 +648,10 @@ td {
 .card-container {
   padding: 15px;
 }
+
+my-email::after {
+  content: attr(data-domain);
+}
+my-email::before {
+  content: attr(data-user) "\0040";
+}

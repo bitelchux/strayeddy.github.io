@@ -199,9 +199,16 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 card-container">
+          <div class="col-md-4 card-container portfolio-item">
             <div class="card">
-              <img class="card-img-top" src="img/news/1.jpg" alt="News card">
+              <a class="portfolio-link" data-toggle="modal" href="#newsModal" data-news-id="1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="card-img-top img-fluid img-clickable" src="img/news/1.jpg" alt="News card">
+              </a>
               <h4 class="service-heading">Mental health, our common goal</h4>
               <p class="text-muted">Mental health is more important than ever. It impacts our physical health and economy all over the world <a href="http://pubdocs.worldbank.org/en/112241465393132401/Lancet-Comment-4th-June-2016.pdf" target="_blank">(Kleinman, 2016)</a>. Now is the time to look at it directly and use therapy, meditation and mindfulness to reduce its impact in our lives. Begin with <a class="js-scroll-trigger" href="#services">us!</a></p>
               <p class="card-text"><small class="text-muted">10 September 2017</small></p>
@@ -774,6 +781,11 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!--  News Modals  -->
+    
+    <div class="portfolio-modal modal fade" id="newsModal" tabindex="-1" role="dialog" aria-hidden="true">
     </div>
 
     <!--  Privacy Policy Modal  -->

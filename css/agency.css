@@ -675,3 +675,7 @@ my-email::before {
 .donation-button {
   width:50% !important;
 }
+
+.navbar-right {
+  border: 1px solid white;
+}

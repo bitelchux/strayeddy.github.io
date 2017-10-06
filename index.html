@@ -63,8 +63,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <li class="nav-item dropdown" id="servicesDropdown">
+              <a class="nav-link dropdown-toggle scroll-to-services" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu" aria-labelledby="Preview">
+                <a class="dropdown-item" data-toggle="modal" href="#therapyModal">Home Therapy</a>
+                <a class="dropdown-item" data-toggle="modal" href="#meditationModal">Meditation Group</a>
+                <a class="dropdown-item" data-toggle="modal" href="#coursesModal">Mindfulness Courses</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#news">News</a>

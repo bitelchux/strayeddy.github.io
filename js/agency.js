@@ -85,13 +85,16 @@
       $('#newsModal').load(url,function(result){
         $('#newsModal').modal({show:true});
       });
-    });
+    }); 
   });
 
   // show alert bar
   $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
       $('#alertBar').collapse('show');
+      // set alert underneath
+      var top = $('#mainNav').outerHeight();
+      $('#alertBar').css('top', top + 'px');
     } else {
       $('#alertBar').collapse('hide');
     }

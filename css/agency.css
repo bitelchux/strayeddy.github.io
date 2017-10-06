@@ -682,3 +682,16 @@ my-email::before {
 .navbar-right {
   border: 1px solid white;
 }
+
+#alertBar {
+  margin-top: 102px;
+  padding: 0; }
+  #alertBar .alert {
+    width: 100%;
+    color: black;
+    border-color: black;
+    background-color: #fed136; }
+  #alertBar h2 {
+    margin-bottom: 0 !important; }
+  #alertBar a {
+    color: black !important; }

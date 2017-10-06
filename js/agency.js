@@ -77,6 +77,7 @@
     }
   });
 
+  // data news modal
   $(document).ready(function(){
     $('a[href="#newsModal"]').click(function(e) {
       var modalId = $(this).attr('data-news-id');
@@ -85,6 +86,15 @@
         $('#newsModal').modal({show:true});
       });
     });
+  });
+
+  // show alert bar
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+      $('#alertBar').collapse('show');
+    } else {
+      $('#alertBar').collapse('hide');
+    }
   });
 
 })(jQuery); // End of use strict

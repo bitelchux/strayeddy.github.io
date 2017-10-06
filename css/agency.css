@@ -691,7 +691,7 @@ my-email::before {
     color: black;
     border-color: black;
     background-color: #fed136; }
-  #alertBar h3 {
+  #alertBar h4 {
     margin-bottom: 0 !important; }
   #alertBar a {
     color: black !important; }

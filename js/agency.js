@@ -92,12 +92,12 @@
   $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
       $('#alertBar').collapse('show');
-      // set alert underneath
-      var top = $('#mainNav').outerHeight();
-      $('#alertBar').css('top', top + 'px');
     } else {
       $('#alertBar').collapse('hide');
     }
+    // set alert underneath
+    var top = $('#mainNav').outerHeight();
+    $('#alertBar').css('top', top + 'px');
   });
 
 })(jQuery); // End of use strict

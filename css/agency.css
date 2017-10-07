@@ -685,14 +685,14 @@ my-email::before {
 
 #alertBar {
   top: 102px;
-  z-index: 1;
+  z-index: 200;
   padding: 0; }
   #alertBar .alert {
     width: 100%;
     color: black;
     border-color: black;
-    background-color: #fed136; }
+    background-color: yellow; }
   #alertBar h5 {
     margin-bottom: 0 !important; }
   #alertBar a {
-    color: black !important; }
+    color: red !important; }

@@ -100,4 +100,22 @@
     $('#alertBar').css('top', top + 'px');
   });
 
+  // add shake function to jQuery
+  $.fn.extend({
+    shake: function(intShakes, intDistance, intDuration) {
+      return this.each(function() {
+        $(this).css("position","relative");
+        for (var x=1; x<=intShakes; x++) {
+          $(this).animate({left:(intDistance*-1)}, (((intDuration/intShakes)/4)))
+            .animate({left:intDistance}, ((intDuration/intShakes)/2))
+            .animate({left:0}, (((intDuration/intShakes)/4)));
+        }
+      });
+    }
+  });
+
+  // shake alertBar
+  setInterval(function(){ $('#alertBar a').shake(3,7,800); }, 3000);
+
 })(jQuery); // End of use strict
+

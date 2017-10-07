@@ -685,6 +685,7 @@ my-email::before {
 
 #alertBar {
   top: 102px;
+  z-index: 1;
   padding: 0; }
   #alertBar .alert {
     width: 100%;

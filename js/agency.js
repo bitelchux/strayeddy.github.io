@@ -90,10 +90,10 @@
 
   // privacy modal
   $(document).ready(function(){
-    $('a[href="#privacyModal"]').click(function(e) {
+    $('a[href="#privacyPolicyModal"]').click(function(e) {
       var url = 'privacy/privacy-' + $('html').attr('lang') + '.html';
-      $('#privacyModal').load(url,function(result){
-        $('#privacyModal').modal({show:true});
+      $('#privacyPolicyModal').load(url,function(result){
+        $('#privacyPolicyModal').modal({show:true});
       });
     }); 
   });

@@ -77,13 +77,23 @@
     }
   });
 
-  // data news modal
+  // news modal
   $(document).ready(function(){
     $('a[href="#newsModal"]').click(function(e) {
       var modalId = $(this).attr('data-news-id');
-      var url = 'news/' + modalId + '.html';
+      var url = 'news/' + modalId + "-" + $('html').attr('lang') + '.html';
       $('#newsModal').load(url,function(result){
         $('#newsModal').modal({show:true});
+      });
+    }); 
+  });
+
+  // privacy modal
+  $(document).ready(function(){
+    $('a[href="#privacyModal"]').click(function(e) {
+      var url = 'privacy/privacy-' + $('html').attr('lang') + '.html';
+      $('#privacyModal').load(url,function(result){
+        $('#privacyModal').modal({show:true});
       });
     }); 
   });

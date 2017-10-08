@@ -66,11 +66,11 @@
             <li class="nav-item dropdown" id="servicesDropdown">
               <a class="nav-link dropdown-toggle scroll-to-services" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
               <div class="dropdown-menu" aria-labelledby="Preview">
-                <a class="dropdown-item" data-toggle="modal" href="#therapyModal">Home Therapy</a>
+                <a class="dropdown-item" href="/services/home-therapy-en.html">Home Therapy</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" data-toggle="modal" href="#meditationModal">Meditation Group</a>
+                <a class="dropdown-item" href="/services/meditation-group-en.html">Meditation Group</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" data-toggle="modal" href="#coursesModal">Mindfulness Courses</a>
+                <a class="dropdown-item" href="/services/mindfulness-courses-en.html">Mindfulness Courses</a>
               </div>
             </li>
             <li class="nav-item">
@@ -130,7 +130,7 @@
         </div>
         <div class="row text-center">
           <div class="col-md-4">
-            <a class="portfolio-link" data-toggle="modal" href="#therapyModal">
+            <a class="portfolio-link" href="/services/home-therapy-en.html">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-square fa-stack-2x text-primary"></i>
                 <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
@@ -140,17 +140,17 @@
             <p class="text-muted">Therapy is accessible, easy, gives you more peace of mind, and helps your life. For any struggle you face, ask for the personal touch of <a class="js-scroll-trigger" href="#team">our therapist.</a></p>
           </div>
           <div class="col-md-4">
-            <a class="portfolio-link" data-toggle="modal" href="#meditationModal">
+            <a class="portfolio-link" href="/services/meditation-group-en.html">
               <span class="fa-stack fa-4x text-center">
                 <i class="fa fa-square fa-stack-2x text-primary"></i>
-                <img class="fa-stack-2x meditation-icon" src="img/logos/meditation-icon.png" alt="Meditation"/>
+                <img class="fa-stack-2x meditation-icon" src="/img/logos/meditation-icon.png" alt="Meditation"/>
               </span>
             </a>
             <h4 class="service-heading">Meditation Group</h4>
             <p class="text-muted">The most direct way to improve your life. Meditation comes with a long list of physical and mental benefits. Discover and improve your practice with the help of <a class="js-scroll-trigger" href="#team">our teacher.</a></p>
           </div>
           <div class="col-md-4">
-            <a class="portfolio-link" data-toggle="modal" href="#coursesModal">
+            <a class="portfolio-link" href="/services/mindfulness-courses-en.html">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-square fa-stack-2x text-primary"></i>
                 <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
@@ -455,291 +455,6 @@
         </div>
       </div>
     </footer>
-
-    <!--  Services Modals  -->
-    
-    <!--  Therapy Modal  -->
-    <div itemscope itemtype="http://schema.org/Product" class="portfolio-modal modal fade" id="therapyModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!--  Service Details Go Here  -->
-                  <h2 itemprop="name">Home Therapy</h2>
-                  <p class="item-intro text-muted">Let's face it together.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/services/therapy.jpg" alt="Home Therapy"/>
-                  <p itemprop="description" class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;By using a combination of <strong>cognitive, behavioral, and emotional</strong> techniques, we can overcome the difficulties in your life. We provide help in many areas, such as <strong>mood disorders</strong> (depression, anxiety, etc.), <strong>personality disorders</strong> (OCD, BPD, etc.), <strong>physical struggles</strong> (chronic pain, insomnia, etc.), and <strong>relationship problems</strong> (family, couple). Take a courageous step today to improve your life.</p>
-                  <h4 class="text-danger">First consultation Free!</h4>
-                  <h4>Rate: 50$/hr</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section class="bg-light" id="therapy-contact">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <h2>Rendezvous</h2>
-                  <h3 class="section-subheading text-muted">Tell us a bit about yourself.</h3>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <form id="therapyForm" name="therapyMessage" action="https://formspree.io/contact@headpause.com" method="POST">
-                    <div class="row">
-                      <div class="col-4 col-lg-4">
-                        <p class="text-left">I want to overcome...</p>
-                      </div>
-                      <div class="col-8 col-lg-8">
-                        <select class="form-control" name="problemSelect">
-                          <option>Depression</option>
-                          <option>Anxiety/Stress</option>
-                          <option>Anger</option>
-                          <option>Personality Disorder</option>
-                          <option>Chronic Pain/Illness</option>
-                          <option>Sleep Disorder</option>
-                          <option>Relationship Problems</option>
-                          <option>Other</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-lg-4">
-                        <p class="text-left">And prefer...</p>
-                      </div>
-                      <div class="col-8 col-lg-8 form-group">
-                        <select class="form-control" name="preferenceSelect">
-                          <option>To understand better my issues</option>
-                          <option>Someone that listens and helps me understand my thoughts and feelings</option>
-                          <option>To learn coping skills and deal with my current situation</option>
-                          <option>I'm not sure</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <input class="form-control" id="therapyName" type="text" name="name" placeholder="Your Name *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="therapyEmail" type="email" name="email" placeholder="Your Email *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="therapyPhone" type="tel" name="phone" placeholder="Your Phone *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="therapyPostalcode" type="text" name="postalcode" placeholder="Your Postal Code *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <textarea class="form-control" id="therapyMessage" name="message" placeholder="Optional Message"></textarea>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="col-lg-12 mx-auto">
-                        <div id="success"></div>
-                        <button id="therapySendMessageButton" class="btn btn-xl" type="submit">Send</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 mx-auto">
-                  <h3 class="section-subheading text-muted mt-3">Feeling uncertain? Having questions? It's ok, <a class="js-scroll-trigger" onclick="$('#therapyModal').modal('hide')" href="#contact">just ask us!</a></h3>
-
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <!--  Meditation Modal  -->
-    <div itemscope itemtype="http://schema.org/Product" class="portfolio-modal modal fade" id="meditationModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!--  Service Details Go Here  -->
-                  <h2 itemprop="name">Meditation Group</h2>
-                  <p class="item-intro text-muted">Let's get healthy.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/services/meditation.jpg" alt="Meditation"/>
-                  <p itemprop="description" class="text-justify">Meditation allows us to cultivate understanding, peace, and good health. It is scientifically proven to <strong>reduce</strong> many <strong>mental</strong> (depression, anxiety, stress, etc.) and <strong>physical</strong> (chronic pain, blood pressure, heart, etc.) issues. It also has a long list of <strong>important benefits</strong> (focus, memory, sleep, immune system, etc.). Try out meditation today, it will benefit your life.</p>
-                  <h4>Rate: free (limited time)</h4>
-				  
-                  <a href="https://www.meetup.com/meditateinpeace-montreal" class="btn btn-xl" role="button">Join Our Group</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  Courses Modal  -->
-    <div itemscope itemtype="http://schema.org/Product" class="portfolio-modal modal fade" id="coursesModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!--  Service Details Go Here  -->
-                  <h2 itemprop="name">Mindfulness Courses</h2>
-                  <p class="item-intro text-muted">Let's get to know ourselves better.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/services/courses.jpg" alt="Courses"/>
-                  <p itemprop="description" class="text-justify">Mindfulness is the ability to look at the unfolding of our experience moment by moment, in a non-judgmental way. By practicing it regularly throughout our day, we can <strong>reduce many issues</strong> (depression, anxiety/stress, chronic pain, blood pressure, etc.) and <strong>increase our abilities</strong> (concentration, memory, sleep, immune system, etc.). But don't take our word for it, look at what the <a href="https://goamra.org/" target="_blank">American Mindfulness Research Association (AMRA)</a> as to say.</p>
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="course1-tab" data-toggle="tab" href="#course1" role="tab" aria-controls="course1" aria-expanded="true">Adults</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="course2-tab" data-toggle="tab" href="#course2" role="tab" aria-controls="course2" aria-expanded="false">Teens</a>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div role="tabpanel" class="tab-pane fade active show" id="course1" aria-labelledby="course1-tab" aria-expanded="true">
-                      <p class="text-justify">In half a day of introduction to mindfulness, you will get a clear understanding of its practice and benefits. This course contains explanations, practical workshops, and discussions specific to your situation. Learn your way to better health!</p>
-                    </div>
-                    <div class="tab-pane fade" id="course2" role="tabpanel" aria-labelledby="course2-tab" aria-expanded="false">
-                      <p class="text-justify">In half a day of introduction to mindfulness, your students will understand their body, thoughts, and emotions better. This course contains material easy to understand through practical workshops, and discussions. Help them learn their way to better health!</p>
-                    </div>
-                  </div>
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th colspan="2" class="text-center">Rates</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Individual</td>
-                        <td>80$</td>
-                      </tr>
-                      <tr>
-                        <td>2-4 people</td>
-                        <td>45$/person</td>
-                      </tr>
-                      <tr>
-                        <td>5+ people</td>
-                        <td>200$</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section class="bg-light" id="courses-contact">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <h2>Reservation</h2>
-                  <h3 class="section-subheading text-muted">Tell us a bit about yourself.</h3>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <form id="coursesForm" name="coursesMessage" action="https://formspree.io/contact@headpause.com" method="POST">
-                    <div class="row">
-                      <div class="col-8 col-lg-4">
-                        <p class="text-left">I choose the course for...</p>
-                      </div>
-                      <div class="col-4 col-lg-8">
-                        <select class="form-control" name="courseSelect">
-                          <option>Adults</option>
-                          <option>Teens</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-8 col-lg-4">
-                        <p class="text-left">We'll be about...</p>
-                      </div>
-                      <div class="col-4 col-lg-8 form-group">
-                        <select class="form-control" name="nbPeopleSelect">
-                          <option>1 person</option>
-                          <option>2-4 people</option>
-                          <option>5-9 people</option>
-                          <option>10-19 people</option>
-                          <option>20+ people</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <input class="form-control" id="name" type="text" name="name" placeholder="Your Name *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="company" type="text" name="company" placeholder="Your Company"/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="email" type="email" name="email" placeholder="Your Email *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="phone" type="tel" name="phone" placeholder="Your Phone *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                          <input class="form-control" id="postalcode" type="text" name="postalcode" placeholder="Your Postal Code *" required/>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <textarea class="form-control" id="message" name="message" placeholder="Optional Message"></textarea>
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="col-lg-12 mx-auto">
-                        <div id="success"></div>
-                        <button id="sendMessageButton" class="btn btn-xl" type="submit">Send</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 mx-auto">
-                  <h3 class="section-subheading text-muted mt-3">Feeling uncertain? Having questions? It's ok, <a class="js-scroll-trigger" onclick="$('#coursesModal').modal('hide')" href="#contact">just ask us!</a></h3>
-
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
 
     <!--  Portfolio Modals  -->
 

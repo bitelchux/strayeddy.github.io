@@ -41,10 +41,12 @@
 
   // Collapse the navbar when page is scrolled
   $(window).scroll(function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
+    if(!$("#mainNav").hasClass("stay-shrinked")) {
+      if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
     }
   });
 
@@ -91,7 +93,7 @@
   // privacy modal
   $(document).ready(function(){
     $('a[href="#privacyPolicyModal"]').click(function(e) {
-      var url = 'privacy/privacy-' + $('html').attr('lang') + '.html';
+      var url = '/privacy/privacy-' + $('html').attr('lang') + '.html';
       $('#privacyPolicyModal').load(url,function(result){
         $('#privacyPolicyModal').modal({show:true});
       });

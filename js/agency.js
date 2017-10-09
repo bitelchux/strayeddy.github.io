@@ -129,5 +129,19 @@
   // shake alertBar
   setInterval(function(){ $('#alertBar a').shake(3,7,800); }, 3000);
 
+  //translate mailchimp popup in french
+  if($('html').attr('lang')=='fr') {
+    var checkExist = setInterval(function() {
+      if ($('#PopupSignupForm_0').length) {
+        $("iframe").contents().find(".content__titleDescription span span").text('JOIGNEZ NOTRE INFO-LETTRE');
+        $("iframe").contents().find(".content__titleDescription div:eq(1)").text('Inscrivez-vous gratuitement aujourd\'hui et soyez le premier à être informé des événements et des promotions.');
+        $("iframe").contents().find("label").text('Adresse Email');
+        $("iframe").contents().find(".content__button input").val('Abonnez-vous Maintenant');
+        clearInterval(checkExist);
+      }
+    }, 100);
+  };
+  
+
 })(jQuery); // End of use strict
 

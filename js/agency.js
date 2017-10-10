@@ -130,7 +130,7 @@
   setInterval(function(){ $('#alertBar a').shake(3,7,800); }, 3000);
 
   // french users
-  var checkExist = setInterval(function() {
+  var checkPopupExist = setInterval(function() {
     
     if ($('#PopupSignupForm_0').length) {
       $("iframe").contents().find("#mc-LANGUAGE").val("EN");
@@ -143,14 +143,29 @@
         $("iframe").contents().find(".content__titleDescription div:eq(1)").text('Inscrivez-vous gratuitement aujourd\'hui et soyez le premier à être informé des événements et des promotions.');
         $("iframe").contents().find("label").text('Adresse Email');
         $("iframe").contents().find(".content__button input").val('Abonnez-vous Maintenant');
+
+        // Check submit
+        $("iframe").contents().find(".content__button").click(function(){
+          // french users
+          var checkSuccessPopupExist = setInterval(function() {
+            
+            if ($("iframe").contents().find(".popup-signup-success").length) {
+              $("iframe").contents().find(".popup-signup-success").text('MERCI DE VOUS ÊTRE ABONNÉ!');
+              clearInterval(checkSuccessPopupExist);
+            }
+          }, 100);
+        });
       }
       
       // Hide language field
       $("iframe").contents().find("#uniqName_3_1").hide();
 
-      clearInterval(checkExist);
+      clearInterval(checkPopupExist);
     }
   }, 100);
+
+  
+
 
 })(jQuery); // End of use strict
 

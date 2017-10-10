@@ -1,21 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://headpause.com/</loc>
-    <lastmod>2017-09-17</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://headpause.com/index-fr.html</loc>
-    <lastmod>2017-09-17</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://headpause.com/index.html</loc>
-    <lastmod>2017-09-17</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://www.headpause.com/</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/services/home-therapy-en.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/services/meditation-group-en.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/services/mindfulness-courses-en.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/index-fr.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/news/mental-health-our-common-goal-en.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/services/home-therapy-fr.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/services/meditation-group-fr.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/services/mindfulness-courses-fr.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/index.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.headpause.com/news/mental-health-our-common-goal-fr.html</loc>
+  <lastmod>2017-10-10T04:58:49+00:00</lastmod>
+</url>
 </urlset>
-<!--<guid value="abc85197-8ba5-4b11-8986-73e2d817cd54" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

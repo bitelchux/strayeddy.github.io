@@ -729,3 +729,7 @@ my-email::before {
 	font-size:2em;
   }
 }
+
+#shareButtons {
+  padding-bottom: 30px;
+}

@@ -153,7 +153,8 @@
     }
   }, 100);
 
-  
+  // replace share-buttons with html
+  $("#shareButtons").load("/templates/share-buttons.html");
 
 
 })(jQuery); // End of use strict

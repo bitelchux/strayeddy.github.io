@@ -79,17 +79,6 @@
     }
   });
 
-  // news modal
-  $(document).ready(function(){
-    $('a[href="#newsModal"]').click(function(e) {
-      var modalId = $(this).attr('data-news-id');
-      var url = 'news/' + modalId + "-" + $('html').attr('lang') + '.html';
-      $('#newsModal').load(url,function(result){
-        $('#newsModal').modal({show:true});
-      });
-    }); 
-  });
-
   // privacy modal
   $(document).ready(function(){
     $('a[href="#privacyPolicyModal"]').click(function(e) {

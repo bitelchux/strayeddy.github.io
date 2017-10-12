@@ -54,7 +54,7 @@
     <nav class="navbar navbar-shrink stay-shrinked navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-          <img class="logo" src="/img/logos/headpause.png" alt="HeadPause - Home Therapy, Meditation Group & Mindfulness Courses"/>
+          <img id="_logo6" itemprop="logo" class="logo" src="/img/logos/headpause.png" alt="HeadPause - Home Therapy, Meditation Group & Mindfulness Courses"/>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -98,16 +98,16 @@
     </nav>
 
     <!--  Courses  -->
-    <section class="service" id="courses">
+    <span itemscope itemtype="http://schema.org/Product"><section class="service" id="courses">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!--  Service Details Go Here  -->
-              <h2>Mindfulness Courses</h2>
+              <h2 itemprop="name">Mindfulness Courses</h2>
               <p class="item-intro text-muted">Let's get to know ourselves better.</p>
-              <img class="img-fluid d-block mx-auto" src="/img/services/courses.jpg" alt="Courses"/>
-              <p class="text-justify">Mindfulness is the ability to look at the unfolding of our experience moment by moment, in a non-judgmental way. By practicing it regularly throughout our day, we can <strong>reduce many issues</strong> (depression, anxiety/stress, chronic pain, blood pressure, etc.) and <strong>increase our abilities</strong> (concentration, memory, sleep, immune system, etc.). But don't take our word for it, look at what the <a href="https://goamra.org/" target="_blank">American Mindfulness Research Association (AMRA)</a> as to say.</p>
+              <img itemprop="image" class="img-fluid d-block mx-auto" src="/img/services/courses.jpg" alt="Courses"/>
+              <p itemprop="description" class="text-justify">Mindfulness is the ability to look at the unfolding of our experience moment by moment, in a non-judgmental way. By practicing it regularly throughout our day, we can <strong>reduce many issues</strong> (depression, anxiety/stress, chronic pain, blood pressure, etc.) and <strong>increase our abilities</strong> (concentration, memory, sleep, immune system, etc.). But don't take our word for it, look at what the <a href="https://goamra.org/" target="_blank">American Mindfulness Research Association (AMRA)</a> as to say.</p>
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="course1-tab" data-toggle="tab" href="#course1" role="tab" aria-controls="course1" aria-expanded="true">Adults</a>
@@ -137,7 +137,7 @@
                   </tr>
                   <tr>
                     <td>2-4 people</td>
-                    <td>45$/person</td>
+                    <td itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">45$/person</span></td>
                   </tr>
                   <tr>
                     <td>5+ people</td>
@@ -233,11 +233,11 @@
     </section>
 
     <!--  Footer  -->
-    <footer>
+    <footer itemprop="brand" itemscope itemtype="http://schema.org/Brand" itemref="_logo6">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; HeadPause 2017</span>
+            <span class="copyright">Copyright &copy; <span itemprop="name">HeadPause</span> 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -263,6 +263,7 @@
         </div>
       </div>
     </footer>
+<meta itemprop="url" content="https://www.headpause.com/services/mindfulness-courses-en.html"></span>
 
     <!--  Privacy Policy Modal  -->
     <div class="privacy-policy-modal modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-hidden="true">

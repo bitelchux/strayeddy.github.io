@@ -53,7 +53,7 @@
     <nav class="navbar navbar-shrink stay-shrinked navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/index-fr.html#page-top">
-          <img class="logo" src="/img/logos/headpause-fr.png" alt="HeadPause - Thérapie à Domicile, Groupe de Méditation & Cours de Pleine Conscience"/>
+          <img id="_logo6" itemprop="logo" class="logo" src="/img/logos/headpause-fr.png" alt="HeadPause - Thérapie à Domicile, Groupe de Méditation & Cours de Pleine Conscience"/>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -97,16 +97,16 @@
     </nav>
 
     <!--  Meditation  -->
-    <section class="service" id="meditation">
+    <span itemscope itemtype="http://schema.org/Product"><section class="service" id="meditation">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!--  Service Details Go Here  -->
-              <h2>Groupe de Méditation</h2>
+              <h2 itemprop="name">Groupe de Méditation</h2>
               <p class="item-intro text-muted">Soyons en bonne santé.</p>
-              <img class="img-fluid d-block mx-auto" src="/img/services/meditation.jpg" alt="Méditation"/>
-              <p class="text-justify">La méditation nous permet de cultiver compréhension, paix et une bonne santé. Il est scientifiquement prouvé qu'elle <strong>réduit</strong> beaucoup de problèmes <strong>mentaux</strong> (dépression, anxiété, stress, etc.) et <strong>physiques</strong> (douleur chronique, pression sanguine, coeur, etc.). Elle démontre aussi une longue liste d'<strong>avantages importants</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Essayez la méditation aujourd'hui, elle améliorera votre vie.</p>
+              <img itemprop="image" class="img-fluid d-block mx-auto" src="/img/services/meditation.jpg" alt="Méditation"/>
+              <p itemprop="description" class="text-justify">La méditation nous permet de cultiver compréhension, paix et une bonne santé. Il est scientifiquement prouvé qu'elle <strong>réduit</strong> beaucoup de problèmes <strong>mentaux</strong> (dépression, anxiété, stress, etc.) et <strong>physiques</strong> (douleur chronique, pression sanguine, coeur, etc.). Elle démontre aussi une longue liste d'<strong>avantages importants</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Essayez la méditation aujourd'hui, elle améliorera votre vie.</p>
               <h4>Tarif: gratuit (temps limité)</h4>
               <a href="https://www.meetup.com/meditateinpeace-montreal" class="btn btn-xl" role="button">Joignez Notre Groupe</a>
             </div>
@@ -116,11 +116,11 @@
     </section>
 
     <!--  Footer  -->
-    <footer>
+    <footer itemprop="brand" itemscope itemtype="http://schema.org/Brand" itemref="_logo6">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Droits d'auteur &copy; HeadPause 2017</span>
+            <span class="copyright">Droits d'auteur &copy; <span itemprop="name">HeadPause</span> 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -146,6 +146,7 @@
         </div>
       </div>
     </footer>
+<meta itemprop="url" content="https://www.headpause.com/services/meditation-group-fr.html"></span>
 
     <!--  Privacy Policy Modal  -->
     <div class="privacy-policy-modal modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-hidden="true">

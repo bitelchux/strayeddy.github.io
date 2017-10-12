@@ -53,7 +53,7 @@
     <nav class="navbar navbar-shrink stay-shrinked navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/index-fr.html#page-top">
-          <img class="logo" src="/img/logos/headpause-fr.png" alt="HeadPause - Thérapie à Domicile, Groupe de Méditation & Cours de Pleine Conscience"/>
+          <img id="_logo6" itemprop="logo" class="logo" src="/img/logos/headpause-fr.png" alt="HeadPause - Thérapie à Domicile, Groupe de Méditation & Cours de Pleine Conscience"/>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -97,16 +97,16 @@
     </nav>
 
     <!--  Courses  -->
-    <section class="service" id="courses">
+    <span itemscope itemtype="http://schema.org/Product"><section class="service" id="courses">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!--  Service Details Go Here  -->
-              <h2>Cours de Pleine Conscience</h2>
+              <h2 itemprop="name">Cours de Pleine Conscience</h2>
               <p class="item-intro text-muted">Apprenons à mieux nous connaître.</p>
-              <img class="img-fluid d-block mx-auto" src="/img/services/courses.jpg" alt="Cours"/>
-              <p class="text-justify">La pleine conscience est la capacité de regarder le déroulement de notre expérience à chaque instant, sans jugement. En pratiquant régulièrement durant de notre journée, nous pouvons <strong>réduire de nombreux problèmes</strong> (dépression, anxiété/stress, douleur chronique, pression sanguine, etc.) et <strong>augmenter nos capacités</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Mais ne nous croyez pas sur parole, regardez ce que <a href="https://goamra.org/" target="_blank">l'Association Américaine de Recherche sur la Pleine Conscience</a> en dit.</p>
+              <img itemprop="image" class="img-fluid d-block mx-auto" src="/img/services/courses.jpg" alt="Cours"/>
+              <p itemprop="description" class="text-justify">La pleine conscience est la capacité de regarder le déroulement de notre expérience à chaque instant, sans jugement. En pratiquant régulièrement durant de notre journée, nous pouvons <strong>réduire de nombreux problèmes</strong> (dépression, anxiété/stress, douleur chronique, pression sanguine, etc.) et <strong>augmenter nos capacités</strong> (concentration, mémoire, sommeil, système immunitaire, etc.). Mais ne nous croyez pas sur parole, regardez ce que <a href="https://goamra.org/" target="_blank">l'Association Américaine de Recherche sur la Pleine Conscience</a> en dit.</p>
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="course1-tab" data-toggle="tab" href="#course1" role="tab" aria-controls="course1" aria-expanded="true">Adultes</a>
@@ -136,7 +136,7 @@
                   </tr>
                   <tr>
                     <td>2-4 personnes</td>
-                    <td>45$/personne</td>
+                    <td itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">45$/personne</span></td>
                   </tr>
                   <tr>
                     <td>5+ personnes</td>
@@ -232,11 +232,11 @@
     </section>
 
     <!--  Footer  -->
-    <footer>
+    <footer itemprop="brand" itemscope itemtype="http://schema.org/Brand" itemref="_logo6">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Droits d'auteur &copy; HeadPause 2017</span>
+            <span class="copyright">Droits d'auteur &copy; <span itemprop="name">HeadPause</span> 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -262,6 +262,7 @@
         </div>
       </div>
     </footer>
+<meta itemprop="url" content="https://www.headpause.com/services/mindfulness-courses-fr.html"></span>
 
     <!--  Privacy Policy Modal  -->
     <div class="privacy-policy-modal modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-hidden="true">

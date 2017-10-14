@@ -89,18 +89,6 @@
     }); 
   });
 
-  // show alert bar
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
-      $('#alertBar').collapse('show');
-    } else {
-      $('#alertBar').collapse('hide');
-    }
-    // set alert underneath
-    var top = $('#mainNav').outerHeight();
-    $('#alertBar').css('top', top + 'px');
-  });
-
   // add shake function to jQuery
   $.fn.extend({
     shake: function(intShakes, intDistance, intDuration) {
@@ -114,9 +102,6 @@
       });
     }
   });
-
-  // shake alertBar
-  setInterval(function(){ $('#alertBar a').shake(3,7,800); }, 3000);
 
   // french users
   var checkPopupExist = setInterval(function() {

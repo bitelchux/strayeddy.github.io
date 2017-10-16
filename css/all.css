@@ -8904,7 +8904,7 @@ my-email::before {
   }
 }
 
-#shareButtons {
+[data-share-buttons] {
   padding-bottom: 30px;
 }
 /*!

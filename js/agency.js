@@ -139,7 +139,12 @@
   }, 100);
 
   // replace share-buttons with html
-  $("#shareButtons").load("/templates/share-buttons.html");
+  $("[data-share-buttons]").load("/templates/share-buttons.html", function() {
+    var url = ($(this).data("share-buttons")) ? $(this).data("share-buttons") : window.location;
+    $(this).find("a").each(function(){
+      this.href = this.href.replace('#currentUrl', url);
+    });
+  });
 
 
 })(jQuery); // End of use strict

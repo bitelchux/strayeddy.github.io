@@ -723,3 +723,8 @@ my-email::before {
 [data-share-buttons] {
   padding-bottom: 30px;
 }
+
+#news .news-container {
+  max-height:1000px;
+  overflow: auto;
+}

@@ -8907,6 +8907,11 @@ my-email::before {
 [data-share-buttons] {
   padding-bottom: 30px;
 }
+
+#news .news-container {
+  max-height:1000px;
+  overflow: auto;
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

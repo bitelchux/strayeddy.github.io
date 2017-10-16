@@ -645,11 +645,16 @@ td {
 }
 
 .card {
-  padding: 15px;
+  margin: 15px;
 }
 
 .card-container {
   padding: 15px;
+}
+
+.card-container > .portfolio-item {
+  text-align: center;
+  margin: 0 !important;
 }
 
 my-email::after {
@@ -682,21 +687,6 @@ my-email::before {
 .navbar-right {
   border: 1px solid white;
 }
-
-#alertBar {
-  top: 102px;
-  z-index: 200;
-  padding: 0; }
-  #alertBar .alert {
-    width: 100%;
-    color: black;
-    border-color: black;
-    background-color: yellow; }
-  #alertBar h5 {
-    margin-bottom: 0 !important; }
-  #alertBar a {
-    color: red !important; }
-
 .service {
   min-height: 100%;
   padding: 100px 0;

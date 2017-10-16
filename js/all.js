@@ -90,20 +90,6 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
     }); 
   });
 
-  // add shake function to jQuery
-  $.fn.extend({
-    shake: function(intShakes, intDistance, intDuration) {
-      return this.each(function() {
-        $(this).css("position","relative");
-        for (var x=1; x<=intShakes; x++) {
-          $(this).animate({left:(intDistance*-1)}, (((intDuration/intShakes)/4)))
-            .animate({left:intDistance}, ((intDuration/intShakes)/2))
-            .animate({left:0}, (((intDuration/intShakes)/4)));
-        }
-      });
-    }
-  });
-
   // french users
   var checkPopupExist = setInterval(function() {
     

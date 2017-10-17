@@ -89,6 +89,11 @@
     }); 
   });
 
+  // hide show more button when showing more content
+  $( "#moreNewsButton" ).click(function() {
+    $('#moreNewsButton').hide();
+  });
+
   // french users
   var checkPopupExist = setInterval(function() {
     

@@ -90,6 +90,11 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
     }); 
   });
 
+  // hide show more button when showing more content
+  $( "#moreNewsButton" ).click(function() {
+    $('#moreNewsButton').hide();
+  });
+
   // french users
   var checkPopupExist = setInterval(function() {
     

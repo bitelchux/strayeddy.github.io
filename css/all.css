@@ -8712,6 +8712,9 @@ ul.social-buttons {
 
 .text-primary {
   color: #fed136 !important; }
+span.fa-stack:hover .text-primary {
+    color: #fec503 !important;
+}
 
 .btn-primary {
   font-weight: 700;
@@ -8818,7 +8821,7 @@ td {
   color: #666b70 !important;
 }
 
-.fa-square {
+.fa-stop {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 

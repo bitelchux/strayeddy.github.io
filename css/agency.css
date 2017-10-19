@@ -527,10 +527,15 @@ ul.social-buttons {
       background-color: #fed136; }
 
 .text-primary {
-  color: #fed136 !important; }
-span.fa-stack:hover .text-primary {
-    color: #fec503 !important;
+  color: #fed136 !important;
 }
+span.fa-stack:hover .text-primary {
+  color: #fec503 !important;
+}
+.timeline-image:hover {
+  background-color: #fec503 !important;
+}
+
 
 .btn-primary {
   font-weight: 700;

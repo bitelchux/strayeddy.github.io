@@ -736,3 +736,7 @@ my-email::before {
   max-height:1000px;
   overflow: auto;
 }
+
+#contact button {
+  cursor: pointer;
+}

@@ -8920,6 +8920,10 @@ my-email::before {
   max-height:1000px;
   overflow: auto;
 }
+
+#contact button {
+  cursor: pointer;
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

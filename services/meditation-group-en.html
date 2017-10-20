@@ -109,9 +109,89 @@
               <img itemprop="image" class="img-fluid d-block mx-auto" src="/img/services/meditation.jpg" alt="Meditation"/>
               <p itemprop="description" class="text-justify">Meditation allows us to cultivate understanding, peace, and good health. It is scientifically proven to <strong>reduce</strong> many <strong>mental</strong> (depression, anxiety, stress, etc.) and <strong>physical</strong> (chronic pain, blood pressure, heart, etc.) issues. It also has a long list of <strong>important benefits</strong> (focus, memory, sleep, immune system, etc.). Try out meditation today, it will benefit your life.</p>
               <h4>Rate: free (limited time)</h4>
-		  
               <a href="https://www.meetup.com/meditateinpeace-montreal" class="btn btn-xl" role="button">Join Our Group</a>
+              <h4 class="mt-2">OR</h4>
+              <a class="btn btn-xl show-more-button" data-toggle="collapse" href="#meditation-contact" aria-expanded="false" aria-controls="meditation-contact">
+                Take A RendezVous
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="container collapse" id="meditation-contact">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Rendezvous</h2>
+            <h3 class="section-subheading text-muted">Tell us a bit about yourself.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="meditationForm" name="meditationMessage" action="https://formspree.io/contact@headpause.com" method="POST">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-4 col-lg-4">
+                    <p class="text-left">Prefered day</p>
+                  </div>
+                  <div class="col-8 col-lg-8 text-right">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="weekdayOption" id="mondayRadio" value="option3"> Mon
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="weekdayOption" id="tuesdayRadio" value="option3"> Tue
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="weekdayOption" id="thursdayRadio" value="option3"> Wed
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="weekdayOption" id="thursdayRadio" value="option3"> Thu
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="weekdayOption" id="fridayRadio" value="option3"> Fri
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <input class="form-control" id="meditationName" type="text" name="name" placeholder="Your Name *" required/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="meditationCompany" type="text" name="company" placeholder="Your Company"/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="meditationEmail" type="email" name="email" placeholder="Your Email *" required/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="meditationPhone" type="tel" name="phone" placeholder="Your Phone *" required/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="meditationPostalcode" type="text" name="postalcode" placeholder="Your Postal Code *" required/>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea class="form-control" id="meditationMessage" name="message" placeholder="Optional Message"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-lg-12 mx-auto">
+                <div id="success"></div>
+                <button id="meditationSendMessageButton" class="btn btn-xl" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h3 class="section-subheading text-muted mt-3">Got questions? It's ok, <a class="js-scroll-trigger" href="/#contact">just ask us!</a></h3>
           </div>
         </div>
       </div>

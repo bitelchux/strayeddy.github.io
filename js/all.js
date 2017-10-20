@@ -91,8 +91,8 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
   });
 
   // hide show more button when showing more content
-  $( "#moreNewsButton" ).click(function() {
-    $('#moreNewsButton').hide();
+  $( ".show-more-button" ).click(function() {
+    $('.show-more-button').hide();
   });
 
   // french users

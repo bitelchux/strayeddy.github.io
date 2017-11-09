@@ -740,3 +740,7 @@ my-email::before {
 #contact button {
   cursor: pointer;
 }
+
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}

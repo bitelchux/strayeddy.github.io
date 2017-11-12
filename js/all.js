@@ -40,17 +40,6 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
     offset: 54
   });
 
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(function() {
-    if(!$("#mainNav").hasClass("stay-shrinked")) {
-      if ($("#mainNav").offset().top > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-      } else {
-        $("#mainNav").removeClass("navbar-shrink");
-      }
-    }
-  });
-
   // cause back button to close bootstrap modal windows
   $('div.modal').on('show.bs.modal', function() {
     var modal = this;

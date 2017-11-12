@@ -8926,7 +8926,19 @@ my-email::before {
 }
 
 li.dropdown:hover > .dropdown-menu {
-    display: block;
+  display: block;
+}
+
+.time-line {
+  position: relative;
+  background-color: #fec503;
+  height: 10px;
+  left: 20%;
+  top: 90px;
+}
+
+.timeline-image {
+  margin-bottom: 27px;
 }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

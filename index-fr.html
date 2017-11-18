@@ -84,16 +84,16 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/index-fr.html#news">Nouvelles</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/index-fr.html#feedback">Témoignages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/index-fr.html#about">À Propos</a>
+              <a class="nav-link js-scroll-trigger" href="/index-fr.html#team">Équipe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/index-fr.html#team">Équipe</a>
+              <a class="nav-link js-scroll-trigger" href="/index-fr.html#news">Nouvelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index-fr.html#about">À Propos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/index-fr.html#contact">Contact</a>
@@ -164,6 +164,110 @@
       </div>
     </section>
 
+    <!--  Feedback  -->
+    <section class="bg-light" id="feedback">
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Témoignages</h2>
+            <h3 class="section-subheading text-muted">Ce que nos clients ont à dire.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img class="mx-auto rounded-circle w-50 mb-3" src="img/feedback/avatar-bill.png" alt="Bill"/>
+            <p class="lead">"<i>Merci pour le meetup. J'ai beaucoup appris. Ça m'a encouragé à commencer la méditation plus sérieusement!</i>"</p>
+            <h5 class="service-heading">Bill</h5>
+          </div>
+          <div class="col-md-4">
+            <img class="mx-auto rounded-circle w-50 mb-3" src="img/feedback/avatar-william.png" alt="William"/>
+            <p class="lead">"<i>J'ai trouvé qu'Edouard est quelqu'un de gentil, réfléchi et enthousiaste. Ce fut un plaisir de méditer avec lui et d'en apprendre plus sur la méditation grâce à notre conversation. J'ai hâte de méditer et de parler à nouveau avec lui.</i>"</p>
+            <h5 class="service-heading">William</h5>
+          </div>
+          <div class="col-md-4">
+            <img class="mx-auto rounded-circle w-50 mb-3" src="img/feedback/avatar-donna.png" alt="Donna"/>
+            <p class="lead">"<i>Cette méditation a été très utile pour ma pratique.</i>"</p>
+            <h5 class="service-heading">Donna</h5>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <hr class="border-warning"/>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <h4 class="text-center service-heading my-3">Vous voulez partager votre expérience avec nous?</h4>
+            <form id="feedbackForm" name="feedbackMessage" action="https://formspree.io/contact@headpause.com" method="POST">
+              <div class="row">
+                <div class="col-md-8">
+                  <input class="form-control" id="feedbackInput" type="text" name="feedback" placeholder="Témoignage *" required/>
+                </div>
+                <div class="col-md-2">
+                  <input class="form-control" id="nameInput" type="text" name="name" placeholder="Nom *" required/>
+                </div>
+                <div class="col-md-2">
+                  <button id="sendMessageButton" class="btn btn-primary" type="submit">Donner Votre Témoignage</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Team  -->
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Votre Équipe</h2>
+            <h3 class="section-subheading text-muted">Des gens qui sont heureux de travailler pour une meilleure santé mentale, chez HeadPause.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1-desktop.jpg" srcset="img/team/1.jpg 2x" alt="Edouard Murat"/>
+              <h4><a href="/team/edouard-murat-fr.html">Edouard Murat</a></h4>
+              <p>Fondateur de HeadPause, Thérapeute, Professeur de Méditation & Instructeur de la Pleine Conscience</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/edouard.murat" target="_blank">
+                    <i title="facebook" class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/edouardmurat1" target="_blank">
+                    <i title="linkedin" class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/2-desktop.jpg" srcset="img/team/2.jpg 2x" alt="Kaoutar Chabbar"/>
+              <h4>Kaoutar Chabbar</h4>
+              <p>Adjointe Administrative</p>
+              <ul class="list-inline social-buttons">
+                <!-- <li class="list-inline-item">
+                  <a href="https://www.facebook.com/kawtharchab" target="_blank">
+                    <i title="facebook" class="fa fa-facebook"></i>
+                  </a>
+                </li> -->
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/kaoutar-chabbar-17b055a3" target="_blank">
+                    <i title="linkedin" class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--  News  -->
     <section class="bg-light" id="news">
       <div class="container">
@@ -221,60 +325,8 @@
       </div>
     </section>
 
-    <!--  Feedback  -->
-    <section id="feedback">
-      <div class="container mb-3">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Témoignages</h2>
-            <h3 class="section-subheading text-muted">Ce que nos clients ont à dire.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <img class="mx-auto rounded-circle w-50 mb-3" src="img/feedback/avatar-bill.png" alt="Bill"/>
-            <p class="lead">"<i>Merci pour le meetup. J'ai beaucoup appris. Ça m'a encouragé à commencer la méditation plus sérieusement!</i>"</p>
-            <h5 class="service-heading">Bill</h5>
-          </div>
-          <div class="col-md-4">
-            <img class="mx-auto rounded-circle w-50 mb-3" src="img/feedback/avatar-william.png" alt="William"/>
-            <p class="lead">"<i>J'ai trouvé qu'Edouard est quelqu'un de gentil, réfléchi et enthousiaste. Ce fut un plaisir de méditer avec lui et d'en apprendre plus sur la méditation grâce à notre conversation. J'ai hâte de méditer et de parler à nouveau avec lui.</i>"</p>
-            <h5 class="service-heading">William</h5>
-          </div>
-          <div class="col-md-4">
-            <img class="mx-auto rounded-circle w-50 mb-3" src="img/feedback/avatar-donna.png" alt="Donna"/>
-            <p class="lead">"<i>Cette méditation a été très utile pour ma pratique.</i>"</p>
-            <h5 class="service-heading">Donna</h5>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-4">
-            <hr class="border-warning"/>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <h4 class="text-center service-heading my-3">Vous voulez partager votre expérience avec nous?</h4>
-            <form id="feedbackForm" name="feedbackMessage" action="https://formspree.io/contact@headpause.com" method="POST">
-              <div class="row">
-                <div class="col-md-8">
-                  <input class="form-control" id="feedbackInput" type="text" name="feedback" placeholder="Témoignage *" required/>
-                </div>
-                <div class="col-md-2">
-                  <input class="form-control" id="nameInput" type="text" name="name" placeholder="Nom *" required/>
-                </div>
-                <div class="col-md-2">
-                  <button id="sendMessageButton" class="btn btn-primary" type="submit">Donner Votre Témoignage</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!--  About  -->
-    <section class="bg-light" id="about">
+    <section id="about">
       <div class="container mb-3">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -310,58 +362,6 @@
             </div>
             <h4 class="service-heading">Vous pouvez nous aider!</h4>
             <p class="px-2">Nous consacrons beaucoup de temps, d'argent et d'efforts pour aider notre communauté à changer son point de vue sur la santé mentale ... une personne à la fois. Toute contribution que vous ferez contribuera à accroître la sensibilisation de la santé mentale et à aider les personnes dans le besoin. Merci pour votre soutien!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--  Team  -->
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Notre Équipe Géniale</h2>
-            <h3 class="section-subheading text-muted">Des gens qui sont heureux de travailler pour une meilleure santé mentale, chez HeadPause.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1-desktop.jpg" srcset="img/team/1.jpg 2x" alt="Edouard Murat"/>
-              <h4><a href="/team/edouard-murat-fr.html">Edouard Murat</a></h4>
-              <p>Fondateur de HeadPause,Thérapeute, Professeur de Méditation & Instructeur de la Pleine Conscience</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/edouard.murat" target="_blank">
-                    <i title="facebook" class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/edouardmurat1" target="_blank">
-                    <i title="linkedin" class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2-desktop.jpg" srcset="img/team/2.jpg 2x" alt="Kaoutar Chabbar"/>
-              <h4>Kaoutar Chabbar</h4>
-              <p>Adjointe Administrative</p>
-              <ul class="list-inline social-buttons">
-                <!-- <li class="list-inline-item">
-                  <a href="https://www.facebook.com/kawtharchab" target="_blank">
-                    <i title="facebook" class="fa fa-facebook"></i>
-                  </a>
-                </li> -->
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/kaoutar-chabbar-17b055a3" target="_blank">
-                    <i title="linkedin" class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

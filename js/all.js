@@ -37,7 +37,7 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 0
+    offset: 54
   });
 
   // cause back button to close bootstrap modal windows

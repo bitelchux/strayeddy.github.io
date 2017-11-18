@@ -8635,7 +8635,7 @@ section#contact {
   background-color: #222222;
   background-image: url("../img/contact-background.png");
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
   background-position: center; }
   section#contact .section-heading {
     color: white; }

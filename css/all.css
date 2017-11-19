@@ -8266,7 +8266,7 @@ body {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     border: 0;
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -8717,14 +8717,10 @@ ul.social-buttons {
 span.fa-stack:hover .text-primary {
   color: #fec503 !important;
 }
-.timeline-image:hover {
-  background-color: #fec503 !important;
-}
-
 
 .btn-primary {
   font-weight: 700;
-  color: white;
+  color: black;
   border-color: #fed136;
   background-color: #fed136;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -8767,7 +8763,7 @@ span.fa-stack:hover .text-primary {
   font-weight: 700;
   padding: 20px 40px;
   border-radius: 3px;
-  color: white;
+  color: black;
   border-color: #fed136;
   background-color: #fed136;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;

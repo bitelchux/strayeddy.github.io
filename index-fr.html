@@ -185,14 +185,14 @@
             <h4 class="text-center service-heading my-3">Vous voulez partager votre expérience avec nous?</h4>
             <form id="feedbackForm" name="feedbackMessage" action="https://formspree.io/contact@headpause.com" method="POST">
               <div class="row">
-                <div class="col-md-8">
-                  <input class="form-control" id="feedbackInput" type="text" name="feedback" placeholder="Témoignage *" required/>
+                <div class="col-md-6 form-group">
+                  <textarea class="form-control" name="feedback" id="feedbackInput" rows="3" placeholder="Témoignage *"></textarea>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3 form-group">
                   <input class="form-control" id="nameInput" type="text" name="name" placeholder="Nom *" required/>
                 </div>
-                <div class="col-md-2">
-                  <button id="sendMessageButton" class="btn btn-primary" type="submit">Donner Votre Témoignage</button>
+                <div class="col-md-3">
+                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Envoyer</button>
                 </div>
               </div>
             </form>

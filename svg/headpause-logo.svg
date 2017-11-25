@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.37432624"
-     inkscape:cx="-4682.1191"
-     inkscape:cy="772.86532"
+     inkscape:cx="-4756.8495"
+     inkscape:cy="665.55834"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -893,136 +893,150 @@
        inkscape:export-xdpi="96.110001"
        inkscape:export-ydpi="96.110001" />
     <g
-       id="g4691-5-9"
-       transform="matrix(1.6832808,0,0,1.6832808,-1273.3497,-271.28075)"
-       style="stroke-width:0.68245262"
+       id="g4723"
+       transform="translate(0,21.500616)"
        inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
        inkscape:export-xdpi="96.110001"
        inkscape:export-ydpi="96.110001">
-      <text
-         id="text4519-3-5-0-9-2-2-0"
-         y="146.25908"
-         x="41.470562"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.5300048"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke-width:0.5300048"
-           y="146.25908"
-           x="41.470562"
-           id="tspan4517-3-5-8-2-5-8-91"
-           sodipodi:role="line">HEADPA   SE</tspan></text>
-      <rect
-         ry="1.8218293"
-         y="125.96448"
-         x="147.39835"
-         height="22.912407"
-         width="3.6436586"
-         id="rect4485-9-3-4-3-2-2-7"
-         style="opacity:1;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.09788794;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.9254902" />
-      <rect
-         ry="1.8218293"
-         y="125.96448"
-         x="157.27856"
-         height="22.912407"
-         width="3.6436586"
-         id="rect4485-5-5-8-9-2-3-6-7"
-         style="opacity:1;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.09788794;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.9254902" />
-    </g>
-    <g
-       id="g4956"
-       inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
-       inkscape:export-xdpi="96.110001"
-       inkscape:export-ydpi="96.110001">
-      <text
-         id="text4519-3-5-0-9-2-2-0-6-0"
-         y="60.691719"
-         x="-1222.5989"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89214694"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
+      <g
+         inkscape:export-ydpi="96.110001"
+         inkscape:export-xdpi="96.110001"
+         inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
+         id="g4956">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89214694"
+           x="-1222.5989"
            y="60.691719"
-           x="-1222.5989"
-           id="tspan4517-3-5-8-2-5-8-91-3-3"
-           sodipodi:role="line">Home</tspan><tspan
-           id="tspan4831"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
-           y="79.443733"
-           x="-1222.5989"
-           sodipodi:role="line">Therapy</tspan></text>
-      <path
-         inkscape:connector-curvature="0"
-         id="path4788"
-         d="m -1223.3726,42.199887 c -0.106,-0.05816 -3.4049,-3.203238 -7.3306,-6.989063 l -7.138,-6.883318 4.2102,-0.03853 c 3.3717,-0.03087 4.2487,-0.05962 4.4029,-0.144446 0.2793,-0.153589 0.5385,-0.40375 0.6596,-0.636409 0.058,-0.11167 0.4369,-1.533136 0.8416,-3.15883 0.4045,-1.625694 0.7623,-3.019707 0.7947,-3.097814 0.04,-0.09587 0.7461,2.269161 2.1743,7.279751 2.2967,8.057507 2.2033,7.791254 2.8262,8.05152 0.3026,0.126441 0.896,0.135737 1.1258,0.01769 0.2455,-0.126059 0.591,-0.462331 0.7033,-0.683994 0.054,-0.105928 0.82,-2.596932 1.703,-5.535562 l 1.6057,-5.342944 0.6479,1.298105 c 0.3563,0.713964 0.7222,1.379419 0.8132,1.478788 0.4029,0.440221 0.3353,0.43249 4.1556,0.474205 l 3.5279,0.03853 -7.1105,6.849306 c -3.9107,3.767115 -7.2145,6.913293 -7.3417,6.991509 -0.2778,0.171004 -0.9852,0.188578 -1.2711,0.03155 z m -0.133,-19.6521 c -1.466,-5.129016 -2.2226,-7.658522 -2.3338,-7.800762 -0.2805,-0.359021 -0.6841,-0.556366 -1.1388,-0.556807 -0.4656,-5.85e-4 -0.7253,0.112706 -1.0557,0.459926 -0.2147,0.225713 -0.3244,0.615585 -1.5461,5.496311 l -1.3149,5.253357 -4.6675,0.01991 -4.6673,0.0199 -0.4346,-0.728551 c -0.7869,-1.318363 -1.3314,-2.668151 -1.6336,-4.049405 -0.1907,-0.871772 -0.1905,-3.095988 0,-4.140045 0.5191,-2.837319 1.8299,-4.930987 3.9544,-6.315708 2.5763,-1.6793431 6.5638,-2.1407261 9.4563,-1.0941252 1.6392,0.5930977 3.9193,2.0895052 5.6083,3.6805392 l 0.5202,0.48999 0.598,-0.558563 c 0.9953,-0.929513 2.8328,-2.281777 3.9496,-2.9063936 0.6166,-0.3448921 1.6634,-0.762271 2.4825,-0.9898472 0.8977,-0.2494133 2.709,-0.3345936 3.9769,-0.1870234 4.6866,0.5454178 7.7035,3.3308782 8.536,7.8811312 0.1909,1.044057 0.1912,3.268273 6e-4,4.140045 -0.3058,1.397472 -0.8239,2.682275 -1.6076,3.987056 l -0.4742,0.789709 h -4.0685 -4.0685 l -1.2405,-2.484684 c -1.224,-2.451596 -1.448,-2.817094 -1.8573,-3.030879 -0.5128,-0.267973 -1.4153,-0.03337 -1.726,0.448739 -0.089,0.138347 -0.7998,2.392031 -1.5794,5.008174 -0.7794,2.616144 -1.4358,4.757029 -1.4585,4.757504 -0.023,5.78e-4 -1.0175,-3.414749 -2.2105,-7.589398 z"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1" />
+           id="text4519-3-5-0-9-2-2-0-6-0"><tspan
+             sodipodi:role="line"
+             id="tspan4517-3-5-8-2-5-8-91-3-3"
+             x="-1222.5989"
+             y="60.691719"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694">Home</tspan><tspan
+             sodipodi:role="line"
+             x="-1222.5989"
+             y="79.443733"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
+             id="tspan4831">Therapy</tspan></text>
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1"
+           d="m -1223.3726,42.199887 c -0.106,-0.05816 -3.4049,-3.203238 -7.3306,-6.989063 l -7.138,-6.883318 4.2102,-0.03853 c 3.3717,-0.03087 4.2487,-0.05962 4.4029,-0.144446 0.2793,-0.153589 0.5385,-0.40375 0.6596,-0.636409 0.058,-0.11167 0.4369,-1.533136 0.8416,-3.15883 0.4045,-1.625694 0.7623,-3.019707 0.7947,-3.097814 0.04,-0.09587 0.7461,2.269161 2.1743,7.279751 2.2967,8.057507 2.2033,7.791254 2.8262,8.05152 0.3026,0.126441 0.896,0.135737 1.1258,0.01769 0.2455,-0.126059 0.591,-0.462331 0.7033,-0.683994 0.054,-0.105928 0.82,-2.596932 1.703,-5.535562 l 1.6057,-5.342944 0.6479,1.298105 c 0.3563,0.713964 0.7222,1.379419 0.8132,1.478788 0.4029,0.440221 0.3353,0.43249 4.1556,0.474205 l 3.5279,0.03853 -7.1105,6.849306 c -3.9107,3.767115 -7.2145,6.913293 -7.3417,6.991509 -0.2778,0.171004 -0.9852,0.188578 -1.2711,0.03155 z m -0.133,-19.6521 c -1.466,-5.129016 -2.2226,-7.658522 -2.3338,-7.800762 -0.2805,-0.359021 -0.6841,-0.556366 -1.1388,-0.556807 -0.4656,-5.85e-4 -0.7253,0.112706 -1.0557,0.459926 -0.2147,0.225713 -0.3244,0.615585 -1.5461,5.496311 l -1.3149,5.253357 -4.6675,0.01991 -4.6673,0.0199 -0.4346,-0.728551 c -0.7869,-1.318363 -1.3314,-2.668151 -1.6336,-4.049405 -0.1907,-0.871772 -0.1905,-3.095988 0,-4.140045 0.5191,-2.837319 1.8299,-4.930987 3.9544,-6.315708 2.5763,-1.6793431 6.5638,-2.1407261 9.4563,-1.0941252 1.6392,0.5930977 3.9193,2.0895052 5.6083,3.6805392 l 0.5202,0.48999 0.598,-0.558563 c 0.9953,-0.929513 2.8328,-2.281777 3.9496,-2.9063936 0.6166,-0.3448921 1.6634,-0.762271 2.4825,-0.9898472 0.8977,-0.2494133 2.709,-0.3345936 3.9769,-0.1870234 4.6866,0.5454178 7.7035,3.3308782 8.536,7.8811312 0.1909,1.044057 0.1912,3.268273 6e-4,4.140045 -0.3058,1.397472 -0.8239,2.682275 -1.6076,3.987056 l -0.4742,0.789709 h -4.0685 -4.0685 l -1.2405,-2.484684 c -1.224,-2.451596 -1.448,-2.817094 -1.8573,-3.030879 -0.5128,-0.267973 -1.4153,-0.03337 -1.726,0.448739 -0.089,0.138347 -0.7998,2.392031 -1.5794,5.008174 -0.7794,2.616144 -1.4358,4.757029 -1.4585,4.757504 -0.023,5.78e-4 -1.0175,-3.414749 -2.2105,-7.589398 z"
+           id="path4788"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         inkscape:export-ydpi="96.110001"
+         inkscape:export-xdpi="96.110001"
+         inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
+         transform="translate(-1.2919108e-4,-5.6256104)"
+         id="g4950">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89214694"
+           x="-1074.5229"
+           y="66.317329"
+           id="text4519-3-5-0-9-2-2-0-6-0-4"><tspan
+             sodipodi:role="line"
+             id="tspan4517-3-5-8-2-5-8-91-3-3-7"
+             x="-1074.5229"
+             y="66.317329"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694">Free Meditation</tspan><tspan
+             sodipodi:role="line"
+             x="-1074.5229"
+             y="85.069344"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
+             id="tspan4753">Group</tspan></text>
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1"
+           d="m -1065.5596,47.877913 c -0.1317,-0.0287 -0.9941,-0.21539 -1.9164,-0.414798 -2.4861,-0.537588 -10.4847,-2.518998 -13.5192,-3.348912 -7.5445,-2.063579 -10.0155,-3.307209 -10.0155,-5.040578 0,-0.567535 0.6384,-1.807126 1.2707,-2.466817 0.5063,-0.528652 0.529,-0.538217 1.09,-0.461329 0.6246,0.0856 2.4471,0.884843 6.644,2.913546 5.2869,2.555564 5.8196,2.681437 9.0206,2.131269 1.527,-0.26243 5.2806,-0.368559 6.5372,-0.184836 3.1805,0.465054 4.9362,1.822329 4.7456,3.668683 -0.205,1.984577 -2.1267,3.581014 -3.857,3.203772 z m -20.0837,-0.749525 c -1.2883,-0.50363 -2.0139,-1.293047 -2.0139,-2.190511 0,-0.620131 0.2166,-0.740596 1.1706,-0.65123 1.4795,0.138595 5.6665,1.281597 6.1983,1.692035 0.2238,0.172909 0.2252,0.191429 0.027,0.345718 -0.4827,0.375236 -3.3286,1.042755 -4.3871,1.029072 -0.2385,-0.0034 -0.6862,-0.104371 -0.9947,-0.225084 z m 24.6359,-5.299393 c -0.1819,-0.143119 -0.4522,-0.381586 -0.6006,-0.529934 -0.4646,-0.464518 -1.6746,-0.992305 -3.1294,-1.364852 -0.7708,-0.197336 -1.5377,-0.448333 -1.7047,-0.557771 l -0.3037,-0.198983 0.4734,-0.412185 c 0.4495,-0.391475 5.1929,-2.806551 5.8228,-2.964616 0.2579,-0.06467 0.436,0.0707 1.3323,1.01258 1.2855,1.350891 1.4256,1.70794 1.1237,2.866416 -0.252,0.967723 -0.7316,1.775271 -1.2697,2.137812 -0.5337,0.359721 -1.2951,0.364754 -1.7441,0.01154 z m -16.11,-1.944989 c -0.4282,-0.153956 -1.3175,-0.521056 -1.9762,-0.81578 -1.972,-0.882236 -8.9699,-4.19768 -9.1489,-4.33451 -0.1387,-0.105936 -0.1547,-0.832864 -0.096,-4.380392 0.085,-5.18334 0.2511,-6.474741 1.0414,-8.096735 0.9185,-1.885229 2.8093,-2.851801 6.4676,-3.306357 1.736,-0.215696 10.9703,-0.215916 12.6607,-2.38e-4 2.3888,0.304708 3.9666,0.932537 4.8414,1.92643 0.665,0.75545 1.4924,2.494522 1.8301,3.846219 0.6725,2.692514 0.7328,6.62661 0.1332,8.690832 -0.3818,1.314284 -0.769,1.614083 -4.4943,3.478457 -3.527,1.765299 -6.028,2.810726 -6.2325,2.605258 -0.1844,-0.185301 -0.7341,-3.191626 -0.658,-3.597851 0.04,-0.213456 0.2364,-0.551636 0.4362,-0.751511 0.2046,-0.204584 1.6762,-1.023149 3.3676,-1.872946 l 3.0042,-1.509541 -0.075,-2.241785 c -0.079,-2.350255 -0.2228,-3.372268 -0.5094,-3.610063 -0.4249,-0.352612 -0.6892,0.374853 -0.9434,2.596997 -0.2767,2.419515 -0.4232,2.580977 -4.3994,4.853096 l -2.6505,1.514633 -0.7301,-0.392995 c -0.4016,-0.216196 -1.6194,-0.862646 -2.7063,-1.436605 -3.297,-1.740999 -3.641,-2.113739 -3.9996,-4.332507 -0.2375,-1.470784 -0.38,-1.964731 -0.7059,-2.448374 -0.3282,-0.487061 -0.5212,-0.510648 -0.8271,-0.101025 -0.2866,0.383727 -0.4808,2.161221 -0.4312,3.942782 l 0.035,1.254851 2.84,1.572136 c 6.0906,3.371878 7.1609,4.172268 7.1609,5.356259 0,0.515036 -0.4998,1.349887 -1.007,1.682278 -0.4239,0.27769 -1.3012,0.241838 -2.2267,-0.09101 z m 1.1425,-22.592401 c -1.861,-0.2925 -3.369,-0.99801 -4.4355,-2.075063 -2.0976,-2.118201 -2.5654,-5.435565 -1.1527,-8.1772056 1.2492,-2.4246002 3.9569,-4.1107089 6.6016,-4.1107089 2.4521,0 5.0781,1.4537596 6.4445,3.5679081 0.7933,1.2272099 1.04,2.1155841 1.0372,3.7338954 0,1.186001 -0.047,1.499391 -0.3203,2.255816 -0.4249,1.175181 -0.9569,2.034418 -1.8792,3.035 -0.8022,0.870329 -1.5418,1.331675 -2.5875,1.614083 -0.7866,0.212472 -2.8085,0.297679 -3.7081,0.156275 z"
+           id="path4775"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="translate(0,-1.0583333)"
+         inkscape:export-ydpi="96.110001"
+         inkscape:export-xdpi="96.110001"
+         inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
+         id="g4944">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1"
+           d="m -946.67151,43.709548 c -0.29218,-0.08222 -0.29731,-0.104206 -0.2913,-1.266773 0,-0.689263 0.22273,-2.803982 0.52507,-5.066275 l 0.51907,-3.883182 -0.44023,-0.514463 c -1.03518,-1.209452 -0.99461,-2.738919 0.10389,-3.91067 0.46001,-0.490767 0.4763,-0.538671 0.70648,-2.084429 0.22984,-1.543146 0.6774,-3.073311 1.26732,-4.332004 0.25915,-0.553246 0.4458,-1.07254 0.41453,-1.153993 -0.0515,-0.133905 -1.62346,-0.665622 -5.55478,-1.878783 -1.76342,-0.544127 -2.33826,-1.02688 -1.82936,-1.535809 0.27829,-0.278286 0.95776,-0.505879 10.70476,-3.585349 12.20192,-3.855062 14.16829,-4.460271 14.49305,-4.460271 0.15123,0 2.11716,0.584619 4.36881,1.299152 2.25166,0.714522 7.67992,2.425942 12.06295,3.803166 4.38291,1.377204 8.1419,2.59346 8.35316,2.702784 0.64853,0.335627 0.62031,0.928895 -0.0601,1.279765 -0.17801,0.09163 -1.95609,0.675692 -3.95132,1.297795 -1.99523,0.622091 -6.97288,2.183924 -11.06156,3.470772 -8.70186,2.738799 -9.3025,2.917635 -9.79619,2.916323 -0.372,-8.42e-4 -2.02805,-0.503199 -9.59129,-2.90869 -2.19141,-0.696993 -4.22961,-1.297248 -4.52912,-1.333901 -0.51961,-0.06353 -0.56203,-0.0456 -0.92222,0.391372 -0.70944,0.86076 -1.4625,3.064563 -1.63079,4.773236 -0.0809,0.828513 -0.0799,0.833631 0.33187,1.293485 1.12014,1.24942 1.19428,2.435682 0.2363,3.785426 l -0.41749,0.588096 0.0732,1.07708 c 0.0415,0.592392 0.24078,2.308129 0.44569,3.81273 0.20503,1.504613 0.38021,3.321387 0.38939,4.037275 0.0174,1.292754 0.0142,1.30218 -0.28058,1.385697 -0.386,0.109129 -4.25094,0.109533 -4.63868,4.83e-4 z m 17.12752,-5.788745 c -4.34235,-0.468636 -7.65794,-1.601308 -9.29321,-3.174752 -0.95503,-0.918944 -1.18892,-1.343523 -1.25737,-2.282664 -0.0711,-0.97554 0.27883,-6.492448 0.42087,-6.634412 0.15888,-0.158957 1.246,0.13982 6.38307,1.754544 5.41133,1.700832 6.36296,1.959753 7.20514,1.960135 0.79243,3.39e-4 1.79153,-0.273573 7.36522,-2.019139 5.07169,-1.588381 6.04695,-1.853349 6.21228,-1.687897 0.15494,0.154834 0.50288,6.259379 0.39715,6.964802 -0.10497,0.700886 -0.55865,1.352085 -1.49804,2.150682 -0.94836,0.806263 -1.98879,1.355332 -3.46333,1.827675 -1.45648,0.466514 -4.22557,1.040821 -5.79391,1.201647 -1.63374,0.167529 -4.83309,0.138476 -6.67787,-0.06069 z"
+           id="path4762"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89214694"
+           x="-926.31537"
+           y="62.175034"
+           id="text4519-3-5-0-9-2-2-0-6-0-4-6"><tspan
+             sodipodi:role="line"
+             id="tspan4517-3-5-8-2-5-8-91-3-3-7-3"
+             x="-926.31537"
+             y="62.175034"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694">Mindfulness</tspan><tspan
+             sodipodi:role="line"
+             x="-926.31537"
+             y="80.927048"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
+             id="tspan4755">Courses</tspan></text>
+      </g>
     </g>
     <g
-       id="g4950"
-       transform="translate(-1.2919108e-4,-5.6256104)"
+       id="g4706"
+       transform="translate(-31.945433,8.9958338)"
        inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
        inkscape:export-xdpi="96.110001"
        inkscape:export-ydpi="96.110001">
+      <g
+         inkscape:export-ydpi="96.110001"
+         inkscape:export-xdpi="96.110001"
+         inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
+         style="stroke-width:0.68245262"
+         transform="matrix(1.6832808,0,0,1.6832808,-1273.3497,-271.28075)"
+         id="g4691-5-9">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.5300048"
+           x="41.470562"
+           y="146.25908"
+           id="text4519-3-5-0-9-2-2-0"><tspan
+             sodipodi:role="line"
+             id="tspan4517-3-5-8-2-5-8-91"
+             x="41.470562"
+             y="146.25908"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke-width:0.5300048">HEADPA   SE</tspan></text>
+        <rect
+           style="opacity:1;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.09788794;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.9254902"
+           id="rect4485-9-3-4-3-2-2-7"
+           width="3.6436586"
+           height="22.912407"
+           x="147.39835"
+           y="125.96448"
+           ry="1.8218293" />
+        <rect
+           style="opacity:1;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.09788794;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.9254902"
+           id="rect4485-5-5-8-9-2-3-6-7"
+           width="3.6436586"
+           height="22.912407"
+           x="157.27856"
+           y="125.96448"
+           ry="1.8218293" />
+      </g>
       <text
-         id="text4519-3-5-0-9-2-2-0-6-0-4"
-         y="66.317329"
-         x="-1074.5229"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89214694"
+         inkscape:export-ydpi="96.110001"
+         inkscape:export-xdpi="96.110001"
+         inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
+         id="text4519-3-5-0-9-2-2-0-6-1-0-1"
+         y="-25.502136"
+         x="-939.80865"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.42669678px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.89214694"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
-           y="66.317329"
-           x="-1074.5229"
-           id="tspan4517-3-5-8-2-5-8-91-3-3-7"
-           sodipodi:role="line">Free Meditation</tspan><tspan
-           id="tspan4753"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
-           y="85.069344"
-           x="-1074.5229"
-           sodipodi:role="line">Group</tspan></text>
-      <path
-         inkscape:connector-curvature="0"
-         id="path4775"
-         d="m -1065.5596,47.877913 c -0.1317,-0.0287 -0.9941,-0.21539 -1.9164,-0.414798 -2.4861,-0.537588 -10.4847,-2.518998 -13.5192,-3.348912 -7.5445,-2.063579 -10.0155,-3.307209 -10.0155,-5.040578 0,-0.567535 0.6384,-1.807126 1.2707,-2.466817 0.5063,-0.528652 0.529,-0.538217 1.09,-0.461329 0.6246,0.0856 2.4471,0.884843 6.644,2.913546 5.2869,2.555564 5.8196,2.681437 9.0206,2.131269 1.527,-0.26243 5.2806,-0.368559 6.5372,-0.184836 3.1805,0.465054 4.9362,1.822329 4.7456,3.668683 -0.205,1.984577 -2.1267,3.581014 -3.857,3.203772 z m -20.0837,-0.749525 c -1.2883,-0.50363 -2.0139,-1.293047 -2.0139,-2.190511 0,-0.620131 0.2166,-0.740596 1.1706,-0.65123 1.4795,0.138595 5.6665,1.281597 6.1983,1.692035 0.2238,0.172909 0.2252,0.191429 0.027,0.345718 -0.4827,0.375236 -3.3286,1.042755 -4.3871,1.029072 -0.2385,-0.0034 -0.6862,-0.104371 -0.9947,-0.225084 z m 24.6359,-5.299393 c -0.1819,-0.143119 -0.4522,-0.381586 -0.6006,-0.529934 -0.4646,-0.464518 -1.6746,-0.992305 -3.1294,-1.364852 -0.7708,-0.197336 -1.5377,-0.448333 -1.7047,-0.557771 l -0.3037,-0.198983 0.4734,-0.412185 c 0.4495,-0.391475 5.1929,-2.806551 5.8228,-2.964616 0.2579,-0.06467 0.436,0.0707 1.3323,1.01258 1.2855,1.350891 1.4256,1.70794 1.1237,2.866416 -0.252,0.967723 -0.7316,1.775271 -1.2697,2.137812 -0.5337,0.359721 -1.2951,0.364754 -1.7441,0.01154 z m -16.11,-1.944989 c -0.4282,-0.153956 -1.3175,-0.521056 -1.9762,-0.81578 -1.972,-0.882236 -8.9699,-4.19768 -9.1489,-4.33451 -0.1387,-0.105936 -0.1547,-0.832864 -0.096,-4.380392 0.085,-5.18334 0.2511,-6.474741 1.0414,-8.096735 0.9185,-1.885229 2.8093,-2.851801 6.4676,-3.306357 1.736,-0.215696 10.9703,-0.215916 12.6607,-2.38e-4 2.3888,0.304708 3.9666,0.932537 4.8414,1.92643 0.665,0.75545 1.4924,2.494522 1.8301,3.846219 0.6725,2.692514 0.7328,6.62661 0.1332,8.690832 -0.3818,1.314284 -0.769,1.614083 -4.4943,3.478457 -3.527,1.765299 -6.028,2.810726 -6.2325,2.605258 -0.1844,-0.185301 -0.7341,-3.191626 -0.658,-3.597851 0.04,-0.213456 0.2364,-0.551636 0.4362,-0.751511 0.2046,-0.204584 1.6762,-1.023149 3.3676,-1.872946 l 3.0042,-1.509541 -0.075,-2.241785 c -0.079,-2.350255 -0.2228,-3.372268 -0.5094,-3.610063 -0.4249,-0.352612 -0.6892,0.374853 -0.9434,2.596997 -0.2767,2.419515 -0.4232,2.580977 -4.3994,4.853096 l -2.6505,1.514633 -0.7301,-0.392995 c -0.4016,-0.216196 -1.6194,-0.862646 -2.7063,-1.436605 -3.297,-1.740999 -3.641,-2.113739 -3.9996,-4.332507 -0.2375,-1.470784 -0.38,-1.964731 -0.7059,-2.448374 -0.3282,-0.487061 -0.5212,-0.510648 -0.8271,-0.101025 -0.2866,0.383727 -0.4808,2.161221 -0.4312,3.942782 l 0.035,1.254851 2.84,1.572136 c 6.0906,3.371878 7.1609,4.172268 7.1609,5.356259 0,0.515036 -0.4998,1.349887 -1.007,1.682278 -0.4239,0.27769 -1.3012,0.241838 -2.2267,-0.09101 z m 1.1425,-22.592401 c -1.861,-0.2925 -3.369,-0.99801 -4.4355,-2.075063 -2.0976,-2.118201 -2.5654,-5.435565 -1.1527,-8.1772056 1.2492,-2.4246002 3.9569,-4.1107089 6.6016,-4.1107089 2.4521,0 5.0781,1.4537596 6.4445,3.5679081 0.7933,1.2272099 1.04,2.1155841 1.0372,3.7338954 0,1.186001 -0.047,1.499391 -0.3203,2.255816 -0.4249,1.175181 -0.9569,2.034418 -1.8792,3.035 -0.8022,0.870329 -1.5418,1.331675 -2.5875,1.614083 -0.7866,0.212472 -2.8085,0.297679 -3.7081,0.156275 z"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1" />
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.42669678px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke-width:0.89214694"
+           y="-25.502136"
+           x="-939.80865"
+           id="tspan4517-3-5-8-2-5-8-91-3-8-6-5"
+           sodipodi:role="line">.com</tspan></text>
     </g>
-    <g
-       id="g4944"
-       inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
-       inkscape:export-xdpi="96.110001"
-       inkscape:export-ydpi="96.110001"
-       transform="translate(0,-1.0583333)">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4762"
-         d="m -946.67151,43.709548 c -0.29218,-0.08222 -0.29731,-0.104206 -0.2913,-1.266773 0,-0.689263 0.22273,-2.803982 0.52507,-5.066275 l 0.51907,-3.883182 -0.44023,-0.514463 c -1.03518,-1.209452 -0.99461,-2.738919 0.10389,-3.91067 0.46001,-0.490767 0.4763,-0.538671 0.70648,-2.084429 0.22984,-1.543146 0.6774,-3.073311 1.26732,-4.332004 0.25915,-0.553246 0.4458,-1.07254 0.41453,-1.153993 -0.0515,-0.133905 -1.62346,-0.665622 -5.55478,-1.878783 -1.76342,-0.544127 -2.33826,-1.02688 -1.82936,-1.535809 0.27829,-0.278286 0.95776,-0.505879 10.70476,-3.585349 12.20192,-3.855062 14.16829,-4.460271 14.49305,-4.460271 0.15123,0 2.11716,0.584619 4.36881,1.299152 2.25166,0.714522 7.67992,2.425942 12.06295,3.803166 4.38291,1.377204 8.1419,2.59346 8.35316,2.702784 0.64853,0.335627 0.62031,0.928895 -0.0601,1.279765 -0.17801,0.09163 -1.95609,0.675692 -3.95132,1.297795 -1.99523,0.622091 -6.97288,2.183924 -11.06156,3.470772 -8.70186,2.738799 -9.3025,2.917635 -9.79619,2.916323 -0.372,-8.42e-4 -2.02805,-0.503199 -9.59129,-2.90869 -2.19141,-0.696993 -4.22961,-1.297248 -4.52912,-1.333901 -0.51961,-0.06353 -0.56203,-0.0456 -0.92222,0.391372 -0.70944,0.86076 -1.4625,3.064563 -1.63079,4.773236 -0.0809,0.828513 -0.0799,0.833631 0.33187,1.293485 1.12014,1.24942 1.19428,2.435682 0.2363,3.785426 l -0.41749,0.588096 0.0732,1.07708 c 0.0415,0.592392 0.24078,2.308129 0.44569,3.81273 0.20503,1.504613 0.38021,3.321387 0.38939,4.037275 0.0174,1.292754 0.0142,1.30218 -0.28058,1.385697 -0.386,0.109129 -4.25094,0.109533 -4.63868,4.83e-4 z m 17.12752,-5.788745 c -4.34235,-0.468636 -7.65794,-1.601308 -9.29321,-3.174752 -0.95503,-0.918944 -1.18892,-1.343523 -1.25737,-2.282664 -0.0711,-0.97554 0.27883,-6.492448 0.42087,-6.634412 0.15888,-0.158957 1.246,0.13982 6.38307,1.754544 5.41133,1.700832 6.36296,1.959753 7.20514,1.960135 0.79243,3.39e-4 1.79153,-0.273573 7.36522,-2.019139 5.07169,-1.588381 6.04695,-1.853349 6.21228,-1.687897 0.15494,0.154834 0.50288,6.259379 0.39715,6.964802 -0.10497,0.700886 -0.55865,1.352085 -1.49804,2.150682 -0.94836,0.806263 -1.98879,1.355332 -3.46333,1.827675 -1.45648,0.466514 -4.22557,1.040821 -5.79391,1.201647 -1.63374,0.167529 -4.83309,0.138476 -6.67787,-0.06069 z"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1" />
-      <text
-         id="text4519-3-5-0-9-2-2-0-6-0-4-6"
-         y="62.175034"
-         x="-926.31537"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89214694"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
-           y="62.175034"
-           x="-926.31537"
-           id="tspan4517-3-5-8-2-5-8-91-3-3-7-3"
-           sodipodi:role="line">Mindfulness</tspan><tspan
-           id="tspan4755"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.00161171px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.89214694"
-           y="80.927048"
-           x="-926.31537"
-           sodipodi:role="line">Courses</tspan></text>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.42669296px;line-height:1.25;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke:none;stroke-width:0.89214694"
-       x="-1203.8765"
-       y="124.43214"
-       id="text4519-3-5-0-9-2-2-0-6"
-       inkscape:export-filename="/home/eddy/Videos/Webcam/services-page.png"
-       inkscape:export-xdpi="96.110001"
-       inkscape:export-ydpi="96.110001"><tspan
-         sodipodi:role="line"
-         id="tspan4517-3-5-8-2-5-8-91-3"
-         x="-1203.8765"
-         y="124.43214"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.42669296px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f4be00;fill-opacity:1;stroke-width:0.89214694">www.headpause.com</tspan></text>
   </g>
 </svg>

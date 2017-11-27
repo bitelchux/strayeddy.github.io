@@ -753,3 +753,42 @@ li.dropdown:hover > .dropdown-menu {
 .timeline-image {
   margin-bottom: 27px;
 }
+
+#meditation {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/meditation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-5p {
+  padding: 5%;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-75 {
+  font-size: 75px;
+}
+
+.bc-lightcoral {
+  background-color: lightcoral;
+}
+
+.bc-lightgreen {
+  background-color: lightgreen;
+}
+
+.bc-lightblue {
+  background-color: lightblue;
+}

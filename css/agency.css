@@ -128,10 +128,21 @@ body {
         font-size: 1.25em;
         padding: 12px 0; } }
 
+header.home {  
+  background-image: url("/img/header-bg.jpg");
+}
+
+header.therapy {  
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/therapy.jpg');
+}
+
+header.meditation {  
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/meditation.jpg');
+}
+
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -754,38 +765,8 @@ li.dropdown:hover > .dropdown-menu {
   margin-bottom: 27px;
 }
 
-#meditation {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/meditation.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#therapy {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/therapy.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .p-5p {
   padding: 5%;
-}
-
-.pb-100 {
-  padding-bottom: 100px;
-}
-
-.pt-200 {
-  padding-top: 200px;
-}
-
-.fs-40 {
-  font-size: 40px;
-}
-
-.fs-75 {
-  font-size: 75px;
 }
 
 .bc-lightcoral {

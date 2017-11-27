@@ -761,6 +761,13 @@ li.dropdown:hover > .dropdown-menu {
   background-position: center;
 }
 
+#therapy {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/therapy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .p-5p {
   padding: 5%;
 }
@@ -791,4 +798,24 @@ li.dropdown:hover > .dropdown-menu {
 
 .bc-lightblue {
   background-color: lightblue;
+}
+
+.bc-lightsalmon {
+  background-color: lightsalmon;
+}
+
+.bc-lightpink {
+  background-color: lightpink;
+}
+
+.bc-lightgrey {
+  background-color: lightgrey;
+}
+
+.bc-grey {
+  background-color: grey;
+}
+
+.bc-white {
+  background-color: white;
 }

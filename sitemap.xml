@@ -1,105 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://www.headpause.com/</loc>
+	<loc>https://www.headpause.com/services/home-therapy-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/home-therapy-en.html</loc>
+	<loc>https://www.headpause.com/services/meditation-group-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/meditation-group-en.html</loc>
+	<loc>https://www.headpause.com/services/mindfulness-workshop-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/mindfulness-courses-en.html</loc>
+	<loc>https://www.headpause.com/index-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/index-fr.html</loc>
+	<loc>https://www.headpause.com/team/edouard-murat-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/overcome-depression-en.html</loc>
+	<loc>https://www.headpause.com/news/why-it-is-hard-to-meditate-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/how-to-meditate-regularly-en.html</loc>
+	<loc>https://www.headpause.com/news/news-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/news-en.html</loc>
+	<loc>https://www.headpause.com/news/5-easy-mindful-tricks-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/team/edouard-murat-en.html</loc>
+	<loc>https://www.headpause.com/news/overcome-depression-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/home-therapy-fr.html</loc>
+	<loc>https://www.headpause.com/news/how-to-meditate-regularly-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/meditation-group-fr.html</loc>
+	<loc>https://www.headpause.com/news/why-do-therapy-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/mindfulness-courses-fr.html</loc>
+	<loc>https://www.headpause.com/news/4-reasons-to-start-meditation-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/index.html</loc>
+	<loc>https://www.headpause.com/services/try-meditation-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/overcome-depression-fr.html</loc>
+	<loc>https://www.headpause.com/news/4-ways-to-reduce-your-stress-right-now-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/how-to-meditate-regularly-fr.html</loc>
+	<loc>https://www.headpause.com/news/meditation-a-new-toolbox-for-school-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/news-fr.html</loc>
+	<loc>https://www.headpause.com/news/mindfulness-to-help-chronic-pain-en.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/team/edouard-murat-fr.html</loc>
+	<loc>https://www.headpause.com/services/home-therapy-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/mental-health-our-common-goal-en.html</loc>
+	<loc>https://www.headpause.com/services/meditation-group-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/try-meditation-en.html</loc>
+	<loc>https://www.headpause.com/services/mindfulness-workshop-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/why-do-therapy-en.html</loc>
+	<loc>https://www.headpause.com/news/4-ways-to-reduce-your-stress-right-now-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/4-reasons-to-start-meditation-en.html</loc>
+	<loc>https://www.headpause.com/news/why-do-therapy-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/4-ways-to-reduce-your-stress-right-now-en.html</loc>
+	<loc>https://www.headpause.com/services/try-meditation-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/meditation-a-new-toolbox-for-school-en.html</loc>
+	<loc>https://www.headpause.com/news/how-to-meditate-regularly-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/mindfulness-to-help-chronic-pain-en.html</loc>
+	<loc>https://www.headpause.com/team/edouard-murat-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/mental-health-our-common-goal-fr.html</loc>
+	<loc>https://www.headpause.com/index.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/services/try-meditation-fr.html</loc>
+	<loc>https://www.headpause.com/index-fr</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/why-do-therapy-fr.html</loc>
+	<loc>https://www.headpause.com/news/meditation-a-new-toolbox-for-school-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/4-reasons-to-start-meditation-fr.html</loc>
+	<loc>https://www.headpause.com/news/mindfulness-to-help-chronic-pain-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/4-ways-to-reduce-your-stress-right-now-fr.html</loc>
+	<loc>https://www.headpause.com/news/5-easy-mindful-tricks-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/meditation-a-new-toolbox-for-school-fr.html</loc>
+	<loc>https://www.headpause.com/news/why-it-is-hard-to-meditate-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/news/mindfulness-to-help-chronic-pain-fr.html</loc>
+	<loc>https://www.headpause.com/news/4-reasons-to-start-meditation-fr.html</loc>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://www.headpause.com/index-fr</loc>
+	<loc>https://www.headpause.com/news/overcome-depression-fr.html</loc>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://www.headpause.com/news/mental-health-our-common-goal-fr.html</loc>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://www.headpause.com/news/mental-health-our-common-goal-en.html</loc>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://www.headpause.com/news/news-en.html</loc>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://www.headpause.com/</loc>
+	<changefreq>weekly</changefreq>
 </url>
 </urlset>

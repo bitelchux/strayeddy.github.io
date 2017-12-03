@@ -11,9 +11,10 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #fec503; }
+  color: #f1ba01; }
   a.active, a:active, a:focus, a:hover {
-    color: #f1ba01; }
+    color: #dcaa01; 
+}
 
 h1,
 h2,

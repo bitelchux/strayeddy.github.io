@@ -5175,9 +5175,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="-2068.1993"
-     inkscape:cx="1985.8179"
-     inkscape:zoom="0.14393859"
+     inkscape:cy="-256.58191"
+     inkscape:cx="-103.45543"
+     inkscape:zoom="0.10177995"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -7141,10 +7141,10 @@
        height="56.480999"
        id="rect8999" />
     <g
-       id="g11281"
+       id="g11611"
        inkscape:export-filename="/home/eddy/strayeddy.github.io/img/infographics/depths-of-concentration.png"
-       inkscape:export-xdpi="50"
-       inkscape:export-ydpi="50">
+       inkscape:export-xdpi="50.000648"
+       inkscape:export-ydpi="50.000648">
       <rect
          inkscape:export-filename="/home/eddy/strayeddy.github.io/img/infographics/stages-of-concentration.png"
          inkscape:export-ydpi="45"
@@ -7234,7 +7234,7 @@
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.90812683px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#119da4;fill-opacity:1;stroke-width:0.26458332"
            y="174.47026"
            x="1029.8024"
-           sodipodi:role="line">Preminilary Concentration</tspan></text>
+           sodipodi:role="line">Preliminary Concentration</tspan></text>
       <path
          transform="translate(9.3036039,-120.32915)"
          clip-path="url(#clipPath9995)"
@@ -8325,6 +8325,17 @@
          id="tspan11097"
          x="1202.6293"
          y="177.84885"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46666622px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="1098.64"
+       y="166.69693"
+       id="text11447"><tspan
+         sodipodi:role="line"
+         id="tspan11445"
+         x="1098.64"
+         y="174.18794"
          style="stroke-width:0.26458332" /></text>
   </g>
 </svg>

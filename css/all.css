@@ -8934,6 +8934,10 @@ my-email::before {
   overflow: auto;
 }
 
+#about button {
+  cursor: pointer;
+}
+
 #contact button {
   cursor: pointer;
 }

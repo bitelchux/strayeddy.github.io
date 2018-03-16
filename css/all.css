@@ -8195,6 +8195,7 @@ p {
   line-height: 1.75; }
 
 a {
+  cursor: pointer;
   color: #f1ba01; }
   a.active, a:active, a:focus, a:hover {
     color: #dcaa01; 

@@ -17,6 +17,15 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
     }
   });
 
+  $("#rendezvouslink").click(function() {
+    $('#rendezvouslink').hide();
+    $('#therapy-contact').collapse()
+	  $('html, body').animate({
+          scrollTop: $("#therapy-contact").offset().top - 54
+      }, 1000, "easeInOutExpo");
+    return false;
+  });
+
   $('#servicesDropdown').on('shown.bs.dropdown', function () {
     var target = $('#services');
     target = target.length ? target : $('[name=services]');

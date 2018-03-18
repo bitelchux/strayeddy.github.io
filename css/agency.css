@@ -493,6 +493,10 @@ li.dropdown:hover > .dropdown-menu {
   background-color: white;
 }
 
+.bc-black {
+  background-color: black;
+}
+
 .text-black {
   color: black;
 }

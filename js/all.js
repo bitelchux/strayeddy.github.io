@@ -17,13 +17,15 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
     }
   });
 
-  $("#rendezvouslink").click(function() {
-    $('#rendezvouslink').hide();
-    $('#therapy-contact').collapse()
-	  $('html, body').animate({
-          scrollTop: $("#therapy-contact").offset().top - 54
-      }, 1000, "easeInOutExpo");
-    return false;
+  $(document).ready(function(){
+    $("#rendezvouslink").on('click',function() {
+      $('#rendezvouslink').hide();
+      $('#therapy-contact').collapse()
+	    $('html, body').animate({
+            scrollTop: $("#therapy-contact").offset().top - 54
+        }, 1000, "easeInOutExpo");
+      return false;
+    });
   });
 
   $('#servicesDropdown').on('shown.bs.dropdown', function () {
@@ -89,8 +91,10 @@ if(function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.e
   });
 
   // hide show more button when showing more content
-  $( ".show-more-button" ).click(function() {
-    $('.show-more-button').hide();
+  $(document).ready(function(){
+    $( ".show-more-button" ).click(function() {
+      $('.show-more-button').hide();
+    });
   });
 
   // french users

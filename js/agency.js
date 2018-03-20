@@ -16,13 +16,15 @@
     }
   });
 
-  $("#rendezvouslink").click(function() {
-    $('#rendezvouslink').hide();
-    $('#therapy-contact').collapse()
-	  $('html, body').animate({
-          scrollTop: $("#therapy-contact").offset().top - 54
-      }, 1000, "easeInOutExpo");
-    return false;
+  $(document).ready(function(){
+    $("#rendezvouslink").on('click',function() {
+      $('#rendezvouslink').hide();
+      $('#therapy-contact').collapse()
+	    $('html, body').animate({
+            scrollTop: $("#therapy-contact").offset().top - 54
+        }, 1000, "easeInOutExpo");
+      return false;
+    });
   });
 
   $('#servicesDropdown').on('shown.bs.dropdown', function () {
@@ -88,8 +90,10 @@
   });
 
   // hide show more button when showing more content
-  $( ".show-more-button" ).click(function() {
-    $('.show-more-button').hide();
+  $(document).ready(function(){
+    $( ".show-more-button" ).click(function() {
+      $('.show-more-button').hide();
+    });
   });
 
   // french users

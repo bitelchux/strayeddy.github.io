@@ -6,6 +6,8 @@
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHRG7NT');</script>
     <!-- End Google Tag Manager -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
@@ -129,10 +131,33 @@
         <div class="intro-text">
           <div class="intro-lead-in">Welcome To 
 <span itemprop="name">HeadPause<meta itemprop="url" content="https://www.headpause.com/"></span>!</div>
-          <div class="intro-heading">It's Nice To Meet You</div>
+        <div>
+          <svg id="svg-animation" width="200px" height="300px"></svg>
+        </div>
           <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
       </div>
+      <script>
+        var s = Snap("#svg-animation");
+        var svg = Snap.load("/svg/animation.svg", function(loadedFragment){
+          s.append(loadedFragment);
+
+          var face = s.select("#face");
+          var chest = s.select("#chest");
+          var neck = s.select("#neck");
+          var legs = s.select("#legs")
+
+          function animation() {
+            face.animate({transform: "translate(0,-3)"},2000, function(){ face.animate({transform: "translate(0,0)"},2000);});
+
+            neck.animate({transform: "translate(0,-3)"},2000, function(){ neck.animate({transform: "translate(0,0)"},2000);});
+
+            chest.animate({transform: "translate(35.7,20) scale(.6)"},0, function(){ chest.animate({transform: "translate(26.5,12) scale(.7)"},2000, function(){ chest.animate({transform: "translate(35.7,20) scale(.6)"},2000, function(){ animation();});});});
+          };
+          
+          animation();
+        });
+      </script>
     </header>
 
     <!--  Services  -->

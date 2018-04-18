@@ -99,16 +99,19 @@
   var checkPopupExist = setInterval(function() {
     
     if ($('#PopupSignupForm_0').length) {
+      $("iframe").contents().find("#mc-MEDITATION").val("NO");
       $("iframe").contents().find("#mc-LANGUAGE").val("EN");
+      $("iframe").contents().find(".content__button input").css('font-size', "18px");
 
       // translate mailchimp popup in french
       if($('html').attr('lang')=='fr') {
         $("iframe").contents().find("#mc-LANGUAGE").val("FR");
 
-        $("iframe").contents().find(".content__titleDescription span span").text('JOIGNEZ NOTRE INFO-LETTRE');
+        $("iframe").contents().find(".content__titleDescription span").text('Obtenez Votre Guide Gratuit Maintenant: "Comment méditer en ville?"');
         $("iframe").contents().find(".content__titleDescription div:eq(1)").text('Inscrivez-vous gratuitement aujourd\'hui et soyez le premier à être informé des événements et des promotions.');
         $("iframe").contents().find("label").text('Adresse Email');
-        $("iframe").contents().find(".content__button input").val('Abonnez-vous Maintenant');
+        $("iframe").contents().find(".content__button input").val('Obtenez-le Maintenant');
+        $("iframe").contents().find(".modalContent__image").css("background-image", "url(/media/ebook-cover-fr.png)");
 
         // Check submit
         $("iframe").contents().find(".content__button").click(function(){
@@ -116,7 +119,7 @@
           var checkSuccessPopupExist = setInterval(function() {
             
             if ($("iframe").contents().find(".popup-signup-success").length) {
-              $("iframe").contents().find(".popup-signup-success").text('MERCI DE VOUS ÊTRE ABONNÉ!');
+              $("iframe").contents().find(".popup-signup-success").text('Votre guide gratuit vous a été envoyé!');
               clearInterval(checkSuccessPopupExist);
             }
           }, 100);
@@ -125,6 +128,9 @@
       
       // Hide language field
       $("iframe").contents().find("#uniqName_3_1").hide();
+      
+      // Hide meditation field
+      $("iframe").contents().find("#uniqName_3_2").hide();
 
       clearInterval(checkPopupExist);
     }

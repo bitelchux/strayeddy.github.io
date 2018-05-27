@@ -1097,7 +1097,7 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
             run(nonjudge_score / max_nonjudge, "nonjudge")
             run(nonreact_score / max_nonreact, "nonreact")
             run(total_score / max_total, "total")
-            total = total_score / max_total
+            total = Math.round(total_score / max_total)
 
             event.preventDefault();
           }

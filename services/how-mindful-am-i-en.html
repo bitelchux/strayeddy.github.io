@@ -983,7 +983,7 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
         </div>
         <div class="row justify-content-center mt-5">
           <div class="col-2 svg text-center">
-            <h3>Total</h3>
+            <h2>Mindful</h2>
             <div id="percent-total"></div>
             <svg id="svg-total"></svg>
           </div>
@@ -1001,6 +1001,8 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
     </section>
 
     <script>
+      var total = 0
+
       window.onload = function() {
         $(document).ready(function() {
 
@@ -1028,6 +1030,7 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
             }, 1000, "easeInOutExpo", showResults());
           });
 
+          // show all results
           function showResults() {
             var answer1 = parseInt($('input[name=question1]:checked').val())
             var answer2 = parseInt($('input[name=question2]:checked').val())
@@ -1094,11 +1097,33 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
             run(nonjudge_score / max_nonjudge, "nonjudge")
             run(nonreact_score / max_nonreact, "nonreact")
             run(total_score / max_total, "total")
-
+            total = total_score / max_total
 
             event.preventDefault();
           }
 
+          // get color wiht percentage
+          function getColor(percent){
+            var r = 0
+            var g = 0
+            if(percent <= .3) {
+              r = 255
+              g = 50
+            }
+            else if(percent >= .7) {
+              g = 255
+              r = 50
+            }
+            else {
+              g = 128
+              r = 255
+            }
+
+
+            return 'rgb(' + r + ',' + g + ",0)"
+          }
+
+          // draw the pie sector
           function drawPieSector(snap, centre, rIn, rOut, startDeg, delta, attr) {
             
             var startOut = {
@@ -1141,20 +1166,17 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
           function run(percent, name) {
             var snap = Snap('#svg-' + name);
            
+            var color = getColor(percent);
+
             var attr = {
-              stroke: '#fed136',
-              fill: '#fed136',
+              stroke: color,
+              fill: color,
               fillOpacity: 1,
               strokeWidth: 1
             };
 
             var percDiv = document.getElementById('percent-' + name);
-
-            if(percent == 1){
-              attr.stroke = '#00f67f';
-              attr.fill = '#00f67f';
-              percDiv.style.color = '#00f67f';
-            }
+            percDiv.style.color = color
 
             Snap.animate(0, percent * 359.99, function (deg) {
               $("#svg-" + name + " > path").remove()
@@ -1174,7 +1196,10 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
           event.preventDefault();
           FB.ui({
             method: 'share',
-            href: 'https://www.headpause.com/services/how-mindful-am-i-en.html'
+            mobile_iframe: true,
+            href: 'https://www.headpause.com/services/how-mindful-am-i-en.html',
+            quote: "I am " + total + "% mindful ! And you ?",
+            hashtag: '#headpausemtl'
           }, function(response){});
           return false;
         });

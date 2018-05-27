@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <meta name="author" content="Edouard Murat"/>
-    <meta name="subject" content="Try Breathing Meditation"/>
-    <meta name="description" content="Try breathing meditation here."/>
+    <meta name="subject" content="How Mindful Am I?"/>
+    <meta name="description" content="How Mindful Am I?"/>
     <meta name="keywords" content="headpause, meditation, mindfulness meditation, how to do meditation, guided meditation, meditate, mbsr, meditation meetup"/>
     <meta name="language" content="English"/>
     <meta name="copyright" content="HeadPause"/>
@@ -24,7 +24,7 @@
     <meta name="city" content="Montreal"/>
     <meta name="country" content="Canada"/>
 
-    <title>Try Meditation Now - HeadPause</title>
+    <title>How Mindful Am I? - HeadPause</title>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
@@ -1097,7 +1097,7 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
             run(nonjudge_score / max_nonjudge, "nonjudge")
             run(nonreact_score / max_nonreact, "nonreact")
             run(total_score / max_total, "total")
-            total = Math.round(total_score / max_total)
+            total = Math.round(total_score * 100 / max_total)
 
             event.preventDefault();
           }
@@ -1199,7 +1199,7 @@ Cochez le chiffre qui correspond le mieux à ce qui est généralement vrai pour
             mobile_iframe: true,
             href: 'https://www.headpause.com/services/how-mindful-am-i-en.html',
             quote: "I am " + total + "% mindful ! And you ?",
-            hashtag: '#headpausemtl'
+            hashtag: '#headpause'
           }, function(response){});
           return false;
         });

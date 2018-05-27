@@ -497,6 +497,43 @@ li.dropdown:hover > .dropdown-menu {
   background-color: black;
 }
 
+.bc-whitesmoke {
+  background-color: whitesmoke;
+}
+
 .text-black {
   color: black;
+}
+
+input[type=radio]{
+  transform:scale(1.5);
+}
+
+#five-facet-mindfulness-form .hoverable:hover{
+  background-color: #fed136;
+}
+
+div[id^="percent-"] {
+  position: absolute;
+  right: 35%;
+  top: 33%;
+  font-size: xx-large;
+  color: #f6bf01;
+}
+
+div[id="percent-total"] {
+  top: 45%;
+}
+
+svg[id^="svg-"] {
+  overflow: overlay
+}
+
+#share-results.btn-facebook {
+  height:68px;
+  width:168px;
+}
+#share-results .fa-facebook {
+  font-size:2em;
+  top:17px;
 }

@@ -8699,8 +8699,8 @@ input[type=radio]{
 
 div[id^="percent-"] {
   position: absolute;
-  right: 35%;
-  top: 33%;
+  right: 38%;
+  top: 40%;
   font-size: xx-large;
   color: #af8800;
 }
@@ -8710,7 +8710,8 @@ div[id="percent-total"] {
 }
 
 svg[id^="svg-"] {
-  overflow: overlay
+  overflow: overlay;
+  width: 160px;
 }
 
 #share-results.btn-facebook {

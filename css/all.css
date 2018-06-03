@@ -8714,6 +8714,10 @@ svg[id^="svg-"] {
   width: 160px;
 }
 
+svg[id="svg-body"] {
+  width: auto;
+}
+
 #share-results.btn-facebook {
   height:68px;
   width:168px;

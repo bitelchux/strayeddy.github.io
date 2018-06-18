@@ -8193,7 +8193,7 @@ a {
   cursor: pointer;
   color: #f1ba01; }
   a.active, a:active, a:focus, a:hover {
-    color: #dcaa01; 
+    color: #dcaa01;
 }
 
 h1,
@@ -8309,19 +8309,19 @@ body {
         font-size: 1.25em;
         padding: 12px 0; } }
 
-header.home {  
+header.home {
   background-image: url("/img/header-bg.jpg");
 }
 
-header.therapy {  
+header.therapy {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/therapy.jpg');
 }
 
-header.meditation {  
+header.meditation {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/meditation.jpg');
 }
 
-header.mindfulness {  
+header.mindfulness {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/services/mindfulness.jpg');
 }
 
@@ -8554,7 +8554,7 @@ span.fa-stack:hover .text-primary {
   .btn-xl .badge {
     color: #fed136;
     background-color: white; }
-    
+
 @media (max-width: 768px) {
   .portfolio-modal .modal-content h2 {
 	font-size:2em;
@@ -8725,6 +8725,34 @@ svg[id="svg-body"] {
 #share-results .fa-facebook {
   font-size:2em;
   top:17px;
+}
+
+.custom-file-control:lang(fr):before{
+  content: "Parcourir"!important;
+}
+.custom-file-control:after{
+  position: absolute;
+  left: 11px;
+}
+
+#share-my-color.btn-facebook {
+  position: absolute;
+  height: 68px;
+  width: 315px;
+}
+
+#share-my-color .fa-facebook {
+  font-size:2em;
+  top:17px;
+}
+#share-my-color .fa-facebook:before {
+  position: absolute;
+  left: 14px;
+}
+#share-my-color .fa-facebook:after {
+  position: absolute;
+  right: 12px;
+  content: "Partager ma couleur";
 }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

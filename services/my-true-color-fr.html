@@ -222,31 +222,25 @@
               event.preventDefault();
               var pixel = currentPixel;
               dColor = '#' + pixel[0].toString(16) + pixel[1].toString(16) + pixel[2].toString(16);
-              colorName = ntc.name(dColor)[1];
+              colorName = ntc.name(dColor)[1].toLowerCase();
 
               $.ajax({
                 type: "POST",
                 url: "https://translation.googleapis.com/language/translate/v2?key=AIzaSyCGa_7-MKmOOh5EYdazDAgDbuCFExC2nFU",
-                data: {
-                  "target":"fr",
-                  "q":colorName
-                },
-                contentType: "application/json; charset=utf-8",
+                data: "target=fr&q=" + encodeURIComponent(colorName),
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
                 crossDomain: true,
                 dataType: "json",
-                success: function(data,status,jqXHR) {
-                  alert("success");
+                success: function(response,status,jqXHR) {
+                  colorName = response.data.translations[0].translatedText;
+                  $('#result').collapse('show');
+                  $('html, body').animate({
+                      scrollTop: $("#result").offset().top - 54
+                  }, 1000, "easeInOutExpo", showResults());
                 },
                 error: function(jqXHR,status) {
-                  console.log(jqXHR);
-                  alert('fail' + status.code);
                 }
               });
-
-              $('#result').collapse('show');
-              $('html, body').animate({
-                  scrollTop: $("#result").offset().top - 54
-              }, 1000, "easeInOutExpo", showResults());
 
               function showResults() {
                 $('#final').css('background-color', dColor);

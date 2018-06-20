@@ -190,7 +190,7 @@
           var canvas;
           var ctx;
           var colorName;
-          var pixelColor;
+          var currentPixel;
           var dColor;
           $(function(){
 
@@ -214,18 +214,34 @@
               var canvasY = Math.floor(e.pageY - canvasOffset.top);
               var imageData = ctx.getImageData(canvasX, canvasY, 1, 1);
               var pixel = imageData.data;
+              currentPixel = pixel;
               var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
               $('#preview').css('backgroundColor', pixelColor);
             });
             $('#panel').click(function(e) { // mouse click handler
               event.preventDefault();
-              var canvasOffset = $(canvas).offset();
-              var canvasX = Math.floor(e.pageX - canvasOffset.left);
-              var canvasY = Math.floor(e.pageY - canvasOffset.top);
-              var imageData = ctx.getImageData(canvasX, canvasY, 1, 1);
-              var pixel = imageData.data;
-              dColor = pixel[2] + 256 * pixel[1] + 65536 * pixel[0];
-              colorName = ntc.name('#' + dColor.toString(16))[1];
+              var pixel = currentPixel;
+              dColor = '#' + pixel[0].toString(16) + pixel[1].toString(16) + pixel[2].toString(16);
+              colorName = ntc.name(dColor)[1];
+
+              $.ajax({
+                type: "POST",
+                url: "https://translation.googleapis.com/language/translate/v2?key=AIzaSyCGa_7-MKmOOh5EYdazDAgDbuCFExC2nFU",
+                data: {
+                  "target":"fr",
+                  "q":[colorName]
+                },
+                contentType: "application/json; charset=utf-8",
+                crossDomain: true,
+                dataType: "json",
+                success: function(data,status,jqXHR) {
+                  alert("success");
+                },
+                error: function(jqXHR,status) {
+                  console.log(jqXHR);
+                  alert('fail' + status.code);
+                }
+              });
 
               $('#result').collapse('show');
               $('html, body').animate({
@@ -233,7 +249,7 @@
               }, 1000, "easeInOutExpo", showResults());
 
               function showResults() {
-                $('#final').css('background-color', '#' + dColor.toString(16));
+                $('#final').css('background-color', dColor);
                 $('#final').html(colorName);
               }
             });

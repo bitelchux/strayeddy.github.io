@@ -258,20 +258,20 @@
               }
               reader.readAsDataURL($(this)[0].files[0]);
             });
+            
+            // share results on facebook
+            $("#share-my-color").click(function(event) {
+            event.preventDefault();
+              FB.ui({
+                method: 'share',
+                mobile_iframe: false,
+                href: 'https://www.headpause.com/services/my-true-color-fr.html',
+                quote: "Je ne suis ni noir(e) ni blanc(he), Je suis " + colorName ,
+                hashtag: '#headpause'
+              }, function(response){});
+              return false;
+            });
           });
-        });
-
-        // share results on facebook
-        $("#share-my-color").click(function(event) {
-        event.preventDefault();
-          FB.ui({
-            method: 'share',
-            mobile_iframe: false,
-            href: 'https://www.headpause.com/services/my-true-color-fr.html',
-            quote: "Je ne suis ni noir(e) ni blanc(he), Je suis " + colorName ,
-            hashtag: '#headpause'
-          }, function(response){});
-          return false;
         });
       }
     </script>

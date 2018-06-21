@@ -5,8 +5,6 @@
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHRG7NT');</script>
     <!-- End Google Tag Manager -->
-    
-    <script src="/js/snap.svg-min.js"></script>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -141,892 +139,46 @@
     </nav>
 
     <div class="container">
-      <h2 class="text-center m-5">My True Color</h2>
-      <p class="h4 text-center mb-5"><strong>Share your true color with a photo</strong></p>
+      <h2 class="text-center m-5">Show Your True Color</h2>
 
-      <div class="row justify-content-center text-center font-weight-bold mb-5">
-        <div class="col-2">
-          <label>1</label>
-          </br>
-          <p>Never or very rarely true</p>
-        </div>
-        <div class="col-2">
-          <label>2</label>
-          </br>
-          <p>Rarely true</p>
-        </div>
-        <div class="col-2">
-          <label>3</label>
-          </br>
-          <p>At times true</p>
-        </div>
-        <div class="col-2">
-          <label>4</label>
-          </br>
-          <p>Often true</p>
-        </div>
-        <div class="col-2">
-          <label>5</label>
-          </br>
-          <p>Very often or always true</p>
+      <div class="row justify-content-center text-center mb-5">
+        <h4>1- Use a picture of yourself</h4>
+        <div class="col-8 text-center">
+          <label class="custom-file">
+            <input type="file" id="file" class="custom-file-input">
+            <span id="upload-file-info" class="custom-file-control"></span>
+          </label>
         </div>
       </div>
 
-      <form id="five-facet-mindfulness-form">
-        <div class="row justify-content-center text-center font-weight-bold">
-          <div class="col-lg-6">
-          </div>
-          <div class="col">
-            <label class="col-form-label">1</label>
-          </div>
-          <div class="col">
-            <label class="col-form-label">2</label>
-          </div>
-          <div class="col">
-            <label class="col-form-label">3</label>
-          </div>
-          <div class="col">
-            <label class="col-form-label">4</label>
-          </div>
-          <div class="col">
-            <label class="col-form-label">5</label>
-          </div>
+      <div class="row justify-content-center text-center mb-5">
+        <h4>2- Click on your skin</h4>
+        <div class="col-10 bg-light">
+          <canvas id="panel" width="300%" height="300%"></canvas>
         </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I’m walking, I deliberately notice the sensations of my body moving.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question1" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question1" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question1" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question1" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question1" value="5">
-          </div>
+        <div id="preview" class="col-2" style="background-color: rgb(230,230,230)">
         </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I’m good at finding words to describe my feelings.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question2" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question2" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question2" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question2" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question2" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I criticize myself for having irrational or inappropriate emotions.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question3" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question3" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question3" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question3" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question3" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I perceive my feelings and emotions without having to react to them.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question4" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question4" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question4" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question4" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question4" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I do things, my mind wanders off and I’m easily distracted.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question5" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question5" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question5" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question5" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question5" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I take a shower or bath, I stay alert to the sensations of water on my body.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question6" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question6" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question6" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question6" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question6" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I can easily put my beliefs, opinions, and expectations into words.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question7" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question7" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question7" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question7" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question7" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I don’t pay attention to what I’m doing because I’m daydreaming, worrying, or otherwise distracted.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question8" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question8" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question8" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question8" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question8" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I watch my feelings without getting lost in them.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question9" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question9" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question9" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question9" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question9" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I tell myself I shouldn’t be feeling the way I’m feeling.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question10" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question10" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question10" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question10" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question10" value="5">
-          </div>
-        </div>
-        <hr class="m-5">
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I notice how foods and drinks affect my thoughts, bodily sensations, and emotions.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question11" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question11" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question11" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question11" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question11" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">It’s hard for me to find the words to describe what I’m thinking.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question12" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question12" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question12" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question12" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question12" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I am easily distracted.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question13" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question13" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question13" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question13" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question13" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I believe some of my thoughts are abnormal or bad and I shouldn’t think that way.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question14" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question14" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question14" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question14" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question14" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I pay attention to sensations, such as the wind in my hair or sun on my face.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question15" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question15" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question15" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question15" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question15" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I have trouble thinking of the right words to express how I feel about things.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question16" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question16" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question16" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question16" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question16" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I make judgments about whether my thoughts are good or bad.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question17" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question17" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question17" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question17" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question17" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I find it difficult to stay focused on what’s happening in the present.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question18" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question18" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question18" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question18" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question18" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I have distressing thoughts or images, I “step back” and am aware of the thought or image without getting taken over by it.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question19" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question19" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question19" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question19" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question19" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I pay attention to sounds, such as clocks ticking, birds chirping, or cars passing.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question20" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question20" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question20" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question20" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question20" value="5">
-          </div>
-        </div>
-        <hr class="m-5">
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">In difficult situations, I can pause without immediately reacting.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question21" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question21" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question21" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question21" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question21" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I have a sensation in my body, it’s difficult for me to describe it because I can’t find the right words.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question22" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question22" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question22" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question22" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question22" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">It seems I am “running on automatic” without much awareness of what I’m doing.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question23" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question23" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question23" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question23" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question23" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I have distressing thoughts or images, I feel calm soon after.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question24" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question24" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question24" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question24" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question24" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I tell myself that I shouldn’t be thinking the way I’m thinking.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question25" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question25" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question25" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question25" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question25" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I notice the smells and aromas of things.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question26" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question26" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question26" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question26" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question26" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">Even when I’m feeling terribly upset, I can find a way to put it into words.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question27" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question27" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question27" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question27" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question27" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I rush through activities without being really attentive to them.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question28" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question28" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question28" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question28" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question28" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I have distressing thoughts or images I am able just to notice them without reacting.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question29" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question29" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question29" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question29" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question29" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I think some of my emotions are bad or inappropriate and I shouldn’t feel them.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question30" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question30" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question30" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question30" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question30" value="5">
-          </div>
-        </div>
-        <hr class="m-5">
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I notice visual elements in art or nature, such as colors, shapes, textures, or patterns of light and shadow.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question31" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question31" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question31" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question31" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question31" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">My natural tendency is to put my experiences into words.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question32" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question32" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question32" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question32" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question32" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I have distressing thoughts or images, I just notice them and let them go.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question33" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question33" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question33" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question33" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question33" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I do jobs or tasks automatically without being aware of what I’m doing.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question34" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question34" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question34" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question34" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question34" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">When I have distressing thoughts or images, I judge myself as good or bad, depending what the thought/image is about.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question35" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question35" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question35" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question35" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question35" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I pay attention to how my emotions affect my thoughts and behavior.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question36" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question36" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question36" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question36" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question36" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I can usually describe how I feel at the moment in considerable detail.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question37" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question37" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question37" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question37" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question37" value="5">
-          </div>
-        </div>
-        <div class="row hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I find myself doing things without paying attention.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question38" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question38" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question38" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question38" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question38" value="5">
-          </div>
-        </div>
-        <div class="row bc-whitesmoke hoverable">
-          <div class="col-lg-6">
-            <label class="col-form-label">I disapprove of myself when I have irrational ideas.</label>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question39" value="1" required>
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question39" value="2">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question39" value="3">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question39" value="4">
-          </div>
-          <div class="col text-center my-auto">
-            <input type="radio" name="question39" value="5">
-          </div>
-        </div>
-        <div class="row justify-content-center m-5">
-          <button class="btn btn-primary btn-xl" type="submit">Compute Results</button>
-        </div>
-      </form>
+      </div>
     </div>
-
+    <img id="img-upload"/>
     <section id="result" class="collapse bc-whitesmoke">
       <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-sm-2 svg text-center">
-            <h6>Observe</h6>
-            <div id="percent-observe"></div>
-            <svg id="svg-observe"></svg>
-          </div>
-          <div class="col-sm-2 svg text-center">
-            <h6>Describe Experience</h6>
-            <div id="percent-describe"></div>
-            <svg id="svg-describe"></svg>
-          </div>
-          <div class="col-sm-2 svg text-center">
-            <h6>Act With Awareness</h6>
-            <div id="percent-act"></div>
-            <svg id="svg-act"></svg>
-          </div>
-          <div class="col-sm-2 svg text-center">
-            <h6>Nonjudge</h6>
-            <div id="percent-nonjudge"></div>
-            <svg id="svg-nonjudge"></svg>
-          </div>
-          <div class="col-sm-2 svg text-center">
-            <h6>Nonreact</h6>
-            <div id="percent-nonreact"></div>
-            <svg id="svg-nonreact"></svg>
-          </div>
+        <div class="row justify-content-center text-center">
+          <h4>I am neither Black nor White, My true color is:</h4>
         </div>
-        <div class="row justify-content-center mt-5">
-          <div class="col-sm-2 svg text-center">
-            <h2>Mindful</h2>
-            <div id="percent-total"></div>
-            <svg id="svg-total"></svg>
-          </div>
+        <div class="row justify-content-center text-center mb-5">
+          <button id="final" class="btn btn-xl text-white" style="text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;">
+          </button>
         </div>
-      </div>
-      <div class="row justify-content-center m-5">
-        <!--  Bootstrap social CSS  -->
-        <link rel="stylesheet" href="/vendor/bootstrap-social/bootstrap-social.min.css"/>
+        <div class="row justify-content-center text-center m-5">
+          <!--  Bootstrap social CSS  -->
+          <link rel="stylesheet" href="/vendor/bootstrap-social/bootstrap-social.min.css"/>
 
-        <!-- Facebook -->
-        <button id="share-results" class="btn btn-social-icon btn-facebook">
-          <span class="fa fa-facebook">&#09;&#09;Share</span>
-        </a>
+          <!-- Facebook -->
+          <button id="share-my-color" class="btn btn-social-icon btn-facebook">
+            <span class="fa fa-facebook facebook-pos"></span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -1036,210 +188,80 @@
       window.onload = function() {
         $(document).ready(function() {
 
-          var inverted_answer = function(answer) {
-            if(answer == 1){
-              return 5
+          var canvas;
+          var ctx;
+          var colorName;
+          var currentPixel;
+          var dColor;
+          $(function(){
+
+            $('head').append('<style id="addedCSS" type="text/css">.custom-file-control:lang(fr):after{content: "My picture..."!important;}</style>');
+
+            // creating canvas object
+            canvas = document.getElementById('panel');
+            ctx = canvas.getContext('2d');
+
+            // drawing active image
+            var image = new Image();
+            image.onload = function () {
+              ctx.drawImage(image, 0, 0, image.width, image.height,
+                0, 0, canvas.width, canvas.height);
             }
-            else if(answer == 2){
-              return 4
-            }
-            else if(answer == 3){
-              return 3
-            }
-            else if(answer == 4){
-              return 2
-            }
-            else if(answer == 5){
-              return 1
-            }
-          };
 
-          $("#five-facet-mindfulness-form").submit(function(event) {
+            $('#panel').mousemove(function(e) { // mouse move handler
+              event.preventDefault();
+              var canvasOffset = $(canvas).offset();
+              var canvasX = Math.floor(e.pageX - canvasOffset.left);
+              var canvasY = Math.floor(e.pageY - canvasOffset.top);
+              var imageData = ctx.getImageData(canvasX, canvasY, 1, 1);
+              var pixel = imageData.data;
+              currentPixel = pixel;
+              var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", "+pixel[3]+")";
+              $('#preview').css('backgroundColor', pixelColor);
+            });
+            $('#panel').click(function(e) { // mouse click handler
+              event.preventDefault();
+              var pixel = currentPixel;
+              dColor = '#' + pixel[0].toString(16) + pixel[1].toString(16) + pixel[2].toString(16);
+              colorName = ntc.name(dColor)[1].toLowerCase();
 
-            $("#result").collapse();
-            $('html, body').animate({
-                scrollTop: $("#result").offset().top - 54
-            }, 1000, "easeInOutExpo", showResults());
-          });
+              function showResults() {
+                $('#final').css('background-color', dColor);
+                $('#final').html(colorName);
+              }
+            });
+            $('.custom-file-input').on('change', function() {
+              var filename = $(this)[0].files[0].name;
+              console.log(filename);
+              $('#addedCSS').text('.custom-file-control:lang(fr):after{content: "' +
+                filename.slice(0,20) + '..."!important;}');
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                image.src = e.target.result;
+              }
+              reader.readAsDataURL($(this)[0].files[0]);
+            });
 
-          // show all results
-          function showResults() {
-            var answer1 = parseInt($('input[name=question1]:checked').val())
-            var answer2 = parseInt($('input[name=question2]:checked').val())
-            var answer3 = parseInt($('input[name=question3]:checked').val())
-            var answer4 = parseInt($('input[name=question4]:checked').val())
-            var answer5 = parseInt($('input[name=question5]:checked').val())
-            var answer6 = parseInt($('input[name=question6]:checked').val())
-            var answer7 = parseInt($('input[name=question7]:checked').val())
-            var answer8 = parseInt($('input[name=question8]:checked').val())
-            var answer9 = parseInt($('input[name=question9]:checked').val())
-            var answer10 = parseInt($('input[name=question10]:checked').val())
-            var answer11 = parseInt($('input[name=question11]:checked').val())
-            var answer12 = parseInt($('input[name=question12]:checked').val())
-            var answer13 = parseInt($('input[name=question13]:checked').val())
-            var answer14 = parseInt($('input[name=question14]:checked').val())
-            var answer15 = parseInt($('input[name=question15]:checked').val())
-            var answer16 = parseInt($('input[name=question16]:checked').val())
-            var answer17 = parseInt($('input[name=question17]:checked').val())
-            var answer18 = parseInt($('input[name=question18]:checked').val())
-            var answer19 = parseInt($('input[name=question19]:checked').val())
-            var answer20 = parseInt($('input[name=question20]:checked').val())
-            var answer21 = parseInt($('input[name=question21]:checked').val())
-            var answer22 = parseInt($('input[name=question22]:checked').val())
-            var answer23 = parseInt($('input[name=question23]:checked').val())
-            var answer24 = parseInt($('input[name=question24]:checked').val())
-            var answer25 = parseInt($('input[name=question25]:checked').val())
-            var answer26 = parseInt($('input[name=question26]:checked').val())
-            var answer27 = parseInt($('input[name=question27]:checked').val())
-            var answer28 = parseInt($('input[name=question28]:checked').val())
-            var answer29 = parseInt($('input[name=question29]:checked').val())
-            var answer30 = parseInt($('input[name=question30]:checked').val())
-            var answer31 = parseInt($('input[name=question31]:checked').val())
-            var answer32 = parseInt($('input[name=question32]:checked').val())
-            var answer33 = parseInt($('input[name=question33]:checked').val())
-            var answer34 = parseInt($('input[name=question34]:checked').val())
-            var answer35 = parseInt($('input[name=question35]:checked').val())
-            var answer36 = parseInt($('input[name=question36]:checked').val())
-            var answer37 = parseInt($('input[name=question37]:checked').val())
-            var answer38 = parseInt($('input[name=question38]:checked').val())
-            var answer39 = parseInt($('input[name=question39]:checked').val())
-
-            var observe_score = answer1 + answer6 + answer11 + answer15 + answer20 + answer26 + answer31 + answer36
-
-            var describe_score = answer2 + answer7 + inverted_answer(answer12) + inverted_answer(answer16) + inverted_answer(answer22) + answer27 + answer32 + answer37
-
-            var act_with_awareness_score = inverted_answer(answer5) + inverted_answer(answer8) + inverted_answer(answer13) + inverted_answer(answer18) + inverted_answer(answer23) + inverted_answer(answer28) + inverted_answer(answer34) + inverted_answer(answer38)
-
-            var nonjudge_score = inverted_answer(answer3) + inverted_answer(answer10) + inverted_answer(answer14) + inverted_answer(answer17) + inverted_answer(answer25) + inverted_answer(answer30) + inverted_answer(answer35) + inverted_answer(answer39)
-
-            var nonreact_score = answer4 + answer9 + answer19 + answer21 + answer24 + answer29 + answer33
-
-            var total_score = observe_score + describe_score + act_with_awareness_score + nonjudge_score + nonreact_score
-
-            var max_observe = 40
-            var max_describe = 40
-            var max_act = 40
-            var max_nonjudge = 40
-            var max_nonreact = 35
-            var max_total = max_observe + max_describe + max_act + max_nonjudge + max_nonreact
-
-            run(observe_score / max_observe, "observe")
-            run(describe_score / max_describe, "describe")
-            run(act_with_awareness_score / max_act, "act")
-            run(nonjudge_score / max_nonjudge, "nonjudge")
-            run(nonreact_score / max_nonreact, "nonreact")
-            run(total_score / max_total, "total")
-            total = Math.round(total_score * 100 / max_total)
-
+            // share results on facebook
+            $("#share-my-color").click(function(event) {
             event.preventDefault();
-          }
-
-          // get color wiht percentage
-          function getColor(percent){
-            var r = 0
-            var g = 0
-            if(percent <= .3) {
-              r = 255
-              g = 50
-            }
-            else if(percent >= .7) {
-              g = 255
-              r = 50
-            }
-            else {
-              g = 128
-              r = 255
-            }
-
-
-            return 'rgb(' + r + ',' + g + ",0)"
-          }
-
-          // draw the pie sector
-          function drawPieSector(snap, centre, rIn, rOut, startDeg, delta, attr) {
-            
-            var startOut = {
-              x: centre.x + rOut * Math.cos(Math.PI*(startDeg)/180),
-              y: centre.y + rOut * Math.sin(Math.PI*(startDeg)/180)
-            };
-           
-            var endOut = {
-              x: centre.x + rOut * Math.cos(Math.PI*(startDeg + delta)/180),
-              y: centre.y + rOut * Math.sin(Math.PI*(startDeg + delta)/180)
-            };
-           
-            var startIn = {
-              x: centre.x + rIn * Math.cos(Math.PI*(startDeg + delta)/180),
-              y: centre.y + rIn * Math.sin(Math.PI*(startDeg + delta)/180)
-            };
-           
-            var endIn = {
-              x: centre.x + rIn * Math.cos(Math.PI*(startDeg)/180),
-              y: centre.y + rIn * Math.sin(Math.PI*(startDeg)/180)
-            };
-           
-            var largeArc = delta > 180 ? 1 : 0;
-           
-            var path = "M" + startOut.x + "," + startOut.y +
-                    " A" + rOut + "," + rOut + " 0 " +
-                    largeArc + ",1 " + endOut.x + "," + endOut.y +
-                    " L" + startIn.x + "," + startIn.y +
-                    " A" + rIn + "," + rIn + " 0 " +
-                    largeArc + ",0 " + endIn.x + "," + endIn.y +
-                    " L" + startOut.x + "," + startOut.y + " Z";
-           
-            var path = snap.path(path);
-           
-            path.attr(attr);
-
-            return path;
-          }
-          
-          function run(percent, name) {
-            var snap = Snap('#svg-' + name);
-           
-            var color = getColor(percent);
-
-            var attr = {
-              stroke: color,
-              fill: color,
-              fillOpacity: 1,
-              strokeWidth: 1
-            };
-
-            var percDiv = document.getElementById('percent-' + name);
-            percDiv.style.color = color
-
-            Snap.animate(0, percent * 359.99, function (deg) {
-              $("#svg-" + name + " > path").remove()
-              var sector = drawPieSector(snap,
-                      {x:75, y:75},
-                      50, 75,
-                      0, deg,
-                      attr);
-              var percDiv = document.getElementById('percent-' + name);
-              percDiv.innerHTML = Math.round(deg/360 * 100) +'%';
-            }, 3000, mina.easeinout);
-          }
-        });
-
-        // share results on facebook
-        $("#share-results").click(function(event) {
-          event.preventDefault();
-          FB.ui({
-            method: 'share',
-            mobile_iframe: false,
-            href: 'https://www.headpause.com/services/how-mindful-am-i-en.html',
-            quote: "I am " + total + "% mindful ! And you ?",
-            hashtag: '#headpause'
-          }, function(response){});
-          return false;
+              FB.ui({
+                method: 'share',
+                mobile_iframe: false,
+                href: 'https://www.headpause.com/services/my-true-color-en.html',
+                quote: "I am neither Black nor White, My true color is '" + colorName + "'" ,
+                hashtag: '#headpause'
+              }, function(response){});
+              return false;
+            });
+          });
         });
       }
     </script>
 
     <!-- All JavaScripts -->
     <script src="/js/all.min.js"></script>
+    <script src="/js/ntc.js"></script>
     <script src="/js/jquery.countdown.min.js"></script>
 
     <!--  All CSS  -->

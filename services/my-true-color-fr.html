@@ -163,7 +163,7 @@
     <section id="result" class="collapse bc-whitesmoke">
       <div class="container">
         <div class="row justify-content-center text-center">
-          <h4>Ma vraie couleur est:</h4>
+          <h4>Je ne suis ni Noir(e) ni Blanc(he), Ma vraie couleur est:</h4>
         </div>
         <div class="row justify-content-center text-center mb-5">
           <button id="final" class="btn btn-xl text-white" style="text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;">
@@ -258,7 +258,7 @@
               }
               reader.readAsDataURL($(this)[0].files[0]);
             });
-            
+
             // share results on facebook
             $("#share-my-color").click(function(event) {
             event.preventDefault();
@@ -266,7 +266,7 @@
                 method: 'share',
                 mobile_iframe: false,
                 href: 'https://www.headpause.com/services/my-true-color-fr.html',
-                quote: "Je ne suis ni noir(e) ni blanc(he), Je suis " + colorName ,
+                quote: "Je ne suis ni Noir(e) ni Blanc(he), Ma vrai couleur est '" + colorName + "'" ,
                 hashtag: '#headpause'
               }, function(response){});
               return false;

@@ -556,6 +556,11 @@ svg[id="svg-body"] {
   height: 68px;
   width: 315px;
 }
+#share-my-color.btn-facebook:lang(en) {
+  position: absolute;
+  height: 68px;
+  width: 315px;
+}
 
 #share-my-color .fa-facebook {
   font-size:2em;

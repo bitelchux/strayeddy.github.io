@@ -8752,7 +8752,12 @@ svg[id="svg-body"] {
 #share-my-color .fa-facebook:after {
   position: absolute;
   right: 12px;
+}
+#share-my-color .fa-facebook:lang(fr):after {
   content: "Partager ma couleur";
+}
+#share-my-color .fa-facebook:lang(en):after {
+  content: "Share my color";
 }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

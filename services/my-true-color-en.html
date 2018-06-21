@@ -225,6 +225,11 @@
               dColor = '#' + pixel[0].toString(16) + pixel[1].toString(16) + pixel[2].toString(16);
               colorName = ntc.name(dColor)[1].toLowerCase();
 
+              $('#result').collapse('show');
+              $('html, body').animate({
+                  scrollTop: $("#result").offset().top - 54
+              }, 1000, "easeInOutExpo", showResults());
+
               function showResults() {
                 $('#final').css('background-color', dColor);
                 $('#final').html(colorName);

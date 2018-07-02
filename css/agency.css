@@ -284,6 +284,9 @@ ul.social-buttons {
 .text-primary {
   color: #fed136 !important;
 }
+.bg-primary {
+  background-color: #fed136 !important;
+}
 span.fa-stack:hover .text-primary {
   color: #fec503 !important;
 }
@@ -579,4 +582,8 @@ svg[id="svg-body"] {
 }
 #share-my-color .fa-facebook:lang(en):after {
   content: "Share my color";
+}
+
+.mejs-container {
+	background: #fed136 !important;
 }

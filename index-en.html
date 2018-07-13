@@ -82,8 +82,8 @@
       <div class="container" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
         <a class="navbar-brand js-scroll-trigger" href="/index-en.html#page-top">
           <img itemprop="logo" class="logo" src="/img/logos/headpause.png" alt="HeadPause - Home Therapy, Free Meditation Group & Mindfulness Workshop"/>
-
-<meta itemprop="name" content="HeadPause - Home Therapy, Meditation Group & Mindfulness Workshop"></a>
+          <meta itemprop="name" content="HeadPause - Home Therapy, Meditation Group & Mindfulness Workshop">
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -131,8 +131,11 @@
         <div class="intro-text">
           <div class="intro-lead-in">Welcome To
 <span itemprop="name">HeadPause<meta itemprop="url" content="https://www.headpause.com/"></span>!</div>
+        <div id="svg-temp">
+          <img src="/svg/animation.svg">
+        </div>
         <div>
-          <svg id="svg-animation" width="200px" height="300px"></svg>
+          <svg id="svg-animation" style="display:none" width="200px" height="300px"></svg>
         </div>
           <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
@@ -154,6 +157,9 @@
 
             chest.animate({transform: "translate(35.7,20) scale(.6)"},0, function(){ chest.animate({transform: "translate(26.5,12) scale(.7)"},2000, function(){ chest.animate({transform: "translate(35.7,20) scale(.6)"},2000, function(){ animation();});});});
           };
+
+          $('#svg-animation').css('display', 'inline-block');
+          $('#svg-temp').css('display', 'none');
 
           animation();
         });

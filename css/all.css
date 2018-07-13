@@ -8712,12 +8712,28 @@ div[id="percent-total"] {
   top: 45%;
 }
 
-svg[id^="svg-"] {
+svg[id="svg-observe"] {
   overflow: overlay;
   width: 160px;
 }
-
+svg[id="svg-describe"] {
+  overflow: overlay;
+  width: 160px;
+}
+svg[id="svg-act"] {
+  overflow: overlay;
+  width: 160px;
+}
+svg[id="svg-nonjudge"] {
+  overflow: overlay;
+  width: 160px;
+}
+svg[id="svg-nonreact"] {
+  overflow: overlay;
+  width: 160px;
+}
 svg[id="svg-body"] {
+  overflow: overlay;
   width: auto;
 }
 

@@ -159,8 +159,8 @@
             chest.animate({transform: "translate(35.7,20) scale(.6)"},0, function(){ chest.animate({transform: "translate(26.5,12) scale(.7)"},2000, function(){ chest.animate({transform: "translate(35.7,20) scale(.6)"},2000, function(){ animation();});});});
           };
 
-          $('#svg-animation').css('display', 'inline-block');
-          $('#svg-temp').css('display', 'none');
+          document.getElementById("svg-animation").style.display = "inline-block";
+          document.getElementById("svg-temp").style.display = "none";
 
           animation();
         });

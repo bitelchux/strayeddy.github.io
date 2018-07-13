@@ -587,3 +587,46 @@ svg[id="svg-body"] {
 .mejs-container {
 	background: #fed136 !important;
 }
+
+.phone {
+  border-width: 2px;
+  border-color: white;
+  z-index: 10;
+  border-radius: 50%;
+  font-size: 3em;
+  background: blue;
+  color: white; /*phone's color*/
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 66px;
+  height: 66px;
+  animation: bounce 3s cubic-bezier(0.9, 0.1, 0.1, 0.9) infinite alternate;
+  -webkit-animation: bounce 3s cubic-bezier(0.9, 0.1, 0.1, 0.9) infinite alternate;
+}
+
+.phone {
+}
+
+@keyframes bounce {
+  from {
+    border-color: white;
+    background: blue;
+    color: white;
+  }
+  to {
+    border-color: blue;
+    background: white;
+    color: blue;
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    background: blue;
+    color: white;
+  }
+  to {
+    background: white;
+    color: blue;
+  }
+}

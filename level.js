@@ -21,10 +21,21 @@ class Level {
     }.bind(this));
   }
 
+  getStartPoints() {
+    var starts = [];
+    this.triggersLayer.filterTiles(function(tile){
+      if(tile.index == 121) {
+        var point = new Phaser.Math.Vector2(tile.getCenterX(), tile.getCenterY());
+        starts.push(point);
+      }
+    }, this);
+    return starts;
+  }
+
   getAllSpawns() {
     var spawns = [];
     this.groundLayer.filterTiles(function(tile){
-      if(tile.index != 81) {
+      if(tile.index != 81 && tile.index != -1) {
         var point = new Phaser.Math.Vector2(tile.getCenterX(), tile.getCenterY());
         spawns.push(point);
       }

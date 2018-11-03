@@ -11,6 +11,7 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
     this.setDepth(2);
     this.body.world.setBounds(0,0,this.scene.level.tilemap.widthInPixels,this.scene.level.tilemap.heightInPixels);
     this.name = name;
+    this.setFrame(name + '-walk-left-down-1.png');
     this.setTint(color);
 
     this.healthbar = new HealthBar(this, scene, false);

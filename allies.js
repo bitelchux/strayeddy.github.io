@@ -12,10 +12,12 @@ class Allies {
     var chosenAlly = allies.filter(item => item.name === window.selectedName)[0];
     allies = allies.filter(item => item.name !== window.selectedName);
 
-    this.player = new Player(this.scene, 11*16-8, 9*16-8, chosenAlly.name, chosenAlly.weaponName, 0xCB904D);
-    this.ally1 = new Ally(this.scene, 12*16-8, 7*16-8, allies[0].name, allies[0].weaponName, 0xFFFFFF);
-    this.ally2 = new Ally(this.scene, 11*16-8, 7*16-8, allies[1].name, allies[1].weaponName, 0xFFFFFF);
-    this.ally3 = new Ally(this.scene, 12*16-8, 10*16-8, allies[2].name, allies[2].weaponName, 0xFFFFFF);
+    var startPoints = this.scene.level.getStartPoints();
+
+    this.player = new Player(this.scene, startPoints[0].x, startPoints[0].y, chosenAlly.name, chosenAlly.weaponName, 0xCB904D);
+    this.ally1 = new Ally(this.scene, startPoints[1].x, startPoints[1].y, allies[0].name, allies[0].weaponName, 0xFFFFFF);
+    this.ally2 = new Ally(this.scene, startPoints[2].x, startPoints[2].y, allies[1].name, allies[1].weaponName, 0xFFFFFF);
+    this.ally3 = new Ally(this.scene, startPoints[3].x, startPoints[3].y, allies[2].name, allies[2].weaponName, 0xFFFFFF);
 
     this.group = [];
     this.group.push(this.player);

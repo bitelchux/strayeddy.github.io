@@ -85,7 +85,7 @@ class MenuScene extends Phaser.Scene {
   }
 
   timeout() {
-    setTimeout(function () {
+    this.timeoutVar = setTimeout(function () {
       var x = config.width + 16;
       var y = Math.random() * config.height;
       this.addZombie(x, y);
@@ -101,6 +101,7 @@ class MenuScene extends Phaser.Scene {
 
     this.input.keyboard.on('keydown_ENTER', function() {
       window.selectedName = this.survivors[this.survivorIndex];
+      clearTimeout(this.timeoutVar);
       this.scene.remove(this);
       this.scene.add('gameScene', GameScene, true);
     }, this);

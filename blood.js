@@ -1,5 +1,6 @@
 class Blood extends Phaser.Physics.Arcade.Image {
   constructor(scene, x, y) {
+
     var blood = [
       '...55.......',
       '.....5......'

@@ -3,7 +3,7 @@ class HelpSign extends Phaser.GameObjects.GameObject {
     super(scene);
     this.scene = scene;
     this.sprite = this.scene.physics.add.sprite(0, 0, 'helpsign');
-    this.sprite.setDepth(4);
+    this.sprite.setDepth(1000);
     this.sprite.setVisible(false);
   }
 

@@ -8,7 +8,6 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
 
     this.setPipeline("Light2D");
     this.setCollideWorldBounds(true);
-    this.setDepth(2);
     this.body.world.setBounds(0,0,this.scene.level.tilemap.widthInPixels,this.scene.level.tilemap.heightInPixels);
     this.name = name;
     this.setFrame(name + '-walk-left-down-1.png');
@@ -64,9 +63,10 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
+    this.setDepth(this.y);
     if(this.state == this.states.IDLE) {
 
-      var enemies = this.scene.enemies.getEnemiesAround(this.getCenter(), 90);
+      var enemies = this.scene.enemies.getVisibleEnemiesAround(this.getCenter(), 90);
       // enemies nearby
       if(enemies.length > 0) {
         this.shootWeaponAt(enemies[0].getCenter());
@@ -311,6 +311,7 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
   }
 
   die() {
+    this.scene.allies.removeAlly(this);
     this.destroy();
   }
 }

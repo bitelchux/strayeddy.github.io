@@ -3,6 +3,9 @@ class GameScene extends Phaser.Scene {
   preload() {
     this.load.setPath('assets/');
 
+    var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#24281F'};
+    this.loadingText = this.add.text(280, 284, 'Loading...', textStyle);
+
     // images
     this.load.image("bulletshell", ["bullet.png", "bullet_n.png"]);
     this.load.image("reload", ["reload.png", "reload_n.png"]);
@@ -487,6 +490,8 @@ class GameScene extends Phaser.Scene {
   }
 
   create() {
+    this.loadingText.destroy();
+
     this.createAnims();
     this.createAudio();
     this.createStats();
@@ -515,7 +520,7 @@ class GameScene extends Phaser.Scene {
     this.input.keyboard.on('keydown_ENTER', function(){
       this.isBeingRemoved = true;
       this.scene.remove(this);
-      this.scene.add('endScene', EndScene, true);;
+      this.scene.add('endScene', EndScene, true);
     }, this);
   }
 

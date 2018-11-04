@@ -10,7 +10,6 @@ class Player extends Phaser.Physics.Arcade.Sprite {
 
     this.setPipeline("Light2D");
     this.setCollideWorldBounds(true);
-    this.setDepth(2);
     this.body.world.setBounds(0,0,this.scene.level.tilemap.widthInPixels,this.scene.level.tilemap.heightInPixels);
     this.name = name;
     this.setFrame(name + '-walk-left-down-1.png');
@@ -62,6 +61,7 @@ class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
+    this.setDepth(this.y);
     this.setVelocity(0,0);
 
     if(this.cursors.space.isDown) {
@@ -232,6 +232,7 @@ class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   die() {
-    location.href = location.href;
+    this.scene.allies.removeAlly(this);
+    this.destroy();
   }
 }

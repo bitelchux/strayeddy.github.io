@@ -61,7 +61,7 @@ class Allies {
       ally.update();
     });
 
-    if(this.areAtEndPosition()) {
+    if(this.areAtEndPosition() || this.areDown()) {
       this.scene.end();
     }
   }
@@ -78,6 +78,9 @@ class Allies {
 
   removeAlly(ally) {
     this.group.splice(this.group.indexOf(ally), 1);
+    if(this.group.length == 0)
+      this.scene.end();
+
   }
 
   getClosestAllyTo(coord) {
@@ -152,5 +155,11 @@ class Allies {
       var tile = this.scene.level.triggersLayer.getTileAtWorldXY(ally.x, ally.y);
       return (tile && tile.index == 122);
     }.bind(this));
+  }
+
+  areDown() {
+    return this.group.every(function(ally) {
+      return ally.isDown();
+    });
   }
 }

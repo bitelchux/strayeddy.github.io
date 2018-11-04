@@ -48,7 +48,7 @@ class Level {
     var minCircle = new Phaser.Geom.Circle(playerCoord.x, playerCoord.y, minRange);
     var maxCircle = new Phaser.Geom.Circle(playerCoord.x, playerCoord.y, maxRange);
     this.groundLayer.filterTiles(function(tile){
-      if(tile.index != 81) {
+      if(tile.index != 81 && tile.index != -1) {
         var tileCoord = new Phaser.Math.Vector2(tile.getCenterX(), tile.getCenterY());
         var insideMinCircle = minCircle.contains(tileCoord.x, tileCoord.y);
         var insideMaxCircle = maxCircle.contains(tileCoord.x, tileCoord.y);

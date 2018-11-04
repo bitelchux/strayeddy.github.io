@@ -17,6 +17,23 @@ class Enemies extends Phaser.GameObjects.Group {
     }
   }
 
+  getVisibleEnemiesAround(point, radius) {
+    var enemies = [];
+    var circle = new Phaser.Geom.Circle(point.x, point.y, radius);
+
+    this.getChildren().forEach(function(enemy) {
+      if(enemy.active && circle.contains(enemy.x, enemy.y)) {
+        var lineToEnemy = new Phaser.Geom.Line(point.x, point.y, enemy.x, enemy.y);
+        var obstacles = this.scene.level.obstaclesLayer.getTilesWithinShape(lineToEnemy, {isNotEmpty: true});
+        if(obstacles.length == 0) {
+          enemies.push(enemy);
+        }
+      }
+    }.bind(this));
+
+    return enemies;
+  }
+
   getEnemiesAround(point, radius) {
     var enemies = [];
     var circle = new Phaser.Geom.Circle(point.x, point.y, radius);
@@ -49,7 +66,6 @@ class Enemy extends Phaser.Physics.Arcade.Sprite {
     this.startsPursuit = startsPursuit;
 
     this.setPipeline("Light2D");
-    this.setDepth(2);
 
     this.pursuitInterval = null;
     this.path = null;
@@ -85,7 +101,8 @@ class Enemy extends Phaser.Physics.Arcade.Sprite {
   whenDie(killer) {}
 
   update(time, delta) {
-    this.clearTint()
+    this.clearTint();
+    this.setDepth(this.y);
     var targetCoord = this.target.getCenter();
     var meCoord = this.getCenter();
     var distance = meCoord.distance(targetCoord);
@@ -367,6 +384,8 @@ class Hunter extends Enemy {
   }
 
   update(time, delta) {
+    this.clearTint();
+    this.setDepth(this.y);
     var targetCoord = this.target.getCenter();
     var meCoord = this.getCenter();
     var distance = meCoord.distance(targetCoord);
@@ -432,6 +451,8 @@ class Smoker extends Enemy {
   }
 
   update(time, delta) {
+    this.clearTint();
+    this.setDepth(this.y);
     var targetCoord = this.target.getCenter();
     var meCoord = this.getCenter();
     var distance = meCoord.distance(targetCoord);
@@ -561,7 +582,7 @@ class Rock {
     this.scene = scene;
 
     this.sprite = scene.physics.add.sprite(x, y, 'rock').setPipeline("Light2D");
-    this.sprite.setDepth(3);
+    this.sprite.setDepth(1000);
 
     this.damage = 35;
     this.isExploding = false;

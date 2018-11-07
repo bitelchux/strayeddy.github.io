@@ -10,7 +10,7 @@ class Weapon extends Phaser.Physics.Arcade.Image {
     this.rate = rate;
     this.damage = damage;
     this.name = name;
-    this.lastShotTime = scene.time.now;
+    this.lastShotTime = 0;
     this.bulletBar = null;
     this.isReloading = false;
     this.setScale(0.8);

@@ -1,11 +1,5 @@
 class EndScene extends Phaser.Scene {
 
-  preload() {
-    this.load.setPath('assets/');
-    this.load.image('endBkg', 'end/end.png');
-    this.load.audio('endSound', 'audio/end.wav');
-  }
-
   createMusic() {
     this.endMusic = this.sound.add('endSound');
     this.endMusic.play();

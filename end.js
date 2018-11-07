@@ -3,6 +3,12 @@ class EndScene extends Phaser.Scene {
   preload() {
     this.load.setPath('assets/');
     this.load.image('endBkg', 'end/end.png');
+    this.load.audio('endSound', 'audio/end.wav');
+  }
+
+  createMusic() {
+    this.endMusic = this.sound.add('endSound');
+    this.endMusic.play();
   }
 
   createBackground() {
@@ -81,6 +87,7 @@ class EndScene extends Phaser.Scene {
   }
 
   create() {
+    this.createMusic();
     this.createBackground();
     this.createStats();
 
@@ -100,6 +107,7 @@ class EndScene extends Phaser.Scene {
   }
 
   backToMenu() {
+    this.endMusic.stop();
     this.scene.remove(this);
     this.scene.add('menuScene', MenuScene, true);
   }

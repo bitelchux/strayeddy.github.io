@@ -3,6 +3,8 @@ class MenuScene extends Phaser.Scene {
   preload() {
     this.load.setPath('assets/');
 
+    this.load.audio('menuSound', 'audio/menu.wav');
+
     this.load.image('menuBkg', 'menu/menu.png');
 
     this.load.image('billPhoto', 'bill/bill-photo.png');
@@ -26,6 +28,11 @@ class MenuScene extends Phaser.Scene {
       normalMap: 'enemies/zombie/zombie_n.png',
       atlasURL: 'enemies/zombie/zombie.json'
     });
+  }
+
+  createMusic() {
+    this.menuMusic = this.sound.add('menuSound', {loop: true});
+    this.menuMusic.play();
   }
 
   createBackground() {
@@ -135,6 +142,7 @@ class MenuScene extends Phaser.Scene {
   }
 
   create() {
+    this.createMusic();
     this.createBackground();
     this.createTexts();
     this.createSurvivors();
@@ -151,6 +159,7 @@ class MenuScene extends Phaser.Scene {
         window.selectedName = this.survivors[this.survivorIndex];
         window.selectedDifficulty = this.difficultyIndex + 1;
         clearTimeout(this.timeoutVar);
+        this.menuMusic.stop();
         this.scene.remove(this);
         this.scene.add('gameScene', GameScene, true);
       }

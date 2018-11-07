@@ -533,12 +533,14 @@ class GameScene extends Phaser.Scene {
     this.isBeingRemoved = false;
 
     this.input.keyboard.on('keydown_ESC', function(){
+      this.sounds.music.stop();
       this.isBeingRemoved = true;
       this.scene.remove(this);
       this.scene.add('menuScene', MenuScene, true);;
     }, this);
 
     this.input.keyboard.on('keydown_ENTER', function(){
+      this.sounds.music.stop();
       this.isBeingRemoved = true;
       this.scene.remove(this);
       this.scene.add('endScene', EndScene, true);

@@ -3,11 +3,31 @@ class GameScene extends Phaser.Scene {
   preload() {
     this.load.setPath('assets/');
 
-    var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#24281F'};
-    this.loadingText = this.add.text(280, 284, 'Loading...', textStyle);
+    var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#EEEEEE'};
+    this.loadingText = this.add.text(280, 284, 'Loading', textStyle);
+    this.loadingIndex = 0;
+
+    this.loadingInterval = setInterval(function() {
+      switch(this.loadingIndex) {
+        case 0:
+          this.loadingText.text = 'Loading';
+          break;
+        case 1:
+          this.loadingText.text = 'Loading.';
+          break;
+        case 2:
+          this.loadingText.text = 'Loading..';
+          break;
+        case 3:
+          this.loadingText.text = 'Loading...';
+          break;
+      }
+      this.loadingIndex = (loadingIndex + 1) % 4;
+    }.bind(this), 1000);
 
     // images
     this.load.image("bulletshell", ["bullet.png", "bullet_n.png"]);
+    this.load.image("blood", ["blood/blood.png", "blood/blood_n.png"]);
     this.load.image("reload", ["reload.png", "reload_n.png"]);
     this.load.image("help", ["help.png", "help_n.png"]);
 
@@ -490,6 +510,7 @@ class GameScene extends Phaser.Scene {
   }
 
   create() {
+    clearInterval(this.loadingInterval);
     this.loadingText.destroy();
 
     this.createAnims();

@@ -13,3 +13,7 @@ Phaser.Sound.WebAudioSound.prototype["playInSpace"] = function(scene, point) {
   this.setVolume(volume);
   this.play();
 }
+
+String.prototype.replaceAt=function(index, replacement) {
+    return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
+}

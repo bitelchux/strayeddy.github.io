@@ -216,6 +216,7 @@ class Enemy extends Phaser.Physics.Arcade.Sprite {
   isHit(bullet) {
     this.whenIsHit(bullet);
     this.setTintFill(0xff0000);
+    var blood = this.scene.add.image(this.x, this.y, 'blood').setPipeline("Light2D");
 
     if(!this.startsPursuit) {
       this.startPursuit()
@@ -290,7 +291,8 @@ class Zombie extends Enemy {
     this.config.hp = 100;
     this.setActive(false);
     this.setVisible(false);
-    this.scene.add.image(this.x, this.y, 'zombie', 'zombie-dead.png').setPipeline("Light2D");
+    var deadZombie = this.scene.add.image(this.x, this.y, 'zombie', 'zombie-dead.png').setPipeline("Light2D");
+    deadZombie.setDepth(this.y);
   }
 
   clear() {

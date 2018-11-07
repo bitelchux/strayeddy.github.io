@@ -60,12 +60,15 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
     }
 
     this.state = this.states.IDLE;
+    this.updateIndex = 0;
+
+    console.log(window.selectedDifficulty);
   }
 
   update() {
+    this.updateIndex += 1;
     this.setDepth(this.y);
-    if(this.state == this.states.IDLE) {
-
+    if(this.state == this.states.IDLE && this.updateIndex % window.selectedDifficulty == 0) {
       var enemies = this.scene.enemies.getVisibleEnemiesAround(this.getCenter(), 90);
       // enemies nearby
       if(enemies.length > 0) {

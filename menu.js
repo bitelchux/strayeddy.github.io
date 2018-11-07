@@ -124,74 +124,73 @@ class MenuScene extends Phaser.Scene {
     });
 
     // sounds
-    this.load.audio('musicSound', 'audio/music.wav');
-    this.load.audio('endSound', 'audio/end.wav');
+    this.load.audio('menuSound', 'audio/menu.mp3');
+    this.load.audio('musicSound', 'audio/music.mp3');
+    this.load.audio('endSound', 'audio/end.mp3');
 
     // weapons
-    this.load.audio('pistolsSound', 'audio/pistols.wav');
-    this.load.audio('shotgunSound', 'audio/shotgun.wav');
-    this.load.audio('uziSound', 'audio/uzi.wav');
-    this.load.audio('rifleSound', 'audio/rifle.wav');
-    this.load.audio('grenadeSound', 'audio/grenade.wav');
+    this.load.audio('pistolsSound', 'audio/pistols.mp3');
+    this.load.audio('shotgunSound', 'audio/shotgun.mp3');
+    this.load.audio('uziSound', 'audio/uzi.mp3');
+    this.load.audio('rifleSound', 'audio/rifle.mp3');
+    this.load.audio('grenadeSound', 'audio/grenade.mp3');
 
     //reloading
-    this.load.audio('reloadingSound', 'audio/reloading.wav');
+    this.load.audio('reloadingSound', 'audio/reloading.mp3');
 
     //walking
-    this.load.audio('walkingSound', 'audio/walking.wav');
+    this.load.audio('walkingSound', 'audio/walking.mp3');
 
     //zombie
-    this.load.audio('zombie1Sound', 'audio/zombie/zombie-1.wav',{instances: 10});
-    this.load.audio('zombie2Sound', 'audio/zombie/zombie-2.wav');
-    this.load.audio('zombie3Sound', 'audio/zombie/zombie-3.wav');
-    this.load.audio('zombie4Sound', 'audio/zombie/zombie-4.wav');
-    this.load.audio('zombie5Sound', 'audio/zombie/zombie-5.wav');
-    this.load.audio('zombie6Sound', 'audio/zombie/zombie-6.wav');
-    this.load.audio('zombie7Sound', 'audio/zombie/zombie-7.wav');
-    this.load.audio('zombie8Sound', 'audio/zombie/zombie-8.wav');
-    this.load.audio('zombie9Sound', 'audio/zombie/zombie-9.wav');
-    this.load.audio('zombiefast1Sound', 'audio/zombie/zombie-fast-1.wav');
-    this.load.audio('zombiefast2Sound', 'audio/zombie/zombie-fast-2.wav');
-    this.load.audio('zombiefast3Sound', 'audio/zombie/zombie-fast-3.wav');
-    this.load.audio('zombiefast4Sound', 'audio/zombie/zombie-fast-4.wav');
-    this.load.audio('zombiefast5Sound', 'audio/zombie/zombie-fast-5.wav');
-    this.load.audio('zombiewaveSound', 'audio/zombie/zombie-wave.wav');
+    this.load.audio('zombie1Sound', 'audio/zombie/zombie-1.mp3',{instances: 10});
+    this.load.audio('zombie2Sound', 'audio/zombie/zombie-2.mp3');
+    this.load.audio('zombie3Sound', 'audio/zombie/zombie-3.mp3');
+    this.load.audio('zombie4Sound', 'audio/zombie/zombie-4.mp3');
+    this.load.audio('zombie5Sound', 'audio/zombie/zombie-5.mp3');
+    this.load.audio('zombie6Sound', 'audio/zombie/zombie-6.mp3');
+    this.load.audio('zombie7Sound', 'audio/zombie/zombie-7.mp3');
+    this.load.audio('zombie8Sound', 'audio/zombie/zombie-8.mp3');
+    this.load.audio('zombie9Sound', 'audio/zombie/zombie-9.mp3');
+    this.load.audio('zombiefast1Sound', 'audio/zombie/zombie-fast-1.mp3');
+    this.load.audio('zombiefast2Sound', 'audio/zombie/zombie-fast-2.mp3');
+    this.load.audio('zombiefast3Sound', 'audio/zombie/zombie-fast-3.mp3');
+    this.load.audio('zombiefast4Sound', 'audio/zombie/zombie-fast-4.mp3');
+    this.load.audio('zombiefast5Sound', 'audio/zombie/zombie-fast-5.mp3');
+    this.load.audio('zombiewaveSound', 'audio/zombie/zombie-wave.mp3');
 
     //boomer
-    this.load.audio('boomermusicSound', 'audio/boomer/boomer-music.wav');
-    this.load.audio('boomerexplodeSound', 'audio/boomer/boomer-explode.wav');
-    this.load.audio('boomercrySound', 'audio/boomer/boomer-cry.wav');
-    this.load.audio('boomerattack1Sound', 'audio/boomer/boomer-attack-1.wav');
-    this.load.audio('boomerattack2Sound', 'audio/boomer/boomer-attack-2.wav');
-    this.load.audio('boomerattack3Sound', 'audio/boomer/boomer-attack-3.wav');
+    this.load.audio('boomermusicSound', 'audio/boomer/boomer-music.mp3');
+    this.load.audio('boomerexplodeSound', 'audio/boomer/boomer-explode.mp3');
+    this.load.audio('boomercrySound', 'audio/boomer/boomer-cry.mp3');
+    this.load.audio('boomerattack1Sound', 'audio/boomer/boomer-attack-1.mp3');
+    this.load.audio('boomerattack2Sound', 'audio/boomer/boomer-attack-2.mp3');
+    this.load.audio('boomerattack3Sound', 'audio/boomer/boomer-attack-3.mp3');
 
     //hunter
-    this.load.audio('huntermusicSound', 'audio/hunter/hunter-music.wav');
-    this.load.audio('hunterjumpSound', 'audio/hunter/hunter-jump.wav');
-    this.load.audio('huntercrySound', 'audio/hunter/hunter-cry.wav');
-    this.load.audio('hunterattack1Sound', 'audio/hunter/hunter-attack-1.wav');
-    this.load.audio('hunterattack2Sound', 'audio/hunter/hunter-attack-2.wav');
-    this.load.audio('hunterattack3Sound', 'audio/hunter/hunter-attack-3.wav');
+    this.load.audio('huntermusicSound', 'audio/hunter/hunter-music.mp3');
+    this.load.audio('hunterjumpSound', 'audio/hunter/hunter-jump.mp3');
+    this.load.audio('huntercrySound', 'audio/hunter/hunter-cry.mp3');
+    this.load.audio('hunterattack1Sound', 'audio/hunter/hunter-attack-1.mp3');
+    this.load.audio('hunterattack2Sound', 'audio/hunter/hunter-attack-2.mp3');
+    this.load.audio('hunterattack3Sound', 'audio/hunter/hunter-attack-3.mp3');
 
     //smoker
-    this.load.audio('smokermusicSound', 'audio/smoker/smoker-music.wav');
-    this.load.audio('smokerdragSound', 'audio/smoker/smoker-drag.wav');
-    this.load.audio('smokercrySound', 'audio/smoker/smoker-cry.wav');
-    this.load.audio('smokerattack1Sound', 'audio/smoker/smoker-attack-1.wav');
-    this.load.audio('smokerattack2Sound', 'audio/smoker/smoker-attack-2.wav');
-    this.load.audio('smokerattack3Sound', 'audio/smoker/smoker-attack-3.wav');
+    this.load.audio('smokermusicSound', 'audio/smoker/smoker-music.mp3');
+    this.load.audio('smokerdragSound', 'audio/smoker/smoker-drag.mp3');
+    this.load.audio('smokercrySound', 'audio/smoker/smoker-cry.mp3');
+    this.load.audio('smokerattack1Sound', 'audio/smoker/smoker-attack-1.mp3');
+    this.load.audio('smokerattack2Sound', 'audio/smoker/smoker-attack-2.mp3');
+    this.load.audio('smokerattack3Sound', 'audio/smoker/smoker-attack-3.mp3');
 
     //tank
-    this.load.audio('tankmusicSound', 'audio/tank/tank-music.wav');
-    this.load.audio('tankwalkSound', 'audio/tank/tank-walk.wav');
-    this.load.audio('tankattack1Sound', 'audio/tank/tank-attack-1.wav');
-    this.load.audio('tankattack2Sound', 'audio/tank/tank-attack-2.wav');
-    this.load.audio('tankattack3Sound', 'audio/tank/tank-attack-3.wav');
-    this.load.audio('tankpickrockSound', 'audio/tank/tank-pick-rock.wav');
-    this.load.audio('tankthrowSound', 'audio/tank/tank-throw.wav');
-    this.load.audio('tankrockexplodeSound', 'audio/tank/tank-rock-explode.wav');
-
-    this.load.audio('menuSound', 'audio/menu.wav');
+    this.load.audio('tankmusicSound', 'audio/tank/tank-music.mp3');
+    this.load.audio('tankwalkSound', 'audio/tank/tank-walk.mp3');
+    this.load.audio('tankattack1Sound', 'audio/tank/tank-attack-1.mp3');
+    this.load.audio('tankattack2Sound', 'audio/tank/tank-attack-2.mp3');
+    this.load.audio('tankattack3Sound', 'audio/tank/tank-attack-3.mp3');
+    this.load.audio('tankpickrockSound', 'audio/tank/tank-pick-rock.mp3');
+    this.load.audio('tankthrowSound', 'audio/tank/tank-throw.mp3');
+    this.load.audio('tankrockexplodeSound', 'audio/tank/tank-rock-explode.mp3');
 
     this.load.image('menuBkg', 'menu/menu.png');
     this.load.image('endBkg', 'end/end.png');

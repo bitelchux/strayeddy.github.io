@@ -3,6 +3,28 @@ class MenuScene extends Phaser.Scene {
   preload() {
     this.load.setPath('assets/');
 
+    var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#EEEEEE'};
+    this.loadingText = this.add.text(280, 284, 'Loading', textStyle);
+    this.loadingIndex = 0;
+
+    this.loadingInterval = setInterval(function() {
+      switch(this.loadingIndex) {
+        case 0:
+          this.loadingText.text = 'Loading';
+          break;
+        case 1:
+          this.loadingText.text = 'Loading.';
+          break;
+        case 2:
+          this.loadingText.text = 'Loading..';
+          break;
+        case 3:
+          this.loadingText.text = 'Loading...';
+          break;
+      }
+      this.loadingIndex = (this.loadingIndex + 1) % 4;
+    }.bind(this), 1000);
+
     this.load.audio('menuSound', 'audio/menu.wav');
 
     this.load.image('menuBkg', 'menu/menu.png');
@@ -142,6 +164,9 @@ class MenuScene extends Phaser.Scene {
   }
 
   create() {
+    clearInterval(this.loadingInterval);
+    this.loadingText.destroy();
+    
     this.createMusic();
     this.createBackground();
     this.createTexts();

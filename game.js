@@ -22,7 +22,7 @@ class GameScene extends Phaser.Scene {
           this.loadingText.text = 'Loading...';
           break;
       }
-      this.loadingIndex = (loadingIndex + 1) % 4;
+      this.loadingIndex = (this.loadingIndex + 1) % 4;
     }.bind(this), 1000);
 
     // images

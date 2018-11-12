@@ -146,14 +146,14 @@ class Allies {
   areAtStartPosition() {
     return this.group.every(function(ally) {
       var tile = this.scene.level.triggersLayer.getTileAtWorldXY(ally.x, ally.y);
-      return (tile && tile.index == 121);
+      return (tile && tile.index == 120);
     });
   }
 
   areAtEndPosition() {
     return this.group.every(function(ally) {
       var tile = this.scene.level.triggersLayer.getTileAtWorldXY(ally.x, ally.y);
-      return (tile && tile.index == 122);
+      return (tile && tile.index == 121);
     }.bind(this));
   }
 

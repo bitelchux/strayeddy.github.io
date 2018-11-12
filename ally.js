@@ -75,10 +75,12 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
         this.shootWeaponAt(enemies[0].getCenter());
       }
 
-      var healthkitCoord = this.scene.level.getClosestHealthKit(this.getCenter());
       //health kit is close by
-      if(this.healthbar.isCritical() && healthkitCoord.distance(this.getCenter()) < 200) {
-        this.moveTo(healthkitCoord.x, healthkitCoord.y, this.interact);
+      if(this.healthbar.isCritical()) {
+        var healthkitCoord = this.scene.level.getClosestHealthKit(this.getCenter());
+        if(healthkitCoord.distance(this.getCenter()) < 200) {
+          this.moveTo(healthkitCoord.x, healthkitCoord.y, this.interact);
+        }
       } else {
         // var ally = this.scene.allies.getStrongestAlly();
         var ally = this.scene.allies.player;
@@ -213,7 +215,7 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
   }
 
   pickObject(tile) {
-    if(tile.index == 101) {
+    if(tile.index == 100) {
       window.gameplayStats[this.name].nbFirstAidKitsUsed += 1;
       this.healthbar.gainHp(50);
       this.updateHealthRelatedCondition();
@@ -257,6 +259,10 @@ class Ally extends Phaser.Physics.Arcade.Sprite {
       this.direction = "down";
     } else if(rotation < 3*Math.PI/8 && rotation > Math.PI/8) {
       this.direction = "downright";
+    }
+
+    if(!this.direction) {
+      this.direction = "right";
     }
 
     if(this.direction.includes("up")) {

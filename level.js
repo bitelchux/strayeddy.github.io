@@ -1,22 +1,50 @@
 class Level {
   constructor(scene) {
     this.scene = scene;
-    this.tilemap = scene.make.tilemap({ key: "levelTilemap", tileWidth: 16, tileHeight: 16 });
-    this.tileset = this.tilemap.addTilesetImage('level');
-    this.groundLayer = this.tilemap.createDynamicLayer(0, this.tileset, 0, 0).setPipeline('Light2D');
-    this.objectsLayer = this.tilemap.createDynamicLayer(1, this.tileset, 0, 0).setPipeline('Light2D');
-    this.obstaclesLayer = this.tilemap.createDynamicLayer(2, this.tileset, 0, 0).setPipeline('Light2D');
-    this.triggersLayer = this.tilemap.createDynamicLayer(3, this.tileset, 0, 0);
 
+    var levelCreator = new LevelCreator();
+    this.tilemap = scene.make.tilemap({
+      tileWidth: 16, tileHeight: 16,
+      width: levelCreator.w, height: levelCreator.h
+    });
+    this.tileset = this.tilemap.addTilesetImage('level');
+
+    this.groundLayer = this.tilemap.createBlankDynamicLayer('ground', this.tileset).setPipeline('Light2D');
+    levelCreator.getLayer("ground").matrix.forEach(function (value, index, matrix) {
+      this.groundLayer.putTileAt(value, index[1], index[0]);
+    }.bind(this))
+
+    this.objectsLayer = this.tilemap.createBlankDynamicLayer('objects', this.tileset).setPipeline('Light2D');
+    levelCreator.getLayer("objects").matrix.forEach(function (value, index, matrix) {
+      this.objectsLayer.putTileAt(value, index[1], index[0]);
+    }.bind(this))
+
+    this.shadowsLayer = this.tilemap.createBlankDynamicLayer('shadows', this.tileset).setPipeline('Light2D');
+    levelCreator.getLayer("shadows").matrix.forEach(function (value, index, matrix) {
+      this.shadowsLayer.putTileAt(value, index[1], index[0]);
+    }.bind(this))
+
+    this.obstaclesLayer = this.tilemap.createBlankDynamicLayer('obstacles', this.tileset).setPipeline('Light2D');
+    levelCreator.getLayer("obstacles").matrix.forEach(function (value, index, matrix) {
+      this.obstaclesLayer.putTileAt(value, index[1], index[0]);
+    }.bind(this))
+
+    this.triggersLayer = this.tilemap.createBlankDynamicLayer('triggers', this.tileset).setPipeline('Light2D');
+    levelCreator.getLayer("triggers").matrix.forEach(function (value, index, matrix) {
+      this.triggersLayer.putTileAt(value, index[1], index[0]);
+    }.bind(this))
+
+    //this.shadowsLayer.setDepth(1000);
+    this.shadowsLayer.setAlpha(0.5);
+    this.obstaclesLayer.setCollisionBetween(0,400);
     this.triggersLayer.setVisible(false);
-    this.obstaclesLayer.setCollisionBetween(1,400);
 
     this.setupLights();
   }
 
   setupLights() {
     this.groundLayer.forEachTile(function(tile) {
-      if(tile.index == 42)
+      if(tile.index == 41)
         this.scene.myLights.addLight(tile.getCenterX(), tile.getCenterY())
     }.bind(this));
   }
@@ -24,7 +52,7 @@ class Level {
   getStartPoints() {
     var starts = [];
     this.triggersLayer.filterTiles(function(tile){
-      if(tile.index == 121) {
+      if(tile.index == 120) {
         var point = new Phaser.Math.Vector2(tile.getCenterX(), tile.getCenterY());
         starts.push(point);
       }
@@ -79,7 +107,7 @@ class Level {
 
   getClosestHealthKit(point) {
     var healthkitTiles = this.objectsLayer.filterTiles(function(tile){
-      return tile.index == 101;
+      return tile.index == 100;
     });
 
     var distanceToHealthkit = 10000;

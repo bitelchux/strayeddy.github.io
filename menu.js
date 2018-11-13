@@ -237,10 +237,10 @@ class MenuScene extends Phaser.Scene {
     this.survivorText = this.add.text(240, 130, 'by Edouard Murat', subtitleStyle);
 
     var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#FFFFFF'};
-    this.survivorText = this.add.text(150, 230, 'Choose a survivor', textStyle);
-    this.difficultyText = this.add.text(150, 490, 'And a difficulty', textStyle);
-    this.survivorText.setDepth(230);
-    this.difficultyText.setDepth(490);
+    this.survivorText = this.add.text(150, 200, 'Choose a survivor', textStyle);
+    this.difficultyText = this.add.text(150, 460, 'And a difficulty', textStyle);
+    this.survivorText.setDepth(200);
+    this.difficultyText.setDepth(460);
 
     this.titleIndex = 0;
     this.survivorText.setTint(0x770000);
@@ -250,33 +250,33 @@ class MenuScene extends Phaser.Scene {
   createSurvivors() {
     this.survivors = ["bill", "zoey", "francis", "louis"];
 
-    this.bill = this.add.image(100, 370, 'billPhoto');
-    this.zoey = this.add.image(285, 370, 'zoeyPhoto');
-    this.francis = this.add.image(485, 370, 'francisPhoto');
-    this.louis = this.add.image(668, 370, 'louisPhoto');
-    this.bill.setDepth(370);
-    this.zoey.setDepth(370);
-    this.francis.setDepth(370);
-    this.louis.setDepth(370);
+    this.bill = this.add.image(100, 340, 'billPhoto');
+    this.zoey = this.add.image(285, 340, 'zoeyPhoto');
+    this.francis = this.add.image(485, 340, 'francisPhoto');
+    this.louis = this.add.image(668, 340, 'louisPhoto');
+    this.bill.setDepth(340);
+    this.zoey.setDepth(340);
+    this.francis.setDepth(340);
+    this.louis.setDepth(340);
 
-    this.bill["weapon"] = this.add.image(100, 420, 'shotgunPhoto');
-    this.zoey["weapon"] = this.add.image(285, 420, 'uziPhoto');
-    this.francis["weapon"] = this.add.image(485, 420, 'riflePhoto');
-    this.louis["weapon"] = this.add.image(668, 420, 'pistolsPhoto');
-    this.bill.weapon.setScale(4).setDepth(420);
-    this.zoey.weapon.setScale(4).setDepth(420);
-    this.francis.weapon.setScale(4).setDepth(420);
-    this.louis.weapon.setScale(4).setDepth(420);
+    this.bill["weapon"] = this.add.image(100, 390, 'shotgunPhoto');
+    this.zoey["weapon"] = this.add.image(285, 390, 'uziPhoto');
+    this.francis["weapon"] = this.add.image(485, 390, 'riflePhoto');
+    this.louis["weapon"] = this.add.image(668, 390, 'pistolsPhoto');
+    this.bill.weapon.setScale(4).setDepth(390);
+    this.zoey.weapon.setScale(4).setDepth(390);
+    this.francis.weapon.setScale(4).setDepth(390);
+    this.louis.weapon.setScale(4).setDepth(390);
 
     var textStyle = {fontStyle: 'bold', fontSize: '24px', fill: '#24281F'};
-    this.bill["title"] = this.add.text(75, 450, 'Bill', textStyle);
-    this.zoey["title"] = this.add.text(260, 450, 'Zoey', textStyle);
-    this.francis["title"] = this.add.text(440, 450, 'Francis', textStyle);
-    this.louis["title"] = this.add.text(630, 450, 'Louis', textStyle);
-    this.bill.title.setDepth(450);
-    this.zoey.title.setDepth(450);
-    this.francis.title.setDepth(450);
-    this.louis.title.setDepth(450);
+    this.bill["title"] = this.add.text(75, 420, 'Bill', textStyle);
+    this.zoey["title"] = this.add.text(260, 420, 'Zoey', textStyle);
+    this.francis["title"] = this.add.text(440, 420, 'Francis', textStyle);
+    this.louis["title"] = this.add.text(630, 420, 'Louis', textStyle);
+    this.bill.title.setDepth(420);
+    this.zoey.title.setDepth(420);
+    this.francis.title.setDepth(420);
+    this.louis.title.setDepth(420);
 
     this.survivorIndex = 0;
     this.updateSurvivorSelection();
@@ -285,24 +285,24 @@ class MenuScene extends Phaser.Scene {
   createDifficulties() {
     this.difficulties = ["beginner", "normal", "expert", "insane"];
 
-    this.beginner = this.add.image(100, 660, 'beginnerPhoto');
-    this.normal = this.add.image(285, 660, 'normalPhoto');
-    this.expert = this.add.image(485, 660, 'expertPhoto');
-    this.insane = this.add.image(668, 660, 'insanePhoto');
-    this.beginner.setDepth(660);
-    this.normal.setDepth(660);
-    this.expert.setDepth(660);
-    this.insane.setDepth(660);
+    this.beginner = this.add.image(100, 630, 'beginnerPhoto');
+    this.normal = this.add.image(285, 630, 'normalPhoto');
+    this.expert = this.add.image(485, 630, 'expertPhoto');
+    this.insane = this.add.image(668, 630, 'insanePhoto');
+    this.beginner.setDepth(630);
+    this.normal.setDepth(630);
+    this.expert.setDepth(630);
+    this.insane.setDepth(630);
 
     var textStyle = {fontStyle: 'bold', fontSize: '24px', fill: '#24281F'};
-    this.beginner["title"] = this.add.text(75, 740, 'Beginner', textStyle);
-    this.normal["title"] = this.add.text(260, 740, 'Normal', textStyle);
-    this.expert["title"] = this.add.text(440, 740, 'Expert', textStyle);
-    this.insane["title"] = this.add.text(630, 740, 'Insane', textStyle);
-    this.beginner.title.setDepth(740);
-    this.normal.title.setDepth(740);
-    this.expert.title.setDepth(740);
-    this.insane.title.setDepth(740);
+    this.beginner["title"] = this.add.text(75, 710, 'Beginner', textStyle);
+    this.normal["title"] = this.add.text(260, 710, 'Normal', textStyle);
+    this.expert["title"] = this.add.text(440, 710, 'Expert', textStyle);
+    this.insane["title"] = this.add.text(630, 710, 'Insane', textStyle);
+    this.beginner.title.setDepth(710);
+    this.normal.title.setDepth(710);
+    this.expert.title.setDepth(710);
+    this.insane.title.setDepth(710);
 
     this.difficultyIndex = 1;
     this.updateDifficultySelection();

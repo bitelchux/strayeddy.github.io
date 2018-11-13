@@ -27,13 +27,15 @@ class MenuScene extends Phaser.Scene {
 
     // images
     this.load.image("bulletshell", ["bullet.png", "bullet_n.png"]);
-    this.load.image("blood", ["blood/blood.png", "blood/blood_n.png"]);
+    this.load.image("blood-1", ["blood/blood-1.png", "blood/blood-1_n.png"]);
+    this.load.image("blood-2", ["blood/blood-2.png", "blood/blood-2_n.png"]);
+    this.load.image("blood-3", ["blood/blood-3.png", "blood/blood-3_n.png"]);
+    this.load.image("blood-4", ["blood/blood-4.png", "blood/blood-4_n.png"]);
     this.load.image("reload", ["reload.png", "reload_n.png"]);
     this.load.image("help", ["help.png", "help_n.png"]);
 
     //levels
     this.load.image("level", ["levels/level.png", "levels/level_n.png"]);
-    this.load.tilemapTiledJSON("levelTilemap", "levels/level.json");
 
     // weapons
     this.load.image("pistols", ["weapons/pistols.png", "weapons/pistols_n.png"]);
@@ -228,14 +230,14 @@ class MenuScene extends Phaser.Scene {
   }
 
   createTexts() {
-    var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#24281F'};
+    var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#FFFFFF'};
     this.survivorText = this.add.text(150, 160, 'Choose a survivor', textStyle);
     this.difficultyText = this.add.text(150, 420, 'And a difficulty', textStyle);
     this.survivorText.setDepth(160);
     this.difficultyText.setDepth(420);
 
     this.titleIndex = 0;
-    this.survivorText.setTint(0xFF0000);
+    this.survivorText.setTint(0x770000);
     this.difficultyText.setTint(0x000000);
   }
 
@@ -344,7 +346,7 @@ class MenuScene extends Phaser.Scene {
       if(this.titleIndex == 0){
         this.titleIndex += 1;
         this.survivorText.setTint(0x000000);
-        this.difficultyText.setTint(0xFF0000);
+        this.difficultyText.setTint(0x770000);
         this.updateDifficultySelection();
       } else {
         window.selectedName = this.survivors[this.survivorIndex];

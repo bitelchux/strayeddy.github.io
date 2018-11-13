@@ -216,7 +216,8 @@ class Enemy extends Phaser.Physics.Arcade.Sprite {
   isHit(bullet) {
     this.whenIsHit(bullet);
     this.setTintFill(0xff0000);
-    var blood = this.scene.add.image(this.x, this.y, 'blood').setPipeline("Light2D");
+    var bloodId = 1 + Math.round(Math.random()*3);
+    var blood = this.scene.add.image(this.x, this.y, 'blood-' + bloodId).setPipeline("Light2D");
 
     if(!this.startsPursuit) {
       this.startPursuit()

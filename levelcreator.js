@@ -4,6 +4,8 @@ window.TILE = {
   WALL: 40,
   WALL_SAFE: 122,
   FLOOR: 60,
+  FLOOR_1: 42,
+  FLOOR_2: 43,
   FLOOR_START: 120,
   FLOOR_END: 121,
   FLOOR_SAFE: 80,
@@ -80,6 +82,17 @@ class LevelCreator {
           } else if(groundValue == window.TILE.FLOOR_SAFE) {
             groundLayer.matrix.subset(math.index(index[0]+1, index[1]), window.TILE.WALL_SAFE);
           }
+        }
+      }
+    })
+
+    groundLayer.matrix.forEach(function (value, index, matrix) {
+      if(value == window.TILE.FLOOR) {
+        var rand = Math.random();
+        if(rand < 0.3) {
+          groundLayer.matrix.subset(math.index(index[0], index[1]), window.TILE.FLOOR_1);
+        } else if(rand < 0.6) {
+          groundLayer.matrix.subset(math.index(index[0], index[1]), window.TILE.FLOOR_2);
         }
       }
     })

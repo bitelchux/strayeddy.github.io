@@ -7,16 +7,16 @@ class AIDirector {
     this.spawnRadiusMin = 200;
     this.spawnRadiusMax = 400;
 
-    this.maxEnemies = 100;
+    this.maxEnemies = 100 + 50 * window.selectedDifficulty;
     this.spawnWanderers(this.maxEnemies);
 
     this.emotionalIntensity = 0;
     this.relaxPeriod = false;
 
     //special timeouts
-    this.boomerConfig = { time: 0, timeout: 20000 };
-    this.hunterConfig = { time: 0, timeout: 30000 };
-    this.smokerConfig = { time: 0, timeout: 40000 };
+    this.boomerConfig = { time: 0, timeout: 20000 - 1000*window.selectedDifficulty };
+    this.hunterConfig = { time: 0, timeout: 30000 - 1000*window.selectedDifficulty};
+    this.smokerConfig = { time: 0, timeout: 40000 - 1000*window.selectedDifficulty};
 
     //setup spawning intervals
     this.setupTank();
@@ -73,7 +73,7 @@ class AIDirector {
   }
 
   decreaseEmotionalIntensity() {
-    this.emotionalIntensity -= 0.005;
+    this.emotionalIntensity -= 0.005 - 0.001*window.selectedDifficulty;
     if(this.emotionalIntensity < 0)
       this.emotionalIntensity = 0;
   }
@@ -171,7 +171,7 @@ class AIDirector {
       for(var i=0; i<10; i++)
       {
         var t = window.setTimeout(function(){
-          var mobSize = Math.floor(Math.exp(i/6)) + Math.floor(Math.random()*2);
+          var mobSize = Math.floor(Math.exp(i/6)) + Math.floor(Math.random()*2) + window.selectedDifficulty;
           this.spawnZombies(mobSize);
         }.bind(this), i*500);
         window.timeouts.push(t);
@@ -191,7 +191,7 @@ class AIDirector {
   spawnHunter() {
     this.hunterConfig.time = this.time;
     var playerCoord = this.scene.allies.player.getCenter();
-    var spawns = this.scene.level.getSpawns(playerCoord, 300, 400);
+    var spawns = this.scene.level.getSpawns(playerCoord, 200, 300);
     var spawn = spawns[Math.floor(Math.random()*spawns.length)];
     this.enemies.add(new Hunter(this.scene, spawn.x, spawn.y));
   }
@@ -199,14 +199,14 @@ class AIDirector {
   spawnSmoker() {
     this.smokerConfig.time = this.time;
     var playerCoord = this.scene.allies.player.getCenter();
-    var spawns = this.scene.level.getSpawns(playerCoord, 300, 400);
+    var spawns = this.scene.level.getSpawns(playerCoord, 200, 300);
     var spawn = spawns[Math.floor(Math.random()*spawns.length)];
     this.enemies.add(new Smoker(this.scene, spawn.x, spawn.y));
   }
 
   spawnTank() {
     var playerCoord = this. allies.player.getCenter();
-    var spawns = this.scene.level.getSpawns(playerCoord, 300, 400);
+    var spawns = this.scene.level.getSpawns(playerCoord, 200, 300);
     var spawn = spawns[Math.floor(Math.random()*spawns.length)];
     this.enemies.add(new Tank(this.scene, spawn.x, spawn.y));
   }

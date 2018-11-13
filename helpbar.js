@@ -5,7 +5,7 @@ class HelpBar extends Phaser.GameObjects.GameObject {
     this.helpImage = this.scene.physics.add.image(0, 0, "help");
     this.helpImage.displayWidth = 32;
     this.helpImage.setVisible(false);
-    this.helpImage.setDepth(4);
+    this.helpImage.setDepth(1000);
     this.tween;
   }
 

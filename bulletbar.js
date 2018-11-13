@@ -14,7 +14,7 @@ class BulletBar extends Phaser.GameObjects.GameObject {
   setupSprites() {
     for(var i=0; i<this.max; i++) {
       var sprite = this.scene.physics.add.image(270 + i*4, 285, "bulletshell").setScale(0.5);
-      sprite.setDepth(4);
+      sprite.setDepth(1000);
       sprite.setVisible(this.visible);
       sprite.setScrollFactor(0);
       this.sprites.add(sprite);
@@ -24,7 +24,7 @@ class BulletBar extends Phaser.GameObjects.GameObject {
   setupReload() {
     this.reloadImage = this.scene.physics.add.image(270, 285, "reload");
     this.reloadImage.setVisible(false);
-    this.reloadImage.setDepth(4);
+    this.reloadImage.setDepth(1000);
     this.reloadImage.setScrollFactor(0);
   }
 

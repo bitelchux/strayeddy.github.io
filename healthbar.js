@@ -6,7 +6,7 @@ class HealthBar {
     this.extrahp = 300;
     this.visible = visible;
     this.sprite = scene.physics.add.sprite(290, 270, 'healthbar');
-    this.sprite.setDepth(4);
+    this.sprite.setDepth(1000);
     this.sprite.setScrollFactor(0);
     this.sprite.setVisible(this.visible);
     this.sprite.setTint(owner.color);

@@ -37,6 +37,7 @@ class Level {
     //this.shadowsLayer.setDepth(1000);
     this.shadowsLayer.setAlpha(0.5);
     this.obstaclesLayer.setCollisionBetween(0,400);
+    this.obstaclesLayer.setDepth(1000);
     this.triggersLayer.setVisible(false);
 
     this.setupLights();

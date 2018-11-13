@@ -248,7 +248,7 @@ class Zombie extends Enemy {
       key:'zombie',
       x: x, y: y,
       speed: 0.035 * window.speed,
-      hp: 50,
+      hp: 50 + 5*window.selectedDifficulty,
       pathUpdateTime: 250,
       attack: {
         damage: 4,
@@ -307,7 +307,7 @@ class Boomer extends Enemy {
       key:'boomer',
       x: x, y: y,
       speed: 0.025 * window.speed,
-      hp: 100,
+      hp: 100 + 10*window.selectedDifficulty,
       pathUpdateTime: 250,
       attack: {
         damage: 15,
@@ -357,8 +357,8 @@ class Hunter extends Enemy {
     var config = {
       key:'hunter',
       x: x, y: y,
-      speed: 0.015 * window.speed,
-      hp: 200,
+      speed: 0.020 * window.speed,
+      hp: 200 + 20*window.selectedDifficulty,
       pathUpdateTime: 250,
       attack: {
         damage: 10,
@@ -424,8 +424,8 @@ class Smoker extends Enemy {
     var config = {
       key:'smoker',
       x: x, y: y,
-      speed: 0.025 * window.speed,
-      hp: 200,
+      speed: 0.030 * window.speed,
+      hp: 200 + 20*window.selectedDifficulty,
       pathUpdateTime: 250,
       attack: {
         damage: 15,
@@ -510,7 +510,7 @@ class Tank extends Enemy {
       key:'tank',
       x: x, y: y,
       speed: 0.040 * window.speed,
-      hp: 3000,
+      hp: 3000 + 100*window.selectedDifficulty,
       pathUpdateTime: 250,
       attack: {
         damage: 35,

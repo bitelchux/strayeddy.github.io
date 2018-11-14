@@ -22,6 +22,8 @@ class Player extends Phaser.Physics.Arcade.Sprite {
 
     this.cursors = this.scene.input.keyboard.createCursorKeys();
 
+    console.log(this.cursors);
+
     this.normalspeed = 32 * window.speed;
     this.halfspeed = 16 * window.speed;
     this.speed = this.normalspeed;

@@ -323,6 +323,9 @@ class GameScene extends Phaser.Scene {
     this.createAudio();
     this.createStats();
 
+    if(window.mobilecheck())
+      this.createGamepad();
+
     this.sounds.music.play();
 
     this.myLights = new Lights(this);
@@ -413,7 +416,10 @@ class GameScene extends Phaser.Scene {
         nbBulletsHit: 0
       },
     };
+  }
 
+  createGamepad() {
+    this.gamepad = new VirtualGamepad(this);
   }
 
   update(time, delta) {

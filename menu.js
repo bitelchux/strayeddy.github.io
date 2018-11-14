@@ -1,6 +1,8 @@
 class MenuScene extends Phaser.Scene {
 
   preload() {
+    this.resize();
+
     this.load.setPath('assets/');
 
     var textStyle = {fontStyle: 'bold', fontSize: '48px', fill: '#EEEEEE'};
@@ -123,6 +125,9 @@ class MenuScene extends Phaser.Scene {
     });
     this.load.spritesheet('helpsign', 'helpsign.png', {
       frameWidth: 16, frameHeight: 16
+    });
+    this.load.spritesheet('gamepad', 'gamepad/gamepad_spritesheet.png', {
+      frameWidth: 100, frameHeight: 100
     });
 
     // sounds
@@ -339,7 +344,6 @@ class MenuScene extends Phaser.Scene {
 
   create() {
     window.addEventListener('resize', this.resize);
-    this.resize();
 
     clearInterval(this.loadingInterval);
     this.loadingText.destroy();

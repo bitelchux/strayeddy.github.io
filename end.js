@@ -10,6 +10,14 @@ class EndScene extends Phaser.Scene {
     this.bkg.setScrollFactor(0);
   }
 
+  createMobileFriendly() {
+    this.bkg.setInteractive();
+
+    this.bkg.on('pointerdown', function(pointer, localX, localY, event) {
+      this.backToMenu();
+    }.bind(this));
+  }
+
   createStats() {
     var titleStyle = {fontStyle: 'bold', fontSize: '36px', fill: 'white'};
     var subtitleStyle = {fontStyle: 'bold', fontSize: '26px', fill: 'white'};
@@ -84,6 +92,9 @@ class EndScene extends Phaser.Scene {
     this.createMusic();
     this.createBackground();
     this.createStats();
+
+    if(window.mobilecheck())
+      this.createMobileFriendly();
 
     this.input.keyboard.on('keydown', function() {
       this.backToMenu();

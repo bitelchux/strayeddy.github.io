@@ -313,6 +313,86 @@ class MenuScene extends Phaser.Scene {
     this.updateDifficultySelection();
   }
 
+  createMobileFriendly() {
+    this.characterIsSelected = false;
+    this.difficultyIsSelected = false;
+
+    this.bill.setInteractive();
+    this.zoey.setInteractive();
+    this.francis.setInteractive();
+    this.louis.setInteractive();
+
+    this.beginner.setInteractive();
+    this.normal.setInteractive();
+    this.expert.setInteractive();
+    this.insane.setInteractive();
+
+    this.bill.on('pointerdown', function(pointer, localX, localY, event) {
+      this.survivorIndex = 0;
+      this.updateSurvivorSelection();
+      this.mobileSelect(true);
+    }.bind(this));
+    this.zoey.on('pointerdown', function(pointer, localX, localY, event) {
+      this.survivorIndex = 1;
+      this.updateSurvivorSelection();
+      this.mobileSelect(true);
+    }.bind(this));
+    this.francis.on('pointerdown', function(pointer, localX, localY, event) {
+      this.survivorIndex = 2;
+      this.updateSurvivorSelection();
+      this.mobileSelect(true);
+    }.bind(this));
+    this.louis.on('pointerdown', function(pointer, localX, localY, event) {
+      this.survivorIndex = 3;
+      this.updateSurvivorSelection();
+      this.mobileSelect(true);
+    }.bind(this));
+
+    this.beginner.on('pointerdown', function(pointer, localX, localY, event) {
+      this.difficultyIndex = 0;
+      this.updateDifficultySelection();
+      this.mobileSelect(false, true);
+    }.bind(this));
+    this.normal.on('pointerdown', function(pointer, localX, localY, event) {
+      this.difficultyIndex = 1;
+      this.updateDifficultySelection();
+      this.mobileSelect(false, true);
+    }.bind(this));
+    this.expert.on('pointerdown', function(pointer, localX, localY, event) {
+      this.difficultyIndex = 2;
+      this.updateDifficultySelection();
+      this.mobileSelect(false, true);
+    }.bind(this));
+    this.insane.on('pointerdown', function(pointer, localX, localY, event) {
+      this.difficultyIndex = 3;
+      this.updateDifficultySelection();
+      this.mobileSelect(false, true);
+    }.bind(this));
+
+    for(var i=0; i<4; i++) {
+      var survivor = this.survivors[i];
+      this[survivor].setTint(0x333333);
+      this[survivor].weapon.setTint(0x333333);
+      this[survivor].title.setTint(0x333333);
+
+      var difficulty = this.difficulties[i];
+      this[difficulty].setTint(0x333333);
+      this[difficulty].title.setTint(0x333333);
+    };
+  }
+
+  mobileSelect(character = false, difficulty = false) {
+    if(character)
+      this.characterIsSelected = true;
+
+    if(difficulty)
+      this.difficultyIsSelected = true;
+
+    if(this.characterIsSelected && this.difficultyIsSelected) {
+      this.startGame();
+    }
+  }
+
   createZombies() {
     // zombie
     this.anims.create({
@@ -355,6 +435,9 @@ class MenuScene extends Phaser.Scene {
     this.createDifficulties();
     this.createZombies();
 
+    if(window.mobilecheck())
+      this.createMobileFriendly();
+
     this.input.keyboard.on('keydown_ENTER', function() {
       if(this.titleIndex == 0){
         this.titleIndex += 1;
@@ -362,12 +445,7 @@ class MenuScene extends Phaser.Scene {
         this.difficultyText.setTint(0x770000);
         this.updateDifficultySelection();
       } else {
-        window.selectedName = this.survivors[this.survivorIndex];
-        window.selectedDifficulty = this.difficultyIndex + 1;
-        clearTimeout(this.timeoutVar);
-        this.menuMusic.stop();
-        this.scene.remove(this);
-        this.scene.add('gameScene', GameScene, true);
+        this.startGame();
       }
     }, this);
 
@@ -378,6 +456,15 @@ class MenuScene extends Phaser.Scene {
     this.input.keyboard.on('keydown_RIGHT', function() {
       this.moveSelectionRight();
     }, this);
+  }
+
+  startGame() {
+    window.selectedName = this.survivors[this.survivorIndex];
+    window.selectedDifficulty = this.difficultyIndex + 1;
+    clearTimeout(this.timeoutVar);
+    this.menuMusic.stop();
+    this.scene.remove(this);
+    this.scene.add('gameScene', GameScene, true);
   }
 
   addZombie(x, y) {

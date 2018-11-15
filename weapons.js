@@ -3,7 +3,8 @@ class Weapon extends Phaser.Physics.Arcade.Image {
     super(scene, owner.x, owner.y, name);
     scene.physics.world.enable(this);
     scene.add.existing(this);
-    this.setPipeline("Light2D");
+    if(!window.mobilecheck())
+      this.setPipeline("Light2D");
 
     this.owner = owner;
     this.scene = scene;

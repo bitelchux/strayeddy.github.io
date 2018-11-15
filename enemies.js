@@ -65,7 +65,8 @@ class Enemy extends Phaser.Physics.Arcade.Sprite {
     this.config = config;
     this.startsPursuit = startsPursuit;
 
-    this.setPipeline("Light2D");
+    if(!window.mobilecheck())
+      this.setPipeline("Light2D");
 
     this.pursuitInterval = null;
     this.path = null;
@@ -217,7 +218,9 @@ class Enemy extends Phaser.Physics.Arcade.Sprite {
     this.whenIsHit(bullet);
     this.setTintFill(0xff0000);
     var bloodId = 1 + Math.round(Math.random()*3);
-    var blood = this.scene.add.image(this.x, this.y, 'blood-' + bloodId).setPipeline("Light2D");
+    var blood = this.scene.add.image(this.x, this.y, 'blood-' + bloodId);
+    if(!window.mobilecheck())
+      blood.setPipeline("Light2D");
 
     if(!this.startsPursuit) {
       this.startPursuit()
@@ -292,7 +295,10 @@ class Zombie extends Enemy {
     this.config.hp = 100;
     this.setActive(false);
     this.setVisible(false);
-    var deadZombie = this.scene.add.image(this.x, this.y, 'zombie', 'zombie-dead.png').setPipeline("Light2D");
+    var deadZombie = this.scene.add.image(this.x, this.y, 'zombie', 'zombie-dead.png');
+    if(!window.mobilecheck())
+      deadZombie.setPipeline("Light2D");
+
     deadZombie.setDepth(this.y);
   }
 
@@ -346,7 +352,10 @@ class Boomer extends Enemy {
 
     this.on('animationcomplete', function(animation) {
       if(animation.key == "boomer-explode") {
-        this.scene.add.image(this.x, this.y, 'boomer', 'boomer-dead.png').setPipeline("Light2D").setScale(1.5).setDepth(this.y);
+        var boomerDead = this.scene.add.image(this.x, this.y, 'boomer', 'boomer-dead.png').setScale(1.5).setDepth(this.y);
+        if(!window.mobilecheck())
+          boomerDead.setPipeline("Light2D");
+
         this.destroy();
       }
     }, this);
@@ -416,7 +425,10 @@ class Hunter extends Enemy {
 
   whenDie(killer) {
     window.gameplayStats[killer.name].nbHuntersKilled += 1;
-    this.scene.add.image(this.x, this.y, 'hunter', 'hunter-dead.png').setPipeline("Light2D").setScale(1.3).setDepth(this.y);
+    var hunterDead = this.scene.add.image(this.x, this.y, 'hunter', 'hunter-dead.png').setScale(1.3).setDepth(this.y);
+    if(!window.mobilecheck())
+      hunterDead.setPipeline("Light2D");
+
   }
 }
 
@@ -501,7 +513,9 @@ class Smoker extends Enemy {
     if(this.dragTween)
       this.dragTween.stop();
 
-    this.scene.add.image(this.x, this.y, 'smoker', 'smoker-dead.png').setPipeline("Light2D").setScale(1.2).setDepth(this.y);
+    var smokerDead = this.scene.add.image(this.x, this.y, 'smoker', 'smoker-dead.png').setScale(1.2).setDepth(this.y);
+    if(!window.mobilecheck())
+      smokerDead.setPipeline("Light2D");
   }
 }
 
@@ -575,7 +589,9 @@ class Tank extends Enemy {
   whenDie(killer) {
     this.scene.sounds.tankmusic.stop();
     this.rock = null;
-    this.scene.add.image(this.x, this.y, 'tank', 'tank-dead.png').setPipeline("Light2D").setScale(2).setDepth(this.y);
+    var tankDead = this.scene.add.image(this.x, this.y, 'tank', 'tank-dead.png').setScale(2).setDepth(this.y);
+    if(!window.mobilecheck())
+      tankDead.setPipeline("Light2D");
   }
 }
 
@@ -584,8 +600,9 @@ class Rock {
     this.tank = tank;
     this.scene = scene;
 
-    this.sprite = scene.physics.add.sprite(x, y, 'rock').setPipeline("Light2D");
-    this.sprite.setDepth(1000);
+    this.sprite = scene.physics.add.sprite(x, y, 'rock').setDepth(1000);
+    if(!window.mobilecheck())
+      this.sprite.setPipeline("Light2D");
 
     this.damage = 35;
     this.isExploding = false;

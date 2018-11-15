@@ -25,7 +25,9 @@ class Allies {
     this.group.push(this.ally2);
     this.group.push(this.ally3);
 
-    this.setupLights();
+    if(!window.mobilecheck())
+      this.setupLights();
+
     this.setupColliders();
     this.setupHelpEvents();
   }

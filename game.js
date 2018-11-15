@@ -328,7 +328,9 @@ class GameScene extends Phaser.Scene {
 
     this.sounds.music.play();
 
-    this.myLights = new Lights(this);
+    if(!window.mobilecheck())
+      this.myLights = new Lights(this);
+
     this.level = new Level(this);
     this.allies = new Allies(this);
     this.enemies = new Enemies(this);
@@ -426,7 +428,8 @@ class GameScene extends Phaser.Scene {
     if(!this.isBeingRemoved) {
       this.allies.update();
       this.aidirector.update(time, delta);
-      this.myLights.update();
+      if(!window.mobilecheck())
+        this.myLights.update();
     }
   }
 

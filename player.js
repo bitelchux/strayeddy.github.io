@@ -8,7 +8,9 @@ class Player extends Phaser.Physics.Arcade.Sprite {
 
     window.gameplayStats[name].isPlayer = true;
 
-    this.setPipeline("Light2D");
+    if(!window.mobilecheck())
+      this.setPipeline("Light2D");
+      
     this.setCollideWorldBounds(true);
     this.body.world.setBounds(0,0,this.scene.level.tilemap.widthInPixels,this.scene.level.tilemap.heightInPixels);
     this.name = name;

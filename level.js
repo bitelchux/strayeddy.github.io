@@ -9,27 +9,36 @@ class Level {
     });
     this.tileset = this.tilemap.addTilesetImage('level');
 
-    this.groundLayer = this.tilemap.createBlankDynamicLayer('ground', this.tileset).setPipeline('Light2D');
+    this.groundLayer = this.tilemap.createBlankDynamicLayer('ground', this.tileset);
+    this.objectsLayer = this.tilemap.createBlankDynamicLayer('objects', this.tileset);
+    this.shadowsLayer = this.tilemap.createBlankDynamicLayer('shadows', this.tileset);
+    this.obstaclesLayer = this.tilemap.createBlankDynamicLayer('obstacles', this.tileset);
+    this.triggersLayer = this.tilemap.createBlankDynamicLayer('triggers', this.tileset);
+
+    if(!window.mobilecheck()) {
+      this.groundLayer.setPipeline('Light2D');
+      this.objectsLayer.setPipeline('Light2D');
+      this.shadowsLayer.setPipeline('Light2D');
+      this.obstaclesLayer.setPipeline('Light2D');
+      this.triggersLayer.setPipeline('Light2D');
+    }
+
     levelCreator.getLayer("ground").matrix.forEach(function (value, index, matrix) {
       this.groundLayer.putTileAt(value, index[1], index[0]);
     }.bind(this))
 
-    this.objectsLayer = this.tilemap.createBlankDynamicLayer('objects', this.tileset).setPipeline('Light2D');
     levelCreator.getLayer("objects").matrix.forEach(function (value, index, matrix) {
       this.objectsLayer.putTileAt(value, index[1], index[0]);
     }.bind(this))
 
-    this.shadowsLayer = this.tilemap.createBlankDynamicLayer('shadows', this.tileset).setPipeline('Light2D');
     levelCreator.getLayer("shadows").matrix.forEach(function (value, index, matrix) {
       this.shadowsLayer.putTileAt(value, index[1], index[0]);
     }.bind(this))
 
-    this.obstaclesLayer = this.tilemap.createBlankDynamicLayer('obstacles', this.tileset).setPipeline('Light2D');
     levelCreator.getLayer("obstacles").matrix.forEach(function (value, index, matrix) {
       this.obstaclesLayer.putTileAt(value, index[1], index[0]);
     }.bind(this))
 
-    this.triggersLayer = this.tilemap.createBlankDynamicLayer('triggers', this.tileset).setPipeline('Light2D');
     levelCreator.getLayer("triggers").matrix.forEach(function (value, index, matrix) {
       this.triggersLayer.putTileAt(value, index[1], index[0]);
     }.bind(this))
@@ -40,7 +49,8 @@ class Level {
     this.obstaclesLayer.setDepth(1000);
     this.triggersLayer.setVisible(false);
 
-    this.setupLights();
+    if(!window.mobilecheck())
+      this.setupLights();
   }
 
   setupLights() {
